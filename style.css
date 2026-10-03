@@ -1,0 +1,122 @@
+:root {
+  --fond: #0a1420;
+  --panneau: #122238;
+  --panneau-clair: #1a2f4a;
+  --bordure: #24405f;
+  --texte: #eaf2ff;
+  --texte-att: #8fa6c4;
+  --accent: #22e5a0;
+  --accent-fonce: #15a877;
+  --danger: #ff6b6b;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  background: var(--fond); color: var(--texte);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  overscroll-behavior-y: contain;
+}
+
+.hidden { display: none !important; }
+
+/* ── En-tête ─────────────────────────────────────────────────────────── */
+.nk-haut {
+  position: sticky; top: 0; z-index: 10;
+  background: linear-gradient(180deg, #0d1f38 0%, #0a1420 100%);
+  padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
+  border-bottom: 1px solid var(--bordure);
+}
+.nk-haut-ligne { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.nk-haut h1 { font-size: 19px; margin: 0; flex: 1; }
+.nk-retour-btn {
+  background: var(--panneau); border: 1px solid var(--bordure); color: var(--texte);
+  width: 36px; height: 36px; border-radius: 10px; font-size: 20px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.nk-recherche-zone { position: relative; display: flex; align-items: center; }
+.nk-loupe { position: absolute; left: 12px; font-size: 14px; opacity: 0.7; pointer-events: none; }
+.nk-recherche {
+  width: 100%; padding: 11px 36px 11px 36px; border-radius: 12px;
+  border: 1px solid var(--bordure); background: var(--panneau); color: var(--texte);
+  font-size: 15px;
+}
+.nk-recherche:focus { outline: none; border-color: var(--accent); }
+.nk-recherche-effacer {
+  position: absolute; right: 8px; background: none; border: none; color: var(--texte-att);
+  font-size: 16px; cursor: pointer; padding: 6px;
+}
+
+/* ── Corps ───────────────────────────────────────────────────────────── */
+.nk-corps { padding: 16px; padding-bottom: 90px; max-width: 640px; margin: 0 auto; }
+.nk-vue-titre { font-size: 20px; margin: 4px 0 16px; }
+
+.nk-vide { text-align: center; color: var(--texte-att); padding: 60px 20px; font-size: 14px; }
+
+/* ── Grille de catégories ────────────────────────────────────────────── */
+.nk-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.nk-categorie-carte {
+  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 16px;
+  padding: 18px 14px; text-align: left; cursor: pointer; color: var(--texte);
+  display: flex; flex-direction: column; gap: 8px; min-height: 100px;
+}
+.nk-categorie-carte:active { background: var(--panneau-clair); }
+.nk-categorie-icone { font-size: 28px; }
+.nk-categorie-titre { font-size: 14.5px; font-weight: 700; line-height: 1.25; }
+.nk-categorie-compte { font-size: 11.5px; color: var(--texte-att); }
+
+/* ── Liste de sections ───────────────────────────────────────────────── */
+.nk-sections-liste { display: flex; flex-direction: column; gap: 10px; }
+.nk-section-carte {
+  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 14px;
+  padding: 14px 16px; cursor: pointer; color: var(--texte); text-align: left;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+}
+.nk-section-carte:active { background: var(--panneau-clair); }
+.nk-section-carte-titre { font-size: 15px; font-weight: 600; }
+.nk-section-carte-cat { font-size: 11.5px; color: var(--accent); margin-top: 3px; }
+.nk-section-carte-fleche { color: var(--texte-att); font-size: 18px; flex-shrink: 0; }
+.nk-section-carte-extrait { font-size: 12.5px; color: var(--texte-att); margin-top: 3px; }
+
+/* ── Détail de section ───────────────────────────────────────────────── */
+.nk-section-contenu { font-size: 15.5px; line-height: 1.65; }
+.nk-section-contenu p { margin: 0 0 12px; }
+.nk-section-contenu ul { margin: 0 0 14px; padding-left: 22px; }
+.nk-section-contenu li { margin-bottom: 6px; }
+.nk-section-contenu strong { color: var(--accent); }
+.nk-section-contenu em { color: var(--texte-att); font-style: italic; }
+.nk-section-contenu img {
+  width: 100%; border-radius: 12px; margin: 10px 0 16px;
+  border: 1px solid var(--bordure);
+}
+
+/* ── Pied ─────────────────────────────────────────────────────────────── */
+.nk-pied {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: linear-gradient(0deg, #0a1420 60%, transparent);
+  padding: 10px 16px calc(14px + env(safe-area-inset-bottom));
+  text-align: center;
+}
+.nk-lien { background: none; border: none; color: var(--texte-att); font-size: 12.5px; cursor: pointer; padding: 6px; }
+
+/* ── Modale mentions ─────────────────────────────────────────────────── */
+.nk-modale {
+  position: fixed; inset: 0; z-index: 50; background: rgba(5, 10, 18, 0.85);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.nk-modale-contenu {
+  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 16px;
+  padding: 24px 20px; max-width: 420px; width: 100%; position: relative; max-height: 80vh; overflow-y: auto;
+}
+.nk-modale-contenu h2 { margin-top: 0; }
+.nk-modale-contenu p { font-size: 13.5px; color: var(--texte-att); line-height: 1.6; }
+.nk-mentions-legal { font-size: 11.5px !important; border-top: 1px solid var(--bordure); padding-top: 12px; margin-top: 12px; }
+.nk-modale-fermer {
+  position: absolute; top: 12px; right: 12px; background: var(--panneau-clair); border: 1px solid var(--bordure);
+  color: var(--texte); width: 30px; height: 30px; border-radius: 8px; cursor: pointer; font-size: 14px;
+}
+
+@media (min-width: 560px) {
+  .nk-categories { grid-template-columns: 1fr 1fr 1fr; }
+}

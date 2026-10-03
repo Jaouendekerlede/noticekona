@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+<meta name="author" content="Jean-Luc RIO">
+<meta name="copyright" content="© 2026 Jean-Luc RIO — Tous droits réservés">
+<title>Notice Kona</title>
+<meta name="theme-color" content="#0a1c36" />
+<link rel="manifest" href="./manifest.json" />
+<link rel="icon" href="./icons/icon-192.png" />
+<link rel="apple-touch-icon" href="./icons/icon-192.png" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header class="nk-haut">
+  <div class="nk-haut-ligne">
+    <button id="nk-retour-btn" class="nk-retour-btn hidden" type="button" aria-label="Retour">‹</button>
+    <h1 id="nk-titre">🔋 Notice Kona</h1>
+  </div>
+  <div class="nk-recherche-zone">
+    <span class="nk-loupe">🔍</span>
+    <input type="text" id="nk-recherche" class="nk-recherche" placeholder="Rechercher une fonction, un bouton…" autocomplete="off">
+    <button id="nk-recherche-effacer" class="nk-recherche-effacer hidden" type="button" aria-label="Effacer">✕</button>
+  </div>
+</header>
+
+<main id="nk-corps" class="nk-corps">
+
+  <div id="nk-vue-accueil" class="nk-vue">
+    <div id="nk-categories" class="nk-categories"></div>
+  </div>
+
+  <div id="nk-vue-categorie" class="nk-vue hidden">
+    <h2 id="nk-categorie-titre" class="nk-vue-titre"></h2>
+    <div id="nk-sections-liste" class="nk-sections-liste"></div>
+  </div>
+
+  <div id="nk-vue-section" class="nk-vue hidden">
+    <h2 id="nk-section-titre" class="nk-vue-titre"></h2>
+    <div id="nk-section-contenu" class="nk-section-contenu"></div>
+  </div>
+
+  <div id="nk-vue-recherche" class="nk-vue hidden">
+    <div id="nk-recherche-resultats" class="nk-sections-liste"></div>
+    <div id="nk-recherche-vide" class="nk-vide hidden">Aucun résultat.</div>
+  </div>
+
+  <div id="nk-chargement" class="nk-vide">Chargement de la notice…</div>
+  <div id="nk-erreur" class="nk-vide hidden">Impossible de charger la notice. Vérifiez que l'appli est bien installée (hors-ligne, les données doivent déjà être en cache).</div>
+
+</main>
+
+<footer class="nk-pied">
+  <button id="nk-mentions-btn" class="nk-lien" type="button">À propos</button>
+</footer>
+
+<div id="nk-mentions" class="nk-modale hidden">
+  <div class="nk-modale-contenu">
+    <button id="nk-mentions-fermer" class="nk-modale-fermer" type="button" aria-label="Fermer">✕</button>
+    <h2>🔋 Notice Kona</h2>
+    <p id="nk-mentions-texte"></p>
+    <p class="nk-mentions-legal">Contenu issu du manuel du propriétaire officiel Hyundai, résumé et réorganisé à titre d'aide-mémoire personnel. En cas de doute, la notice papier/PDF originale fait foi.</p>
+  </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

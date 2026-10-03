@@ -1,0 +1,634 @@
+{
+  "categories": [
+    {
+      "id": "demarrage",
+      "titre": "Démarrage et Arrêt",
+      "icone": "🏁",
+      "sections": [
+        {
+          "id": "demarrage-vehicule",
+          "titre": "Démarrage du véhicule",
+          "contenu": "1. Assurez-vous d'avoir la clé intelligente sur vous.\n2. Vérifiez que le frein de stationnement est serré.\n3. Assurez-vous que le rapport P (Stationnement) est engagé.\n4. Appuyez sur la pédale de frein.\n5. Appuyez sur le bouton Start/Stop (démarrage/arrêt). Le voyant ¢ s'allume sur le combiné d'instruments, indiquant que le véhicule est prêt à rouler.\n\n*Informations*\n- Démarrez toujours avec le pied sur la pédale de frein. N'appuyez pas sur l'accélérateur.\n- Le véhicule peut passer en mode prêt (¢ allumé) si la climatisation programmée ou à distance est active, ou si la clé numérique NFC est placée sur le socle d'authentification.",
+          "images": []
+        },
+        {
+          "id": "arret-vehicule",
+          "titre": "Arrêt du véhicule",
+          "contenu": "1. Arrêtez complètement le véhicule en appuyant sur la pédale de frein.\n2. Engagez le rapport P (Stationnement) à l'aide du sélecteur de vitesses rotatif.\n3. Appuyez sur le bouton Start/Stop (démarrage/arrêt). Le témoin ¢ sur le combiné d'instruments s'éteint.\n\n*ATTENTION*\n- Si le témoin ¢ reste allumé sur le combiné d’instruments, le véhicule n’est pas à l’arrêt et peut se déplacer. Assurez-vous toujours d'être en position P.",
+          "images": []
+        },
+        {
+          "id": "demarrage-distance",
+          "titre": "Démarrage à distance",
+          "contenu": "Pour démarrer le véhicule à distance avec la clé intelligente:\n1. Appuyez sur le bouton de verrouillage de porte de la clé intelligente (à moins de 10 m du véhicule).\n2. Dans les 2 secondes, appuyez et maintenez le bouton de démarrage à distance (3) de la clé intelligente pendant plus de 2 secondes. Le véhicule démarre.\n\nPour éteindre le véhicule à distance: Appuyez une fois sur le bouton de démarrage à distance (3).\n\n*Informations*\n- Le véhicule doit être en mode P (Stationnement) pour que la fonction soit opérationnelle.\n- Le démarrage à distance ne fonctionne pas si le capot ou le hayon est ouvert.",
+          "images": [
+            "demarrage-distance-p194.webp",
+            "demarrage-distance-p305.webp"
+          ]
+        },
+        {
+          "id": "demarrage-secours-12v",
+          "titre": "Démarrage de secours (batterie 12V)",
+          "contenu": "Si la batterie 12V est déchargée, vous pouvez démarrer le véhicule à l'aide de câbles de démarrage.\n\n*ATTENTION*\n- L’hydrogène gazeux est présent dans les cellules de la batterie et est inflammable. Évitez les flammes et étincelles.\n- Portez des lunettes de protection.\n- Ne touchez pas le fil électrique haute tension (orange) ou les connecteurs.\n- N'utilisez qu'une batterie 12 V pour le démarrage de secours.\n\n*Procédure*\n1. Placez les véhicules suffisamment près sans contact physique.\n2. Coupez tous les dispositifs électriques (radio, éclairage, climatisation) dans les deux véhicules. Mettez le véhicule en position P (Stationnement) et serrez le frein de stationnement.\n3. Ouvrez le capot du véhicule.\n4. Déposez le couvercle de la batterie situé dans le compartiment de rangement avant (page 8-5).\n5. Branchez le câble positif (+) sur la borne de secours positive (+) de votre véhicule (1).\n6. Branchez l'autre extrémité du câble positif (+) sur la borne positive (+) de la batterie du véhicule d'assistance (2).\n7. Branchez le câble négatif (-) sur la borne négative (-) de la batterie du véhicule d'assistance (3).\n8. Branchez l'autre extrémité du câble négatif (-) sur la borne négative (-) de la batterie de votre véhicule (4). **Ne raccordez pas le câble directement à la borne négative de la batterie déchargée.**\n9. Démarrez le véhicule d'assistance et laissez-le tourner quelques minutes.\n10. Démarrez votre véhicule.\n11. Laissez votre véhicule tourner au ralenti pendant au moins **30 minutes** (ou **60 minutes** pour une décharge complète) pour recharger la batterie.\n\n*Pour débrancher les câbles, suivez l'ordre inverse des étapes 10 à 7.*",
+          "images": [
+            "demarrage-secours-12v-p540.webp",
+            "demarrage-secours-12v-p541.webp"
+          ]
+        },
+        {
+          "id": "systeme-son-moteur-virtuel",
+          "titre": "Système de son du moteur virtuel (VESS)",
+          "contenu": "Le système VESS génère un son de moteur virtuel pour alerter les piétons de l'approche du véhicule. Il est opérationnel lorsque le véhicule est prêt à rouler (¢ voyant allumé) et que le rapport n'est pas en position P (Stationnement). Un son d'avertissement supplémentaire est émis en marche arrière (R).\n\n*ATTENTION*\n- Le véhicule n'émet aucun bruit de moteur en conduite, soyez attentif à l'environnement.\n- Vérifiez toujours les alentours (enfants, obstacles) avant de démarrer ou de reculer.",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "recharge",
+      "titre": "Recharge",
+      "icone": "🔌",
+      "sections": [
+        {
+          "id": "types-temps-charge",
+          "titre": "Types et temps de charge",
+          "contenu": "Les véhicules électriques peuvent être rechargés via des chargeurs CA (courant alternatif), CC (courant continu) ou portables (ICCB).\n\n*Temps de charge estimés (à 25 °C, de 10 % à 100 % ou 80 %)*\n- **Chargeur CA (Type A/B)**:\n  - Standard: Environ 4h 55min (Type A) / 5h 20min (Type B)\n  - Longue autonomie: Environ 6h 25min\n- **Chargeur CC (350 kW)**: Environ 39-41 min (jusqu'à 80%)\n- **Chargeur CC (100 kW)**: Environ 44-45 min (jusqu'à 80%)\n- **Chargeur portable (220 V)**:\n  - Standard: Environ 20h 40-45min\n  - Longue autonomie: Environ 27h 30-45min\n\n*ATTENTION*\n- L'utilisation répétée d'un chargeur CC peut réduire la durée de vie de la batterie haute tension. Privilégiez la charge CA.\n- Vérifiez que la prise électrique domestique (pour charge portable) est conforme aux réglementations et peut supporter la tension/ampérage/puissance du chargeur.\n- Si la capacité du distributeur d'énergie est dépassée, cela peut entraîner une coupure de courant ou un incendie.",
+          "images": [
+            "types-temps-charge-p24.webp"
+          ]
+        },
+        {
+          "id": "precautions-securite-recharge",
+          "titre": "Précautions de sécurité pour la recharge",
+          "contenu": "*AVERTISSEMENT*\n- Avant de charger: engagez le frein de stationnement électronique (EPB) en appuyant sur la pédale de frein, sélectionnez le rapport P (stationnement) et arrêtez le véhicule. Tout mouvement pendant la charge est dangereux.\n- Utilisez uniquement le chargeur spécifié.\n- Ne touchez pas le connecteur/prise de charge avec les mains mouillées ou les pieds dans l'eau/neige.\n- Tenez le câble de charge par sa poignée lors de la connexion/déconnexion.\n- Utilisez un chargeur étanche. Ne chargez pas sous la pluie si l'eau peut pénétrer les joints.\n- Assurez-vous que le connecteur/prise est exempt d'eau, de poussière ou de contaminants.\n- Arrêtez immédiatement la charge en cas d'odeur ou de fumée.\n- Ne chargez pas en cas de risque d'orage.\n\n*ATTENTION*\n- Assurez-vous que la jauge de la batterie haute tension ne soit pas inférieure à **10 %** pour éviter des dommages.\n- Chargez le véhicule au moins **une fois tous les 3 mois** si vous ne l'utilisez pas pendant une longue période.\n- Une charge complète (à partir de 20 % ou moins) via CA est recommandée mensuellement pour maintenir la batterie en condition optimale.\n\n*Informations*\n- Pendant la charge, le levier de sélection doit rester en position P (stationnement).\n- La porte du véhicule doit être déverrouillée pour débrancher le connecteur de charge.",
+          "images": [
+            "precautions-securite-recharge-p18.webp",
+            "precautions-securite-recharge-p19.webp"
+          ]
+        },
+        {
+          "id": "verification-etat-charge",
+          "titre": "Vérification de l’état de charge (SOC)",
+          "contenu": "Vérifiez l’état de charge de la batterie haute tension via le témoin de charge situé à l’intérieur de la trappe de charge.\n\n*Procédure*\n1. Lorsque la portière est déverrouillée, appuyez sur le bouton d’ouverture de la trappe de charge pour l'ouvrir.\n2. Référez-vous au témoin de charge (4 niveaux) à l'intérieur de la trappe pour vérifier le SOC:\n    - Un trait: 0-24 %\n    - Deux traits: 25-49 %\n    - Trois traits: 50-74 %\n    - Quatre traits: 75-100 %\n\n*Informations*\n- Si le SOC est inférieur à **20 %**, un témoin d'avertissement s'affiche sur le combiné d'instruments. Chargez immédiatement le véhicule.",
+          "images": [
+            "verification-etat-charge-p25.webp",
+            "verification-etat-charge-p69.webp"
+          ]
+        },
+        {
+          "id": "verrouillage-connecteur-charge",
+          "titre": "Réglage du mode de verrouillage du connecteur de charge",
+          "contenu": "Vous pouvez verrouiller le connecteur de charge en CA pour éviter qu'il ne se détache involontairement.\n\n*Réglage via système d'infodivertissement*\n1. Sélectionnez Véhicule électrique > Ĥ > Chargeur AC > Verrouillage du câble de charge.\n2. Choisissez parmi les options:\n    - **Toujours**: Verrouille automatiquement le connecteur dès qu'il est branché.\n    - **Pendant le processus de charge**: Verrouille uniquement quand la charge est en cours.\n\n*Informations*\n- En charge CC ou lors de l'utilisation de la fonction V2L, le connecteur est automatiquement verrouillé, indépendamment des réglages.\n- Après une charge CC, le connecteur se déverrouille automatiquement.\n- Pour déverrouiller après consommation d'électricité, appuyez sur le bouton du connecteur V2L pour couper le courant et déverrouiller la portière.\n- Si le mode est réglé sur Toujours ou Pendant le processus de charge, déverrouillez la trappe en appuyant sur le bouton de la clé connectée ou de la portière conducteur pour débrancher.",
+          "images": [
+            "verrouillage-connecteur-charge-p27.webp",
+            "verrouillage-connecteur-charge-p31.webp"
+          ]
+        },
+        {
+          "id": "debranchement-urgence-charge",
+          "titre": "Débranchement d'urgence du connecteur de charge",
+          "contenu": "Si le bouton de déverrouillage ne fonctionne pas en raison d'une batterie déchargée ou d'un câblage anormal:\n1. Ouvrez le coffre.\n2. Tirez le câble d’urgence situé derrière le connecteur de charge (page 1-21/28).\n\n*ATTENTION*\n- Ne forcez pas pour débrancher le connecteur, cela pourrait l'endommager.\n- Si le câble d'urgence ne fonctionne pas, contactez un concessionnaire HYUNDAI agréé.",
+          "images": [
+            "debranchement-urgence-charge-p28.webp"
+          ]
+        },
+        {
+          "id": "chargeur-ca",
+          "titre": "Utilisation d'un chargeur CA",
+          "contenu": "La charge en CA est la méthode la plus courante via les stations publiques ou un câble CA séparé.\n\n*Procédure*\n1. Véhicule démarré, serrez l'EPB en appuyant sur la pédale de frein. Mettez tous les commutateurs sur OFF et le rapport P (stationnement). Coupez le contact.\n2. Portière déverrouillée, appuyez sur le symbole sur la trappe de charge pour l'ouvrir.\n3. Ouvrez le couvercle de l'entrée de charge. Nettoyez si des contaminants sont présents (avec un pistolet à air comprimé).\n4. Retirez le capuchon de protection du connecteur de charge CA, tenez la poignée et connectez-le à l'entrée de charge CA du véhicule jusqu'à un clic.\n5. Si vous utilisez un câble CA acheté séparément, connectez la prise de charge à une prise électrique (220 V).\n6. Le temps de charge estimé s'affiche sur le tableau de bord (environ 1 minute).\n\nPour débrancher (après la charge):\n1. Appuyez sur le bouton de déverrouillage de la poignée du connecteur de charge et tirez-le.\n2. Fermez le couvercle de l'entrée de charge et la trappe de charge.",
+          "images": [
+            "chargeur-ca-p29.webp",
+            "chargeur-ca-p30.webp"
+          ]
+        },
+        {
+          "id": "chargeur-cc",
+          "titre": "Utilisation d’un chargeur CC",
+          "contenu": "La charge rapide en CC est disponible dans les stations publiques.\n\n*Procédure*\n1. Véhicule démarré, serrez l'EPB en appuyant sur la pédale de frein. Mettez tous les commutateurs sur OFF et le rapport P (stationnement). Coupez le contact.\n2. Portière déverrouillée, appuyez sur le symbole sur la trappe de charge pour l'ouvrir.\n3. Ouvrez le couvercle de l'entrée de charge. Nettoyez si des contaminants sont présents (avec un pistolet à air comprimé).\n4. Retirez le capuchon de protection du connecteur de charge CC, tenez la poignée et connectez-le à l'entrée de charge CC du véhicule jusqu'à un clic.\n5. Le temps de charge estimé s'affiche sur le tableau de bord (environ 1 minute).\n\nPour débrancher (après la charge):\n1. Appuyez sur le bouton de déverrouillage de la poignée du connecteur de charge et tirez-le. (Certains chargeurs CC peuvent ne pas avoir de bouton de déverrouillage).\n2. Fermez le couvercle de l'entrée de charge et la trappe de charge.",
+          "images": [
+            "chargeur-cc-p32.webp",
+            "chargeur-cc-p33.webp"
+          ]
+        },
+        {
+          "id": "chargeur-portable-iccb",
+          "titre": "Utilisation d’un chargeur portable (ICCB)",
+          "contenu": "Utilisez le boîtier de commande intégré (ICCB) avec une source d'alimentation CA 220 V pour recharger en cas d'urgence.\n\n*ATTENTION*\n- Utilisez un chargeur portable d'origine HYUNDAI. Les pièces non d'origine peuvent annuler la garantie.\n- Ne laissez pas les enfants manipuler le chargeur.\n- N’utilisez pas de câble de rallonge.\n\n*Procédure*\n1. Branchez la fiche d’alimentation du chargeur portable sur la prise électrique domestique (le voyant POWER du boîtier de commande devient vert).\n2. Réglez le courant de charge en appuyant sur le bouton du boîtier de commande pendant plus de **2 secondes** jusqu’à ce que le chiffre clignote. L'ordre de réglage est **6 A - 8 A - 10 A - 12 A**.\n3. Véhicule démarré, serrez l'EPB en appuyant sur la pédale de frein. Mettez tous les commutateurs sur OFF et le rapport P (stationnement). Coupez le contact.\n4. Portière déverrouillée, appuyez sur le symbole sur la trappe de charge pour l'ouvrir.\n5. Ouvrez le couvercle de l’entrée de charge. Nettoyez si des contaminants sont présents.\n6. Retirez le capuchon de protection du connecteur de charge portable, tenez la poignée et connectez-le à l'entrée de charge CA du véhicule jusqu'à un clic.\n7. Le temps de charge estimé s'affiche sur le tableau de bord (environ 1 minute).\n\nPour débrancher (après la charge):\n1. Appuyez sur le bouton de déverrouillage de la poignée du connecteur de charge et tirez-le.\n2. Fermez le couvercle de l'entrée de charge et la trappe de charge.\n\n*Boîtier de commande ICCB (Exemple)*\n- **POWER (vert)**: Appareil sous tension.\n- **CHARGE (bleu fixe)**: Charge en cours. **Bleu clignotant**: Courant limité (6 A forcé).\n- **DÉFAUT (rouge clignotant)**: Fuite de courant, erreur de communication ou surintensité, ou protection contre les hautes températures.\n- **NIVEAU DE CHARGE (-)**: Affiche le réglage actuel du courant de charge (6 A, 8 A, 10 A ou 12 A).\n\n*En cas d'erreur ICCB (ex: E1, E2, F1, F2, F3, F4, F5, F6, F7, F8)*\n- Réinitialisez en débranchant/rebranchant la prise d'alimentation, puis en appuyant sur le bouton du boîtier de commande pendant plus de **2 secondes**.\n- Si le problème persiste, contactez un concessionnaire HYUNDAI agréé.",
+          "images": [
+            "chargeur-portable-iccb-p34.webp",
+            "chargeur-portable-iccb-p35.webp"
+          ]
+        },
+        {
+          "id": "charge-programmee",
+          "titre": "Charge programmée",
+          "contenu": "La fonction de charge programmée permet de recharger le véhicule la nuit, utilisant une source d'énergie peu coûteuse, jusqu'à l'heure de départ prévue.\n\n*Activation*\n1. Sur l’écran d’accueil du système d’infodivertissement, sélectionnez Véhicule électrique > Ĥ > Chargeur AC > Charge programmée.\n2. Sélectionnez l'option de charge:\n    - **Tarifs heures creuses uniquement**: La charge est activée uniquement pendant les heures creuses. Le niveau de charge cible peut ne pas être atteint.\n    - **Priorité tarifs heures creuses**: La charge est activée pendant les heures creuses et peut continuer après pour atteindre le niveau de charge cible.\n\n*Informations*\n- Le témoin clignote en vert pendant 3 minutes pour indiquer une charge programmée.\n- Pour charger immédiatement malgré une programmation, ouvrez la trappe de charge et appuyez sur le bouton pendant plus de **2 secondes**, ou désactivez le réglage de charge programmée sur l'écran.",
+          "images": [
+            "charge-programmee-p39.webp",
+            "charge-programmee-p46.webp"
+          ]
+        },
+        {
+          "id": "niveau-charge-cible",
+          "titre": "Réglage du niveau de charge cible de la batterie",
+          "contenu": "Vous pouvez régler le niveau de charge cible de la batterie pour les charges CA et CC.\n\n*Réglage via système d'infodivertissement*\n1. Sur l'écran d'infodivertissement, accédez à l'Écran d'accueil.\n2. Sélectionnez Véhicule électrique > Ĥ > Limite de charge.\n3. Réglez le niveau de charge cible souhaité. La valeur peut être modifiée par tranches de **10 %**.\n\n*Informations*\n- Si le niveau cible est inférieur au niveau actuel, la batterie n'est pas chargée.\n- L'autonomie estimée peut varier selon l'économie d'énergie, les températures et votre style de conduite.",
+          "images": [
+            "niveau-charge-cible-p47.webp",
+            "niveau-charge-cible-p48.webp"
+          ]
+        },
+        {
+          "id": "fonction-v2l-vehicle-to-load",
+          "titre": "Fonction Vehicle to Load (V2L)",
+          "contenu": "La fonction V2L permet d'alimenter des appareils électroniques en utilisant la batterie haute tension du véhicule.\n\n*ATTENTION*\n- Ne touchez pas le connecteur, l'entrée de charge ou la fiche V2L si elle est endommagée, rouillée, ou avec les mains mouillées.\n- Vérifiez l'absence d'eau, poussière ou contaminants avant de brancher.\n- N'utilisez pas d'appareils de chauffage électrique gourmands (bouilloire, grille-pain) dans le véhicule, risque d'incendie.\n- Le ventilateur de refroidissement du compartiment moteur peut s'activer automatiquement, même véhicule coupé. Ne pas approcher les mains.\n- Ne modifiez/désassemblez pas le connecteur V2L. Cela annule la garantie et peut causer des accidents.\n- Ne chargez pas le véhicule via le connecteur V2L.\n- La fonction V2L s'arrête automatiquement si la batterie atteint la limite de décharge définie.\n\n*Utilisation de l'électricité en dehors du véhicule (via connecteur V2L)*\n1. Ouvrez le cache du connecteur V2L.\n2. Branchez la fiche d'un appareil électronique à la prise d'alimentation du connecteur.\n3. Ouvrez le capuchon de protection de la borne de connexion du connecteur en appuyant sur l'interrupteur d'ouverture.\n4. Ouvrez la trappe de charge et branchez le connecteur V2L à l’entrée de charge du véhicule (dans les **60 secondes**).\n5. Appuyez sur l'interrupteur d'alimentation du connecteur V2L. L'alimentation est fournie et le voyant du connecteur V2L s'allume.\n\n*Utilisation de l'électricité à l’intérieur du véhicule*\n1. Appuyez sur le bouton Start/Stop (démarrage/arrêt) pour le mettre en position ON ou activez le Mode contact.\n2. Ouvrez le couvercle de la prise de courant intérieure en le faisant glisser vers la gauche.\n3. Branchez la fiche d'alimentation de l'appareil électrique à la prise de courant.\n\n*État de l'indicateur V2L intérieur (page 1-53/60)*\n- **Bleu**: Veille\n- **Rouge**: Pas d'alimentation électrique, prise connectée.\n- **Vert**: Alimentation normale.\n\n*Résolution des problèmes V2L (page 1-54/61)*\n- **V2L terminé. Niveau de charge défini atteint**: Réglez la limite de décharge à un niveau inférieur.\n- **Consommation d'énergie trop élevée. V2L annulé**: Remplacez l'appareil par un produit dans la limite de puissance maximale.\n- **Conditions V2L remplies (contacteur coupé, surchauffe, trappe ouverte)**: Vérifiez le connecteur V2L et la prise intérieure.",
+          "images": [
+            "fonction-v2l-vehicle-to-load-p55.webp",
+            "fonction-v2l-vehicle-to-load-p56.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commandes-principales",
+      "titre": "Commandes principales",
+      "icone": "🕹️",
+      "sections": [
+        {
+          "id": "selecteur-vitesse-rotatif",
+          "titre": "Sélecteur rotatif de vitesse",
+          "contenu": "Le sélecteur rotatif permet de changer les rapports du véhicule.\n\n*Pour changer de vitesse:*\n1. Enfoncez la pédale de frein.\n2. Tournez le bouton rotatif du sélecteur de vitesse pour sélectionner la position souhaitée.\n\n*Positions:*\n- **P (Stationnement)**: Arrêtez complètement le véhicule avant de l'engager. Appuyez sur le bouton P pour le sélectionner.\n- **R (Marche arrière)**: Pour reculer, tournez le sélecteur rotatif vers R. Enfoncez la pédale de frein. Arrêtez complètement le véhicule avant de l'engager.\n- **N (Point mort)**: Pour le point mort, tournez le sélecteur rotatif vers N. Enfoncez la pédale de frein. Si le contact est coupé en N, le rapport passe automatiquement en P.\n- **D (Marche avant)**: Pour avancer, tournez le sélecteur rotatif vers D. Enfoncez la pédale de frein.\n\n*ATTENTION*\n- Ne passez jamais en P lorsque le véhicule est en mouvement, risque de perte de contrôle.\n- En pente, engagez le mode P et serrez le frein de stationnement pour éviter que le véhicule ne dévale.\n\n*Informations*\n- L'EPB (Frein de stationnement électronique) s'applique automatiquement lorsque le rapport P est engagé.",
+          "images": [
+            "selecteur-vitesse-rotatif-p305.webp",
+            "selecteur-vitesse-rotatif-p306.webp"
+          ]
+        },
+        {
+          "id": "frein-stationnement-electronique-epb",
+          "titre": "Frein de stationnement électronique (EPB)",
+          "contenu": "L'EPB immobilise le véhicule. Il peut être activé manuellement ou automatiquement.\n\n*Activation manuelle:*\n1. Appuyez et maintenez la pédale de frein enfoncée.\n2. Tirez sur le bouton de l'EPB (situé sur la console centrale).\n3. Le témoin d'avertissement du frein de stationnement s'allume.\n\n*Désactivation manuelle:*\n1. Le bouton Start/Stop doit être en position ON ou START.\n2. Appuyez et maintenez la pédale de frein enfoncée.\n3. Appuyez sur le bouton de l'EPB.\n4. Le témoin d'avertissement du frein de stationnement s'éteint.\n\n*Activation automatique:*\nL'EPB s'active automatiquement si:\n- D'autres systèmes le requièrent.\n- Le moteur est coupé et la fonction Auto Hold est active.\n- Le rapport est en position P (stationnement).\n\n*Désactivation automatique:*\nL'EPB se désactive automatiquement en position P (stationnement) ou N (point mort) si:\n- Le véhicule est en marche.\n- Vous appuyez sur la pédale de frein et passez en R (marche arrière) ou D (marche avant).\n- Les portières, le capot et le hayon sont fermés et la ceinture de sécurité est attachée.\n\n*Freinage d'urgence:*\nEn cas de problème de pédale de frein en roulant, tirez et maintenez le commutateur EPB vers le haut pour un freinage de secours. La distance de freinage peut être plus longue que la normale.\n\n*AVERTISSEMENT*\n- N'activez JAMAIS l'EPB lorsque le véhicule est en mouvement, sauf en cas d'urgence. Risque d'endommagement et de collision.\n- Ne conduisez pas avec l'EPB activé, cela peut causer une usure excessive des freins.",
+          "images": [
+            "frein-stationnement-electronique-epb-p323.webp",
+            "frein-stationnement-electronique-epb-p324.webp"
+          ]
+        },
+        {
+          "id": "auto-hold-maintien-automatique",
+          "titre": "Auto Hold (maintien automatique)",
+          "contenu": "La fonction Auto Hold maintient le véhicule à l'arrêt sans que le conducteur ait besoin d'appuyer sur la pédale de frein.\n\n*Activation:*\n1. Lorsque la portière conducteur et le hayon sont fermés, enfoncez la pédale de frein.\n2. Appuyez sur le bouton [AUTO HOLD] (situé sur la console centrale). Le voyant blanc AUTO HOLD s'allume et le système se met en veille.\n3. Lorsque vous arrêtez complètement le véhicule en appuyant sur la pédale de frein, Auto Hold maintient la pression de freinage et le voyant passe au vert. Le véhicule reste à l'arrêt même si vous relâchez la pédale de frein.\n\n*Désactivation:*\n1. Appuyez et maintenez la pédale de frein enfoncée.\n2. Appuyez sur le bouton [AUTO HOLD]. Le témoin AUTO HOLD s'éteint.\n\n*Desserrer le frein de stationnement (pour repartir):*\nSi vous enfoncez la pédale d'accélérateur en mode D (marche avant) ou R (marche arrière), Auto Hold se désactive automatiquement et le véhicule commence à rouler. Le voyant AUTO HOLD passe du vert au blanc.\n\n*Informations sur la désactivation automatique:*\nAuto Hold se désactive automatiquement si:\n- La portière conducteur ou le capot est ouvert.\n- Le hayon est ouvert.\n- Le rapport P (Stationnement) est sélectionné.\n- L'EPB est activé.\n- Le véhicule est à l'arrêt depuis plus de **10 minutes**.\n- Le véhicule se trouve dans une pente raide ou a été déplacé plusieurs fois.\n\n*AVERTISSEMENT*\n- Vérifiez toujours autour du véhicule avant de désactiver Auto Hold et de démarrer.\n- En descente, en marche arrière (R), ou en stationnement, désactivez toujours Auto Hold avant les manœuvres pour éviter tout mouvement inattendu.",
+          "images": [
+            "auto-hold-maintien-automatique-p327.webp",
+            "auto-hold-maintien-automatique-p328.webp"
+          ]
+        },
+        {
+          "id": "modes-conduite",
+          "titre": "Modes de conduite (DRIVE MODE)",
+          "contenu": "Vous pouvez sélectionner un mode de conduite via le bouton DRIVE MODE sur la console centrale pour adapter le comportement du véhicule à vos préférences ou aux conditions de route.\n\n*Modes disponibles:*\n- **ECO**: Améliore la consommation d'énergie. L'accélération peut être légèrement réduite et les performances de la climatisation peuvent être limitées. Le témoin ECO s'allume.\n- **NORMAL**: Conduite confortable et souple. C'est le mode par défaut au redémarrage.\n- **SPORT**: Conduite sportive et ferme. La consommation d'énergie peut augmenter. Le témoin SPORT s'allume.\n- **SNOW**: Aide à démarrer sur routes glissantes (neige) en répartissant la force motrice entre les roues pour éviter le patinage. Le mode revient à NORMAL au redémarrage.\n\n*Informations*\n- Le mode de conduite revient à NORMAL à chaque redémarrage du véhicule.\n- Vous pouvez ajuster les conditions de climatisation pour le mode ECO via le système d'infodivertissement (Véhicule > Mode conduite > Mode ECO de la climatisation).",
+          "images": [
+            "modes-conduite-p337.webp",
+            "modes-conduite-p338.webp"
+          ]
+        },
+        {
+          "id": "leve-vitres-electriques",
+          "titre": "Lève-vitres électriques",
+          "contenu": "Les vitres électriques fonctionnent lorsque le bouton Start/Stop est en position ON. Elles restent fonctionnelles environ **3 minutes** après que le bouton Start/Stop est placé en position ACC ou OFF.\n\n*Ouverture et fermeture:*\n- Pour ouvrir/fermer, appuyez/soulevez le commutateur de la vitre jusqu'au premier cran. Relâchez-le à la position désirée.\n\n*Ouverture/fermeture automatique (si équipé):*\n- Appuyez/soulevez le commutateur jusqu'à la seconde position pour ouvrir/fermer complètement la vitre. Pour l'arrêter en cours de mouvement, appuyez ou soulevez le commutateur et relâchez-le.\n\n*Inversion automatique du sens de déplacement (sécurité anti-pincement - si équipé):*\n- Si une vitre détecte un obstacle pendant qu'elle se ferme automatiquement, elle s'arrête et s'abaisse d'environ **30 cm**.\n- Si la vitre rencontre une résistance en fermeture manuelle, elle s'arrête et s'abaisse d'environ **2,5 cm**.\n\n*Réinitialisation des vitres électriques (si dysfonctionnement):*\n1. Mettez le bouton Start/Stop en position ON.\n2. Fermez la vitre et maintenez le commutateur de vitre électrique relevé pendant au moins **une seconde**.\n\n*Bouton de verrouillage des vitres électriques:*\n- Le conducteur peut désactiver les commutateurs de lève-vitre électrique sur les portes arrière en appuyant sur le bouton de verrouillage de lève-vitre électrique (sur la porte conducteur).\n\n*AVERTISSEMENT*\n- Ne laissez jamais d'enfants seuls dans le véhicule avec les clés, ils pourraient actionner les vitres et se blesser.\n- Assurez-vous qu'aucune partie du corps ou objet ne se trouve sur la trajectoire des vitres avant de les fermer.\n- La fonction d'inversion automatique ne détecte pas les objets de moins de **4 mm** de diamètre.",
+          "images": [
+            "leve-vitres-electriques-p224.webp",
+            "leve-vitres-electriques-p225.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordinateur-de-bord",
+      "titre": "Ordinateur de bord / Écran",
+      "icone": "🖥️",
+      "sections": [
+        {
+          "id": "apercu-combiné-instruments",
+          "titre": "Aperçu du combiné d'instruments",
+          "contenu": "Le combiné d'instruments affiche des informations essentielles sur la conduite, l'état du véhicule et les systèmes d'aides à la conduite.\n\n*Éléments principaux:*\n1. **Compteur de vitesse**: Indique la vitesse actuelle (km/h et/ou mph).\n2. **Jauge de puissance/charge**: Indique la consommation d'énergie du moteur (PUISSANCE) ou l'état de charge par freinage régénératif (CHARGE).\n3. **Compteur kilométrique**: Affiche la distance totale parcourue et sert pour la maintenance périodique.\n4. **Autonomie**: Distance estimée que le véhicule peut parcourir avec la charge restante. Elle varie selon le mode de conduite et les conditions.\n5. **Jauge d’état de charge (SOC) de la batterie**: Indique le niveau de charge de la batterie haute tension en pourcentage (0-100%).\n6. **Témoins d'avertissement et d'information**: Signalent l'état du véhicule ou des problèmes.\n7. **Affichage du combiné**: Zone d'affichage multifonction.\n\n*Réglages:*\n- **Sélection du thème du combiné**: Via le système d'infodivertissement: Combiné/Affichage tête haute > Combiné > Sélection du thème du combiné.\n- **Éclairage du tableau de bord (luminosité)**: Via le système d'infodivertissement: Tableau de bord/Aff. tête haute > Luminosité.\n\n*AVERTISSEMENT*\n- Ne réglez jamais le combiné d'instruments en conduisant, risque de distraction et d'accident.",
+          "images": [
+            "apercu-combiné-instruments-p159.webp",
+            "apercu-combiné-instruments-p160.webp"
+          ]
+        },
+        {
+          "id": "affichage-modes",
+          "titre": "Modes d'affichage du combiné",
+          "contenu": "Le combiné d'instruments propose différents modes d'affichage contrôlés par les boutons au volant (MODE, ^, v, OK).\n\n*Modes disponibles:*\n- **Assistance à la conduite**: Affiche l'état des systèmes d'aide à la conduite (maintien de voie, régulateur de vitesse intelligent, suivi de file).\n- **Navigation détaillée**: Affiche le guide de navigation (virage par virage).\n- **Utilitaire**: Affiche des informations de conduite (distance parcourue, économie d'énergie électrique).\n  - **Trajet en cours**: Affiche la distance, durée, consommation moyenne et instantanée. Se réinitialise si le véhicule est à l'arrêt pendant **3 minutes** ou plus. Pour réinitialisation manuelle, appuyez sur OK du volant pendant plus d'une seconde.\n  - **Depuis la dernière réinitialisation**: Affiche la distance accumulée, durée totale, économie d'énergie moyenne. Réinitialisation manuelle en appuyant sur OK du volant pendant plus d'une seconde.\n- **Pression des pneus**: Affiche l'écran de pression des pneus pour réinitialiser le système TPMS.\n- **Assistance au conducteur**: Affiche l'état de fonctionnement de l'assistance manuelle de limitation de vitesse, régulateur de vitesse intelligent, assistance de maintien dans la voie, etc.\n\n*Commandes au volant pour l'affichage du combiné (page 4-25/182)*:\n- **MODE**: Change le mode d'affichage.\n- **^, v (MOVE)**: Change d'option.\n- **OK (SELECT/RESET)**: Sélectionne ou réinitialise l'élément sélectionné.",
+          "images": [
+            "affichage-modes-p182.webp",
+            "affichage-modes-p183.webp"
+          ]
+        },
+        {
+          "id": "temoins-avertissement-info",
+          "titre": "Témoins d'avertissement et d'information",
+          "contenu": "Ces témoins s'allument sur le combiné d'instruments pour signaler l'état du véhicule ou des situations nécessitant votre attention.\n\n*Témoins importants:*\n- **Ready (¢)**: S'allume quand le véhicule est prêt à rouler. Éteint ou clignotant indique un problème. Contactez HYUNDAI agréé.\n- **Connecteur de charge (¥)**: Indique que le connecteur est branché (vert allumé).\n- **Niveau de batterie haute tension (ª)**: S'allume quand le niveau de batterie haute tension est bas (inférieur à **20 %**). Chargez immédiatement.\n- **Avertissement d'entretien («)**: S'allume en cas de problème sur le système de commande électrique du véhicule. Faites inspecter.\n- **Réduction d'alimentation (®)**: S'allume quand la puissance du véhicule est limitée (batterie basse/haute température, moteur chaud). Chargez ou faites inspecter.\n- **Ceinture de sécurité (!)**: S'allume/clignote et carillon retentit si la ceinture n'est pas bouclée (conducteur/passager).\n- **Freinage par récupération (\")**: S'allume si le freinage régénératif ne fonctionne pas correctement. Faites inspecter.\n- **Frein de stationnement et niveau liquide de frein (\")**: S'allume à l'activation de l'EPB ou si le niveau de liquide de frein est bas. Vérifiez le niveau et inspectez les fuites. (Liquide de frein: MAX/MIN, Utilisez DOT 4).\n- **Système ABS (B)**: S'allume à l'allumage ou en cas de dysfonctionnement. Faites inspecter.\n- **Système EBD (B\")**: S'allume avec l'ABS si les systèmes de freinage ne fonctionnent pas normalement. Faites inspecter.\n- **MDPS (E)**: S'allume si la direction assistée est en dysfonctionnement. Faites inspecter.\n- **Alerte principale (X)**: S'allume en cas de dysfonctionnement de nombreux systèmes d'aide à la conduite (évitement collision, radar bloqué, etc.).\n- **Frein de stationnement électronique (M)**: S'allume à l'allumage ou en cas de dysfonctionnement de l'EPB. Faites inspecter.\n- **Basse pression des pneus (L)**: S'allume si un ou plusieurs pneus sont sous-gonflés. Vérifiez et ajustez la pression, ou utilisez le kit anti-crevaison.\n- **Sécurité avant (O)**: Jaune si désactivé/dysfonctionnement de l'assistance anti-collision avant. Rouge clignotant si fonction active.\n- **Braquage d'urgence (P)**: Jaune si désactivé/dysfonctionnement. Rouge clignotant si fonction active (braquage d'urgence).\n- **Détection fatigue conducteur (W)**: Jaune si désactivé/dysfonctionnement. Jaune clignotant recommande une pause.\n- **Détection fatigue conducteur (attention portée à l'avant) ({)**: S'allume si désactivé/dysfonctionnement de l'avertisseur d'attention. Jaune clignotant avertit de regarder la route.\n- **Assistance au suivi de file (LFA) (º)**: Gris si conditions non réunies. Vert si active. Blanc clignotant si assistance annulée.\n- **Assistance intelligente limitation vitesse (z)**: Jaune si désactivée/dysfonctionnement.\n- **Sécurité de voie (S)**: Gris si conditions non réunies. Vert si assistance au maintien de voie active. Jaune si désactivé/dysfonctionnement.\n- **Phares à LED (Y)**: S'allume si dysfonctionnement des phares à LED. Faites inspecter.",
+          "images": [
+            "temoins-avertissement-info-p165.webp",
+            "temoins-avertissement-info-p166.webp"
+          ]
+        },
+        {
+          "id": "messages-ecran",
+          "titre": "Messages affichés à l'écran",
+          "contenu": "Des messages s'affichent sur le combiné d'instruments pour vous informer de l'état du véhicule et des actions requises.\n\n*Messages courants:*\n- **Positionnez le levier sur P**: Apparaît si le bouton Start/Stop est enfoncé en position OFF sans que le rapport P soit engagé.\n- **Véhicule en mode N. Appuyez sur START, positionnez le levier sur P et coupez le contact du véhicule**: S'affiche si vous tentez d'arrêter le véhicule en position N. Pour couper le contact, passez en P, puis appuyez à nouveau sur Start/Stop.\n- **Low key battery (Batterie de clé faible)**: Apparaît si la batterie de la clé intelligente est faible. Remplacez la pile (type CR2450).\n- **Appuyer sur la pédale de frein pour démarrer le véhicule**: Apparaît si le bouton Start/Stop est pressé sans appuyer sur la pédale de frein. Enfoncez la pédale et redémarrez.\n- **Key not in vehicle (La clé n'est pas dans le véhicule)**: S'affiche si la clé intelligente n'est pas détectée. Coupez le véhicule avant de le quitter.\n- **Press START button again (Appuyez sur le bouton START de nouveau)**: Si le véhicule ne démarre pas après plusieurs tentatives. Appuyez à nouveau sur Start/Stop. Si le problème persiste, faites inspecter.\n- **Vérifiez fusible BRAKE SWITCH**: Si le fusible du contacteur de frein est déconnecté. Remplacez le fusible.\n- **Shift to P to start vehicle (Passez en P pour démarrer le véhicule)**: S'affiche si vous tentez de démarrer dans un rapport autre que P.\n- **La batterie se décharge à cause d'appareils électriques extérieurs (si équipé)**: S'affiche si la tension de la batterie 12V est faible à cause d'appareils externes. Débranchez-les ou faites inspecter.\n- **Témoin de porte, capot, hayon ouvert**: Affiche quelle porte/capot/hayon est ouvert. Fermez-les avant de conduire.\n- **Témoin de toit ouvrant ouvert (si équipé)**: Apparaît si le toit ouvrant est ouvert lorsque le véhicule est arrêté. Fermez-le avant de quitter le véhicule.\n- **Pression faible (pneus)**: S'affiche si la pression des pneus est faible. Vérifiez les pneus.\n- **Éclairage**: Indique le mode d'éclairage extérieur sélectionné.",
+          "images": [
+            "messages-ecran-p178.webp",
+            "messages-ecran-p179.webp"
+          ]
+        },
+        {
+          "id": "reglages-vehicule-infodivertissement",
+          "titre": "Réglages du véhicule (système d'infodivertissement)",
+          "contenu": "Le système d'infodivertissement permet de configurer diverses fonctions du véhicule.\n\n*Accès aux réglages:*\n1. Appuyez sur le bouton Ų du clavier principal.\n2. Sélectionnez **Véhicule** pour modifier les paramètres.\n\n*Menus de réglages:*\n- Assistance au conducteur\n- Mode de conduite\n- Conception sonore active\n- Climatisation\n- Siège\n- Éclairage\n- Portière\n- Clés numériques\n- Confort\n\n*AVERTISSEMENT*\n- Ne modifiez pas les réglages du véhicule pendant la conduite, risque de distraction et de collision.",
+          "images": [
+            "reglages-vehicule-infodivertissement-p185.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "securite",
+      "titre": "Sécurité",
+      "icone": "🛡️",
+      "sections": [
+        {
+          "id": "ceintures-securite",
+          "titre": "Ceintures de sécurité",
+          "contenu": "Les ceintures de sécurité sont la protection principale en cas d'accident. Elles complètent les airbags.\n\n*Mesures de sécurité:*\n- Portez TOUJOURS votre ceinture de sécurité et assurez-vous que tous les passagers sont attachés.\n- Les enfants de moins de **13 ans** doivent être attachés correctement sur les sièges arrière.\n- Le dossier du siège doit être le plus droit possible et la ceinture sous-abdominale bien ajustée sur les hanches, en position basse.\n- Ne passez pas la sangle diagonale sous le bras ou derrière le dos.\n- N'attachez jamais plusieurs passagers avec une seule ceinture.\n- Ne vous allongez pas sur un siège dont le dossier est incliné lorsque le véhicule est en mouvement.\n- Ne détachez jamais votre ceinture en conduisant.\n\n*Pour boucler votre ceinture à 3 points:*\n1. Tirez la ceinture de sécurité de l'enrouleur.\n2. Insérez la languette métallique (1) dans la boucle (2) jusqu'à entendre un « clic ».\n3. Assurez-vous que la sangle n'est pas vrillée.\n4. Placez la partie ventrale (1) sur vos hanches et la partie diagonale (2) sur votre poitrine.\n\n*Pour détacher:*\n- Appuyez sur le bouton de déverrouillage (1) de la boucle.\n\n*Réglage de la hauteur de l'ancrage:*\n- Tirez vers le haut (1) pour augmenter la hauteur. Poussez vers le bas (3) tout en appuyant sur le bouton de réglage (2) pour l'abaisser. La ceinture doit passer sur votre poitrine et au milieu de votre épaule, pas au niveau du cou.\n\n*Prétensionneurs de ceinture de sécurité:*\n- Le véhicule est équipé de prétensionneurs (sièges avant et latéraux arrière) qui plaquent les ceintures en cas de collision frontale ou latérale grave, en même temps que les airbags. Replacez-les après activation ou accident.\n\n*ATTENTION*\n- Les ceintures endommagées ne fonctionnent pas correctement. Remplacez les sangles effilochées, contaminées, endommagées ou tout l'ensemble après un accident.",
+          "images": [
+            "ceintures-securite-p123.webp",
+            "ceintures-securite-p124.webp"
+          ]
+        },
+        {
+          "id": "systeme-retenue-enfants",
+          "titre": "Système de retenue pour enfants (CRS)",
+          "contenu": "Les enfants de moins de **13 ans** doivent toujours voyager sur les sièges arrière et être correctement attachés dans un CRS adapté à leur taille et poids.\n\n*Recommandations:*\n- Enfants toujours installés à l'arrière.\n- N'installez jamais un CRS dos à la route sur le siège passager avant, sauf si l'airbag est désactivé.\n- Choisissez un CRS homologué (ECE-R44 ou ECE-R129) et adapté aux sièges du véhicule.\n\n*Types de CRS:*\n- **Dos à la route**: Forces de collision absorbées par la coque. Protège tête, cou, colonne vertébrale. Pour les enfants de moins d'un an.\n- **Face à la route avec harnais**: Retient le corps de l'enfant avec un harnais. Utilisez jusqu'à ce que l'enfant atteigne les limites de taille et poids du fabricant.\n- **Sièges rehausseurs**: Améliore l'adéquation de la ceinture de sécurité du véhicule aux enfants plus grands.\n\n*Installation d'un CRS avec ceinture 3 points:*\n1. Placez le CRS sur un siège arrière. Faites passer la ceinture 3 points autour ou dans le CRS. Assurez-vous que la ceinture n'est pas vrillée.\n2. Bouclez la ceinture. Tendez-la au maximum en appuyant sur le CRS.\n3. Poussez et tirez sur le CRS pour vous assurer qu'il est fermement fixé.\n\n*Ancrages ISOFIX (sièges latéraux arrière - page 3-37/136)*:\n- Utilisez les points d'ancrage ISOFIX inférieurs et/ou l'ancrage de sangle supérieure (situé derrière les dossiers de sièges) pour fixer le CRS compatible ISOFIX.\n- **N'utilisez pas les ancrages ISOFIX pour la place centrale arrière.**\n\n*AVERTISSEMENT*\n- Suivez toujours les instructions du fabricant du CRS et celles du manuel du véhicule.\n- Un CRS mal fixé augmente le risque de blessures graves ou mortelles.\n- Après un accident, faites vérifier le CRS, les ceintures et les ancrages par un concessionnaire HYUNDAI agréé.",
+          "images": [
+            "systeme-retenue-enfants-p130.webp",
+            "systeme-retenue-enfants-p131.webp"
+          ]
+        },
+        {
+          "id": "airbags",
+          "titre": "Airbags - Système de retenue supplémentaire (SRS)",
+          "contenu": "Les airbags sont un système de retenue *complémentaire* aux ceintures de sécurité, conçus pour se déployer lors de collisions suffisamment violentes.\n\n*Composants du SRS (page 3-43/142)*:\n- Airbags frontaux (conducteur et passager)\n- Airbags latéraux (sièges avant)\n- Airbags rideaux (longerons de toit)\n- Airbag latéral central avant (siège conducteur)\n- Prétensionneurs de ceinture\n- Module de commande SRS (SRSCM)\n- Capteurs d'impact\n- Interrupteur ON/OFF de l'airbag frontal passager.\n\n*Où sont les airbags (page 3-44/143)*:\n- **Frontaux**: Centre du volant (conducteur) et panneau avant au-dessus de la boîte à gants (passager).\n- **Latéraux**: Sur chaque siège avant.\n- **Rideaux**: Sur les longerons de toit, au-dessus des portières avant et arrière.\n\n*Déploiement des airbags:*\n- Les airbags se gonflent et se dégonflent extrêmement rapidement (impossible de les voir gonflés).\n- Ils se déploient lors de chocs frontaux ou latéraux graves, ou en cas de tonneau (pour airbags rideaux/latéraux si équipés de capteur de tonneau).\n- Ils peuvent se déployer même si le choc semble faible si les capteurs détectent un impact suffisant.\n- Le SRSCM active les airbags lorsque le bouton Start/Stop est en position ON ou START, et peuvent s'activer dans les **3 minutes** suivant l'arrêt du véhicule.\n\n*AVERTISSEMENT*\n- Portez TOUJOURS votre ceinture de sécurité.\n- Reculez votre siège au maximum tout en gardant le contrôle du véhicule. N'approchez pas trop l'airbag.\n- Ne placez rien entre vous et l'airbag, sur le tableau de bord, ou sur/près des modules d'airbag.\n- N'autorisez pas le passager avant à poser ses pieds ou jambes sur le tableau de bord.\n- Ne touchez pas les composants internes de la zone de rangement de l'airbag immédiatement après son déploiement, ils peuvent être très chauds.\n- Les airbags sont à usage unique. Faites-les remplacer par un concessionnaire HYUNDAI agréé après un déploiement.\n- Une poudre fine est libérée lors du déploiement; rincez les zones exposées à l'eau froide et au savon doux, consultez un médecin si irritation persiste.\n\n*Interrupteur ON/OFF de l'airbag frontal passager (page 3-45/144)*:\n- Insérez la clé ou un objet rigide dans l'interrupteur et tournez sur **OFF** [B] pour désactiver (témoin  s'allume). Tournez sur **ON** [A] pour réactiver (témoin  s'allume).\n- Utilisez-le pour réduire le risque de blessure pour certains occupants (âge, taille, état de santé).\n- **Ne laissez jamais un passager adulte sur le siège avant si l'airbag est désactivé.**\n\n*Témoin de SRS (page 3-52/151)*:\n- Le témoin d'airbag SRS s'allume pendant **3 à 6 secondes** à l'allumage, puis s'éteint. S'il reste allumé ou clignote, il y a un problème. Faites vérifier le système SRS par un concessionnaire HYUNDAI agréé.",
+          "images": [
+            "airbags-p140.webp",
+            "airbags-p142.webp"
+          ]
+        },
+        {
+          "id": "ecall",
+          "titre": "Système eCall paneuropéen",
+          "contenu": "Le système eCall paneuropéen (service 112) envoie automatiquement des appels d'urgence à un centre de réception (PSAP) en cas d'accident grave sur le réseau routier européen. Il transmet des données essentielles du véhicule.\n\n*Activation automatique:*\n- Se déclenche automatiquement à l'aide de capteurs embarqués en cas d'accident grave.\n\n*Activation manuelle:*\n- Appuyez sur le bouton **SOS** (1) situé dans l'habitacle (page 8-28/563) pour lancer un appel d'urgence.\n- Pour annuler un appel manuel, appuyez à nouveau sur le bouton SOS dans les **3 secondes** (sauf pour la Russie).\n\n*Informations transmises:*\n- Numéro de châssis (VIN)\n- Type de véhicule (tourisme ou commercial léger)\n- Type de propulsion (essence/diesel/GNC/GPL/électrique/hydrogène)\n- Emplacements récents et sens de déplacement du véhicule\n- Fichier journal de l'activation et horodatage.\n\n*AVERTISSEMENT*\n- La batterie de secours eCall offre une autonomie d'**une heure** si la source électrique principale est coupée. Elle doit être remplacée tous les **4 ans**.\n- Une diode rouge allumée indique un dysfonctionnement du système eCall. Faites vérifier par HYUNDAI agréé.\n- N'essayez pas de modifier le système eCall vous-même, cela affecte votre sécurité.\n- Le système est inopérant sans transmission mobile et signaux GPS/Galileo.\n- L'abandon des réseaux 2G/3G par les opérateurs peut affecter le fonctionnement d'eCall automatique/manuel.",
+          "images": [
+            "ecall-p558.webp",
+            "ecall-p560.webp"
+          ]
+        },
+        {
+          "id": "contremesures-accident-incendie",
+          "titre": "Contremesures en cas d'accident ou d'incendie",
+          "contenu": "*En cas d'accident:*\n- Allumez les feux de détresse, déplacez le véhicule vers un lieu sûr et ne laissez personne s'approcher.\n- Si la batterie haute tension est endommagée, du gaz ou électrolyte nocif peut s’échapper. Ne touchez pas le liquide.\n- En cas de contact de liquide avec les yeux ou la peau, rincez immédiatement à l'eau claire/solution saline et consultez un médecin.\n- Si vous soupçonnez une fuite de gaz inflammable, ouvrez les fenêtres et évacuez vers un endroit sûr.\n\n*En cas d'incendie:*\n- Évacuez vers un lieu sûr et ne laissez personne s'approcher.\n- Contactez les pompiers en signalant qu'il s'agit d'un véhicule électrique.\n- Si la batterie haute tension prend feu, une grande quantité d'eau est nécessaire. N'approchez pas imprudemment, risque d'électrocution.\n\n*En cas d'inondation:*\n- Mettez le véhicule immédiatement hors tension, évacuez vers un lieu sûr avec la clé.\n- Contactez les services de secours (pompiers) ou un concessionnaire HYUNDAI agréé.\n- **Ne touchez jamais un véhicule submergé.** Risque de choc électrique ou d'incendie.\n\n*Remorquage après accident (page 1-70/77)*:\n- Si le véhicule électrique doit être remorqué, soulevez TOUTES les roues. Le remorquage avec les roues au sol peut endommager le moteur.\n- Contactez les pompiers pour remorquer un véhicule électrique incendié.\n\n*Traitement thermique après accident:*\n- Évitez les traitements thermiques (peinture, réparation) qui peuvent dégrader la batterie haute tension. Faites appel à un concessionnaire HYUNDAI agréé si nécessaire.\n- N'utilisez que des pièces d'origine pour éviter d'endommager le système d'alimentation électrique.",
+          "images": [
+            "contremesures-accident-incendie-p76.webp",
+            "contremesures-accident-incendie-p77.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confort-eclairage",
+      "titre": "Confort et Éclairage",
+      "icone": "💡",
+      "sections": [
+        {
+          "id": "reglage-sieges",
+          "titre": "Réglage des sièges",
+          "contenu": "Les sièges avant (conducteur et passager) et arrière peuvent être réglés pour le confort et la sécurité.\n\n*Siège conducteur (manuel/électrique - page 3-8/107, 3-9/108, 3-10/109)*\n- **Avant/arrière**: Tirez le levier (manuel) ou poussez le commutateur (électrique) et faites glisser le siège.\n- **Inclinaison du dossier**: Penchez-vous légèrement vers l'avant et tournez la poignée (manuel) ou poussez le commutateur (électrique).\n- **Hauteur de l'assise**: Appuyez/tirez le levier (manuel) ou poussez le commutateur (électrique) plusieurs fois.\n- **Soutien lombaire**: Appuyez sur la partie avant (1) pour augmenter, arrière (2) pour réduire.\n\n*Siège confort relaxation (si équipé - page 3-11/110)*\n- Répartit la pression corporelle pour un confort optimal. Activez en appuyant sur le commutateur (1) pendant plus de **0,5 seconde**.\n- Se désactive si le rapport n'est pas P (Stationnement) ou si la vitesse dépasse **3 km/h**.\n- Pour revenir à la position d'origine, appuyez sur le bouton de retour automatique (2).\n\n*Sièges arrière (page 3-12/111, 3-13/112)*\n- **Rabattement des dossiers**: Pour transporter des objets longs ou augmenter le volume de chargement.\n  1. Réglez le dossier du siège avant en position verticale, avancez-le si nécessaire.\n  2. Abaissez les appuie-tête arrière au maximum (maintenez le bouton de déverrouillage (1) enfoncé et appuyez sur l'appuie-tête (2) vers le bas).\n  3. Faites passer la sangle de ceinture de sécurité vers l'extérieur.\n  4. Relevez le levier de rabattement du dossier (situé derrière le siège), puis rabattez le siège vers l'avant.\n- **Pour déplier**: Soulevez et poussez le dossier vers l'arrière jusqu'à ce qu'il s'enclenche. Replacez la ceinture de sécurité.\n- **Accoudoir**: Situé au centre, tirez-le vers le bas depuis le dossier.\n\n*AVERTISSEMENT*\n- Ne réglez jamais les sièges lorsque le véhicule est en mouvement.\n- Ne laissez pas de passagers sur un dossier de siège rabattu lorsque le véhicule se déplace, risque de blessures graves.\n- Arrimez toujours la cargaison pour éviter tout déplacement.\n\n*Appuie-tête (page 3-15/114, 3-16/115, 3-17/116)*\n- **Réglage de la hauteur**: Tirez vers le haut (1) pour relever. Maintenez le bouton de déverrouillage (2) enfoncé et abaissez (3) pour abaisser.\n- **Dépose/repose**: Inclinez le dossier, tirez l'appuie-tête en position haute maximale et enfoncez le bouton de déverrouillage (3) pour le retirer (4). Pour reposer, insérez les tiges et réglez.\n- Réglez les appuie-têtes de sorte que le milieu soit au niveau du haut des yeux.\n- **Ne laissez jamais quelqu'un s'asseoir sur un siège dont l'appuie-tête a été retiré.**",
+          "images": [
+            "reglage-sieges-p103.webp",
+            "reglage-sieges-p104.webp"
+          ]
+        },
+        {
+          "id": "sieges-volant-chauffants-ventiles",
+          "titre": "Sièges et volant chauffants / ventilés",
+          "contenu": "*Sièges chauffants (avant/arrière - page 3-19/118)*\n- Lorsque le moteur tourne, appuyez sur le commutateur du siège (situé sur la console centrale) pour activer le chauffage.\n- Appuyez plusieurs fois pour basculer entre les niveaux: **HAUT > MOYEN > BAS > ARRÊT**.\n- Le chauffage s'abaisse automatiquement et s'éteint après un certain temps pour éviter les brûlures.\n- Par défaut, le chauffage se coupe à chaque mise en position ON du bouton Start/Stop.\n\n*Sièges ventilés (avant - page 3-20/119)*\n- Lorsque le véhicule est en marche, appuyez sur le commutateur du siège (situé sur la console centrale) pour activer la ventilation.\n- Appuyez plusieurs fois pour basculer entre les niveaux: **ÉLEVÉ > MOYEN > FAIBLE > ARRÊT**.\n- Par défaut, la ventilation est OFF à chaque mise en position ON du bouton Start/Stop.\n\n*Volant chauffant (page 5-33/218)*\n- Lorsque le bouton Start/Stop est en position ON ou ¢ est allumé, appuyez sur le bouton de chauffage du volant (situé sur la colonne de direction) pour réchauffer le volant. Le voyant s'allume.\n- Commande manuelle de température: **OFF > HIGH > LOW**.\n- Commande automatique de température: Si HIGH est sélectionné, passe à LOW après **30 minutes**. Si LOW est sélectionné, pas de contrôle automatique.\n\n*AVERTISSEMENT (Sièges chauffants)*\n- Risque de brûlures graves même à faible température si utilisation prolongée.\n- Ne pas utiliser sur des personnes insensibles à la chaleur (nourrissons, enfants, personnes âgées, handicapées, intoxiquées, fatiguées, sous traitement médicamenteux affectant la somnolence).\n- Ne placez aucun objet isolant sur le siège (couverture, coussin) lorsque le chauffage est activé.",
+          "images": [
+            "sieges-volant-chauffants-ventiles-p118.webp",
+            "sieges-volant-chauffants-ventiles-p119.webp"
+          ]
+        },
+        {
+          "id": "retroviseurs",
+          "titre": "Rétroviseurs",
+          "icone": "🪞",
+          "contenu": "*Rétroviseur intérieur:*\n- **Jour/nuit (manuel)**: Tirez le levier vers vous pour réduire l'éblouissement la nuit.\n- **Électrochromatique (ECM - si équipé)**: Le capteur adapte automatiquement l'éblouissement des phares arrière. En marche arrière (R), le rétroviseur s'éclaircit pour améliorer la visibilité.\n\n*Rétroviseurs extérieurs (page 5-36/221)*\n- **Réglage**: Appuyez sur le commutateur (1) vers L (gauche) ou R (droit). Utilisez ensuite le commutateur de commande (2) pour positionner le miroir (haut, bas, gauche, droite). Appuyez au milieu du commutateur (1) pour éviter un réglage involontaire.\n- **Rabattement (électrique - si équipé)**: Appuyez sur le commutateur pour rabattre ou déployer. Peut être configuré via infodivertissement (Véhicule > Éclairage > Accueil rétroviseur/éclairage > Au déverrouillage des portes ou À l`approche du conducteur).\n\n*Aide au stationnement en marche arrière (si équipé - page 5-37/222, 5-38/223)*\n- Lorsque le rapport R (marche arrière) est engagé, les rétroviseurs extérieurs pivotent vers le bas pour faciliter la manœuvre.\n- **Activation**: Placez le commutateur des rétroviseurs extérieurs (1) sur L (Gauche) ou R (Droit).\n- **Désactivation/Retour à la position d'origine**: Placez le commutateur en position neutre, ou coupez le contact (OFF ou ACC), ou sortez du rapport R, ou n'activez pas le bouton de réglage.\n- **Réglage de l'angle**: Véhicule arrêté, passez en R. Appuyez sur L ou R pour sélectionner le rétroviseur. Utilisez le commutateur directionnel pour régler. Passez à une autre position que R ou mettez le commutateur en neutre pour enregistrer. Répétez pour l'autre côté.\n- **Réinitialisation**: Passez en R et réglez l'angle plus haut que la position par défaut en P, N ou D.\n\n*AVERTISSEMENT*\n- Les rétroviseurs extérieurs sont convexes, les objets sont *plus proches qu'ils n'y paraissent*.\n- Ne réglez ni ne rabattez les rétroviseurs en conduisant. Risque de perte de contrôle.\n- Ne grattez pas la glace sur le rétroviseur, utilisez un dégivrant agréé ou de l'eau chaude.\n\n*REMARQUE*\n- Ne nettoyez pas le miroir avec des abrasifs ou produits à base de pétrole.",
+          "images": [
+            "retroviseurs-p219.webp",
+            "retroviseurs-p220.webp"
+          ]
+        },
+        {
+          "id": "toit-ouvrant-pare-soleil",
+          "titre": "Toit ouvrant et pare-soleil",
+          "contenu": "Le toit ouvrant et son pare-soleil électrique peuvent être ouverts, fermés et inclinés.\n\n*Fonctionnement du toit ouvrant (page 5-44/229, 5-45/230)*\n- Le toit ouvrant fonctionne lorsque le bouton Start/Stop est en position ON ou START, et pendant **3 minutes** après l'avoir mis en ACC ou OFF (sauf si la porte avant est ouverte).\n- **Ouverture par inclinaison**: Poussez le commutateur de toit ouvrant vers le haut. Le pare-soleil s'ouvre d'abord, puis le toit s'incline.\n- **Ouverture/fermeture par glissement**: Poussez le commutateur vers l'arrière (ouverture) ou l'avant (fermeture) jusqu'à la première position d'arrêt pour une opération simple. Poussez jusqu'à la deuxième position pour un fonctionnement automatique (glissement automatique).\n- Pour arrêter le mouvement à tout moment, poussez le commutateur dans n'importe quelle direction.\n\n*Inversion automatique du sens de déplacement (sécurité anti-pincement - page 5-45/230)*\n- Si le pare-soleil ou la vitre détecte un obstacle lors de la fermeture, il inverse la direction et s'arrête.\n\n*Réinitialisation du toit ouvrant (page 5-46/231)*\n- Nécessaire après déconnexion/décharge de la batterie 12V ou remplacement du fusible.\n1. Véhicule en position P (stationnement), démarré.\n2. Assurez-vous que le pare-soleil et la vitre sont complètement fermés.\n3. Relâchez le commutateur de toit ouvrant.\n4. Poussez le commutateur vers l'avant jusqu'à ce que le pare-soleil et la vitre bougent légèrement. Relâchez.\n5. Poussez à nouveau le commutateur vers l'avant et maintenez-le jusqu'à ce que le pare-soleil et la vitre s'ouvrent et se ferment entièrement. Ne relâchez pas tant que le mouvement n'est pas terminé.\n\n*AVERTISSEMENT*\n- Réglez le toit ouvrant ou le pare-soleil uniquement lorsque le véhicule est à l'arrêt.\n- Ne laissez pas d'enfants sans surveillance dans le véhicule avec le toit ouvrant.\n- Ne passez jamais la tête, les bras ou d'autres parties du corps par l'ouverture du toit ouvrant en mouvement.",
+          "images": [
+            "toit-ouvrant-pare-soleil-p228.webp",
+            "toit-ouvrant-pare-soleil-p229.webp"
+          ]
+        },
+        {
+          "id": "capot-compartiment-rangement-avant",
+          "titre": "Capot et compartiment de rangement avant",
+          "contenu": "*Ouverture du capot (page 5-47/232)*\n1. Garez le véhicule, serrez le frein de stationnement.\n2. Tirez le levier de déverrouillage du capot (situé sur le côté gauche du tableau de bord) pour l'ouvrir légèrement.\n3. Allez à l'avant, soulevez légèrement le capot, poussez le levier de déverrouillage secondaire (1) vers le haut et soulevez le capot (2).\n\n*Fermeture du capot (page 5-48/233)*\n1. Assurez-vous qu'aucun objet n'est dans le compartiment moteur et que tous les bouchons sont serrés.\n2. Abaissez le capot jusqu’à environ **30 cm** de la position fermée, puis laissez-le retomber.\n3. Vérifiez qu'il est correctement verrouillé.\n\n*Compartiment de rangement avant (si équipé - page 5-48/233)*\n- **Ouverture**: Ouvrez le capot, puis tirez le levier de déverrouillage (1) vers le haut et ouvrez le couvercle du compartiment. Le poids maximal autorisé est de **10 kg**.\n- **Fermeture**: Appuyez légèrement sur le couvercle pour le fermer.\n\n*AVERTISSEMENT*\n- Avant de fermer le capot, retirez toutes les obstructions. Ne conduisez pas avec le capot ouvert.\n- Ne rangez jamais de briquets, bouteilles de propane ou autres matières inflammables/explosives dans le compartiment moteur, risque d'incendie ou d'explosion.\n- Ne pulvérisez pas d'eau dans le compartiment moteur, risque d'endommagement des composants électriques.\n- Maintenez le couvercle du compartiment de rangement avant bien fermé en conduisant pour éviter que les objets ne soient projetés.",
+          "images": [
+            "capot-compartiment-rangement-avant-p232.webp",
+            "capot-compartiment-rangement-avant-p233.webp"
+          ]
+        },
+        {
+          "id": "hayon",
+          "titre": "Hayon",
+          "icone": " tailgate",
+          "contenu": "*Ouverture du hayon (page 5-49/234)*\n- Assurez-vous que le véhicule est en P (stationnement) et que le frein de main est serré.\n- **Via clé intelligente**: Déverrouillez les portes, puis appuyez sur le bouton d'ouverture du hayon (sur la clé) pendant plus de **1 seconde**.\n- **Via bouton sur le hayon**: Avec la clé intelligente sur vous, appuyez sur le bouton d’ouverture du hayon sur le véhicule.\n\n*Fermeture du hayon (page 5-50/235)*\n- Abaissez le couvercle du hayon et appuyez jusqu'à ce qu'il se verrouille.\n- **Via clé intelligente (si hayon motorisé)**: Appuyez et maintenez le bouton d'ouverture/fermeture du hayon (sur la clé).\n\n*Hayon à commande électrique (si équipé - page 5-51/236, 5-52/237, 5-53/238, 5-54/239)*\n- Fonctionne si le rapport est en P (stationnement) et bouton Start/Stop est ON. Fonctionne aussi si le véhicule est coupé.\n- **Vitesse d'ouverture**: Réglez via infodivertissement (Véhicule > Porte > Vitesse ouvert. hayon élect.).\n- **Hauteur d'ouverture**: Réglez via infodivertissement (Véhicule > Porte > Hauteur d`ouverture hayon).\n- **Réinitialisation**: Véhicule éteint ou allumé, en P. Appuyez simultanément sur les boutons intérieur et extérieur d'ouverture/fermeture du hayon jusqu'à un carillon. Fermez le hayon manuellement. Appuyez sur le bouton extérieur, attendez qu'il s'ouvre entièrement.\n\n*Hayon intelligent (si équipé - page 5-56/241, 5-57/242)*\n- Permet une ouverture mains libres si la clé intelligente est détectée dans la zone derrière le véhicule pendant **3 secondes**.\n- **Activation**: Via infodivertissement (Véhicule > Porte > Hayon intelligent).\n- **Zone de détection**: Environ **50 à 100 cm** derrière le véhicule.\n- **Désactivation**: Appuyez sur un bouton de la clé intelligente pendant la phase de détection/alerte.\n\n*Déverrouillage de sécurité en cas d'urgence (page 5-50/235, 5-56/241)*\n1. Insérez un objet long et plat dans l'ouverture au bas du hayon (depuis l'intérieur du coffre).\n2. Faites glisser le loquet dans la direction de la flèche.\n3. Poussez le hayon pour l’ouvrir.\n\n*AVERTISSEMENT*\n- Ne transportez jamais de personne dans le coffre, zone dangereuse en cas d'accident. Utilisez le levier de déverrouillage d'urgence uniquement en cas de besoin.\n- Ne modifiez ni réparez le hayon électrique vous-même. Faites appel à HYUNDAI agréé.\n- N'actionnez pas le hayon électrique si le véhicule est soulevé (remplacement pneu) ou sur une pente non plane.",
+          "images": [
+            "hayon-p234.webp",
+            "hayon-p235.webp"
+          ]
+        },
+        {
+          "id": "systeme-climatisation-auto",
+          "titre": "Système de climatisation automatique",
+          "contenu": "Le système de climatisation automatique gère la température de l'habitacle, la vitesse du ventilateur et l'admission d'air.\n\n*Fonctionnement automatique (page 5-81/266)*\n1. Mettez le véhicule en marche.\n2. Appuyez sur le bouton **AUTO** (1) (sur la console centrale). Le système contrôle automatiquement le mode, la vitesse du ventilateur, l'admission d'air et la climatisation selon la température définie.\n3. Réglez la température souhaitée avec la molette (8). Pour un refroidissement maximal, réglez au minimum et le ventilateur au maximum. Pour un chauffage maximal, réglez au maximum.\n\n*Fonctionnement manuel (page 5-82/267)*\n1. Véhicule démarré, réglez le commutateur de sélection de mode (10) sur la position souhaitée (ex: ĭ pour refroidissement/ventilation, Å pour chauffage).\n2. Tournez la commande de température (8).\n3. Réglez la commande d'admission d'air (7) sur l'air extérieur (frais).\n4. Réglez la vitesse du ventilateur (9).\n5. Activez la climatisation (4) si désiré.\n\n*Fonctionnalités supplémentaires:*\n- **DRIVER ONLY (conducteur uniquement - page 5-85/270)**: Dirige la majeure partie de l'air vers le siège du conducteur.\n- **SYNC (réglage identique conducteur/passager - page 5-85/270)**: Synchronise la température et le flux d'air pour les deux côtés. Appuyez sur SYNC.\n- **Recirculation d'air (Ê) / Air extérieur (fraîcheur - page 5-86/271)**: Pour éviter les poussières ou fumées, réglez temporairement sur recirculation. Revenez à air frais pour la fraîcheur.\n- **Dégivrage et désembuage du pare-brise (Ç - page 5-91/276, 5-92/277)**: Appuyez sur le bouton Ç (sur la console centrale) pour activer. Sélectionne automatiquement l'air extérieur (frais) et active la climatisation. Pour un désembuage rapide, réglez le ventilateur au maximum.\n- **Logique de désembuage automatique (page 5-92/277, 5-95/280)**: Réduit la buée. S'active automatiquement si l'humidité est détectée. Se désactive si la climatisation est coupée ou la recirculation d'air est sélectionnée manuellement. Pour l'activer/désactiver via infodivertissement: Véhicule > Climatisation > Options de désembuage/dégivrage > Désembuage auto.\n- **Déshumidification automatique (page 5-94/279, 5-96/281)**: Supprime l'humidité et réduit les odeurs. S'active après **30 minutes** d'arrêt du véhicule. Activation/désactivation via infodivertissement: Véhicule > Climatisation > Ventilation automatique > Désembuage automatique.\n- **Recirculation d'air pour lave-glace (page 5-96/281)**: S'active automatiquement pour empêcher l'odeur du liquide de lave-glace. Activation/désactivation via infodivertissement: Véhicule > Climatisation > Air recyclé > Activer avec le liquide lave-glace.\n- **Recirculation d'air pour tunnel (si équipé - page 5-97/282)**: S'active pendant environ **7 secondes** avant d'entrer dans un tunnel pour éviter l'air pollué.\n\n*AVERTISSEMENT*\n- N'utilisez pas la position dégivrage Ç avec refroidissement par temps humide, risque de buée sur le pare-brise.\n- Ne dormez pas dans le véhicule avec la climatisation/chauffage activé, risque de somnolence.\n- L'utilisation continue de l'air recyclé peut provoquer de la somnolence.\n- Ne placez aucun objet près du capteur de rayonnement solaire (sur le tableau de bord) pour un fonctionnement optimal de la climatisation.",
+          "images": [
+            "systeme-climatisation-auto-p265.webp",
+            "systeme-climatisation-auto-p266.webp"
+          ]
+        },
+        {
+          "id": "eclairage-exterieur",
+          "titre": "Éclairage extérieur",
+          "contenu": "Contrôlez les feux de votre véhicule à l'aide de la molette sur le levier de commande.\n\n*Positions du commutateur (page 5-64/249)*:\n- **O (OFF)**: Tous les feux éteints.\n- **Éclairage AUTOMATIQUE (AUTO)**: Les feux de position et les phares s'allument/s'éteignent automatiquement selon la luminosité ambiante (via capteur sur tableau de bord).\n- **Feu de position ( )**: Les feux de position, l'éclairage de la plaque d'immatriculation et l'éclairage du tableau de bord sont allumés.\n- **Phares ( )**: Les phares, les feux de position, l'éclairage de la plaque d'immatriculation et l'éclairage du tableau de bord sont allumés. Le bouton Start/Stop doit être en position ON.\n\n*Feux de route (page 5-66/251)*:\n- **Allumer**: Poussez le commodo vers l'avant. Le témoin des feux de route s'allume.\n- **Éteindre**: Tirez le commodo vers vous. Les feux de croisement s'allument.\n- **Appel de phares**: Tirez le commodo vers vous et relâchez.\n\n*Clignotants et signaux de changement de voie (page 5-66/251)*:\n- **Changement de direction**: Appuyez le commodo vers le bas (gauche) ou soulevez-le vers le haut (droite).\n- **Clignotant à une seule touche**: Poussez le commodo légèrement vers le haut ou le bas et relâchez. Les signaux clignotent **3, 5 ou 7 fois** (réglable via infodivertissement: Véhicule > Éclairage > Clignotant monotouche).\n\n*Feu antibrouillard arrière (page 5-67/252)*:\n- Pour allumer: Positionnez le commutateur des phares sur la position phares, puis tournez le commutateur des phares (1) en position feu antibrouillard arrière. Le témoin s'allume.\n- Pour éteindre: Éteignez les phares ou remettez le commutateur en position feu antibrouillard arrière.\n\n*Fonction d'économie de batterie (page 5-67/252)*:\n- Éteint automatiquement les feux de position si le conducteur coupe le moteur et ouvre la portière.\n- Pour garder les feux de position allumés à l'arrêt: Ouvrez la porte conducteur, éteignez puis rallumez les feux de position via le commutateur.\n\n*Fonction de temporisation d'extinction des phares (page 5-68/253)*:\n- Si le bouton Start/Stop est en ACC ou OFF avec les phares allumés, ils restent allumés environ **5 minutes** (ou **15 secondes** si la porte conducteur est ouverte/fermée).\n- Pour éteindre: Appuyez deux fois sur le bouton de verrouillage de la clé intelligente ou mettez le commutateur des phares sur OFF ou AUTO. Activation via infodivertissement: Véhicule > Éclairage > Délai éclairage.\n\n*Feux de jour (FDJ - page 5-68/253)*:\n- Facilitent la vision diurne. S'éteignent si les phares sont allumés, le frein de stationnement est appliqué ou le moteur est coupé.\n\n*Système d'accueil (page 5-69/254)*:\n- Illumine les phares et l'éclairage de la poignée de porte pendant **15 secondes** lorsque le conducteur s'approche avec la clé intelligente ou déverrouille les portes.\n\n*AVERTISSEMENT*\n- N'utilisez pas les feux de route si d'autres véhicules viennent en sens inverse, risque d'éblouissement.\n\n*REMARQUE*\n- Ne couvrez pas le capteur de lumière ambiante sur le tableau de bord. - Nettoyez régulièrement le capteur.",
+          "images": [
+            "eclairage-exterieur-p249.webp",
+            "eclairage-exterieur-p250.webp"
+          ]
+        },
+        {
+          "id": "eclairage-interieur",
+          "titre": "Éclairage intérieur",
+          "contenu": "L'éclairage intérieur s'active/désactive dans diverses situations pour le confort et la sécurité.\n\n*Extinction automatique:*\n- L'éclairage intérieur s'éteint automatiquement environ **20 minutes** après l'arrêt du moteur et la fermeture des portes.\n- Si une porte est ouverte, s'éteint **25 minutes** après l'arrêt du véhicule.\n- Si les portes sont verrouillées avec la télécommande ou la clé intelligente et que le système d'alarme est armé, l'éclairage s'éteint après **5 secondes**.\n\n*Liseuse (page 5-74/259)*:\n- Appuyez sur la lentille pour allumer ou éteindre. Fournit un faisceau étroit pour la lecture.\n\n*Plafonniers (page 5-74/259)*:\n- Appuyez sur le bouton **ĉ** pour allumer. Appuyez sur le bouton **Ĩ** pour éteindre.\n- S'allument si les portes sont ouvertes, ou si déverrouillées avec la clé connectée (pendant **30 secondes** si aucune porte ouverte, puis s'éteignent progressivement).\n- S'éteignent si le bouton Start/Stop est ON ou si toutes les portes sont verrouillées. Restent allumés **5 minutes** si une porte est ouverte avec Start/Stop en ACC ou OFF.\n\n*Éclairage du miroir de courtoisie (page 5-74/259)*:\n- Appuyez sur le commutateur pour allumer ou éteindre.\n\n*Lumière ambiante (si équipé - page 5-75/260)*:\n- Réglez la luminosité et la couleur via infodivertissement (Véhicule > Éclairage > Lumière ambiante).\n- Peut changer de couleur selon le mode de conduite si l'option est activée.\n- Réglez la luminosité sur **0** pour désactiver.\n\n*Lampe de coffre (page 5-75/260)*:\n- S'allume à l'ouverture du hayon, s'éteint à la fermeture.\n- Fermez le hayon après utilisation pour éviter de décharger la batterie.",
+          "images": [
+            "eclairage-interieur-p258.webp",
+            "eclairage-interieur-p259.webp"
+          ]
+        },
+        {
+          "id": "essuie-glace-lave-glace",
+          "titre": "Essuie-glace et lave-glace",
+          "contenu": "Contrôlez les essuie-glaces et les lave-glaces pour maintenir une bonne visibilité.\n\n*Essuie-glaces avant (page 5-76/261)*\n- **2**: Vitesse rapide.\n- **1**: Vitesse lente.\n- **---**: Balayage intermittent (tournez la molette pour varier la vitesse).\n- **AUTO (si équipé)**: Contrôle automatique du balayage (via capteur de pluie sur le pare-brise).\n- **O**: Off (désactivé).\n- **1x**: Un seul cycle de balayage (abaissez le commodo puis relâchez).\n\n*Lave-glaces avant (page 5-77/262)*\n- En position O (off), tirez doucement le commodo vers vous pour pulvériser du liquide lave-glace et actionner les essuie-glaces (**1 à 3 cycles**).\n- La pulvérisation et le balayage continuent tant que le commodo est tiré.\n\n*Essuie-glace arrière (page 5-78/263)*\n- Tournez le commutateur (à l'extrémité du levier) sur la position désirée.\n- **2**: Vitesse rapide.\n- **1**: Vitesse lente.\n- **O**: Off (désactivé).\n- **Automatique**: Fonctionne en marche arrière si l'essuie-glace avant est en marche (activable via infodivertissement: Véhicule > Confort > Essuie-glace arrière auto (inverse)).\n\n*Lave-glace de lunette arrière (page 5-79/264)*\n- Repoussez le commodo pour pulvériser du liquide lave-glace et actionner l'essuie-glace arrière (**1 à 3 cycles**).\n\n*AVERTISSEMENT*\n- N'utilisez pas le lave-glace si le réservoir est vide ou le pare-brise est sec.\n- N'utilisez pas d'antigel ou de liquide de refroidissement moteur dans le réservoir de lave-glace, risque de visibilité réduite et d'accident.\n- Utilisez des liquides antigel adaptés à la saison hivernale.",
+          "images": [
+            "essuie-glace-lave-glace-p261.webp",
+            "essuie-glace-lave-glace-p262.webp"
+          ]
+        },
+        {
+          "id": "charge-sans-fil-usb",
+          "titre": "Charge sans-fil et ports USB",
+          "icone": "📱",
+          "contenu": "*Charge sans-fil pour smartphone (si équipé - page 5-103/288)*\n- Recharge les smartphones compatibles Qi. Placez le smartphone au centre de la plaque de charge sans-fil, écran vers le haut.\n- **Activation**: Véhicule > Confort > Chargeur sans fil pour les appareils mobiles dans le système d'infodivertissement.\n- Le témoin lumineux est orange pendant la charge, bleu une fois terminée.\n- **Ne laissez pas d'objets métalliques (clés, cartes) sur la plaque de charge.** Risque d'endommagement.\n\n*Ports USB (page 5-101/286)*\n- Permettent de recharger des petits appareils électroniques ou de lire de la musique (avec un appareil de stockage multimédia).\n- Chargeur USB avant (1) et arrière (2).\n- **Ne connectez pas d'appareils dépassant 180 W** sur la prise de courant intérieure.\n- **Ne dépassez pas 3 000 mA (3,0 A)** pour les chargeurs USB.\n- Utilisez des adaptateurs de conversion et câbles d'origine pour éviter les dommages.",
+          "images": [
+            "charge-sans-fil-usb-p286.webp",
+            "charge-sans-fil-usb-p287.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aide-a-la-conduite",
+      "titre": "Aide à la conduite",
+      "icone": "🚗",
+      "sections": [
+        {
+          "id": "aide-evitement-collision-avant-fca",
+          "titre": "Aide à l'évitement de collision avant (FCA)",
+          "contenu": "Le système FCA détecte les véhicules, deux-roues, piétons ou cyclistes devant vous et peut avertir d'un risque de collision, voire freiner le véhicule.\n\n*Fonctionnement de base (page 7-11/368)*:\n- **Avertissement de collision**: Message « Collision Warning! », signal sonore, vibrations du volant.\n- **Freinage d'urgence**: Message « Emergency Braking », signal sonore, vibrations du volant. Freinage maximal pour éviter la collision.\n  - **Véhicule/deux-roues**: Opérationnel entre **10 et 200 km/h** (faible puissance de freinage) ou **10 et 130 km/h** (forte puissance de freinage).\n  - **Piéton/cycliste**: Opérationnel entre **10 et 85 km/h**.\n- **Arrêt du véhicule et fin du contrôle de freinage**: Message « Conduisez prudemment » après immobilisation par freinage d'urgence.\n\n*Fonctions avancées (si équipé - page 7-4/361, 7-5/362, 7-6/363)*:\n- **Virage à une intersection**: Évite collision avec véhicule venant en sens inverse lors d'un virage (clignotant activé).\n- **Approche directe**: Réduit la vitesse lors d'une collision frontale.\n- **Traversée de croisement**: Évite collision à un carrefour avec véhicules venant en sens inverse.\n- **Interdiction de changement de voie (trafic opposé/latéral)**: Aide à éviter collision lors d'un changement de voie avec véhicule venant en sens inverse ou adjacent.\n- **Braquage d'évitement actif**: Alerte et assiste le conducteur à tourner le volant pour éviter une collision.\n\n*Réglages (page 7-8/365, 7-10/367)*:\n- Via infodivertissement (Véhicule > Assistance cond. > Assistants de conduite > Sécurité avant).\n- **Temps de réaction de l`avertissement**: Normal ou Tardif.\n- **Méthodes d'avertissement**: Volume d'avertissement, Avertissement haptique (vibration volant), Priorité à la sécurité de conduite (diminue autres volumes audio).\n\n*Capteur de détection (page 7-6/363, 7-7/364)*:\n- Caméra avant (A), Radar avant (B), Radars d'angle avant (C) et arrière (D).\n\n*AVERTISSEMENT*\n- Le conducteur est responsable du contrôle du véhicule. Ne comptez pas uniquement sur le FCA.\n- **La fonction peut être limitée ou désactivée** par mauvais temps (neige, pluie, brouillard), pare-brise/capteur sale ou obstrué, fortes ondes électromagnétiques, conditions routières complexes ou inattendues.",
+          "images": [
+            "aide-evitement-collision-avant-fca-p361.webp",
+            "aide-evitement-collision-avant-fca-p362.webp"
+          ]
+        },
+        {
+          "id": "assistance-maintien-voie-lka",
+          "titre": "Assistance au maintien de voie (LKA)",
+          "contenu": "Le LKA détecte les marquages de voie et aide à maintenir le véhicule dans sa voie de circulation.\n\n*Activation/Désactivation (page 7-34/391)*:\n- S'active automatiquement au démarrage. Le témoin gris S s'allume. Lorsque la fonction est active, le témoin vert S s'allume.\n- Appuyez sur le bouton de sécurité de voie (p) sur le tableau de bord pour désactiver (le voyant S devient jaune).\n\n*Avertissement et contrôle (page 7-34/391)*:\n- **Alerte de franchissement de ligne**: Le voyant vert S clignote, la ligne de voie clignote sur le combiné, signal sonore et vibrations du volant.\n- **Assistance au maintien de voie**: Le volant effectue des réglages pour maintenir le véhicule dans la voie. Opérationnel entre **60 et 200 km/h**.\n\n*Rappel des mains sur le volant (page 7-35/392)*:\n- Si le conducteur retire les mains du volant pendant plusieurs secondes, un message « Gardez les mains sur le volant » et un signal sonore retentissent.\n- Si les mains sont toujours retirées, le message « LFA annulé » apparaît et l'assistance est automatiquement annulée.\n\n*Capteur de détection (page 7-32/389)*:\n- Caméra avant (A).\n\n*AVERTISSEMENT*\n- Le conducteur est responsable de la sécurité. Le LKA est une aide, pas une conduite autonome.\n- Le volant peut sembler lourd lorsque le LKA est actif.\n- La fonction peut être limitée ou désactivée par mauvais temps, pare-brise/capteur sale, lignes de voie estompées ou complexes, ou lorsque le véhicule tracte une remorque.",
+          "images": [
+            "assistance-maintien-voie-lka-p389.webp",
+            "assistance-maintien-voie-lka-p390.webp"
+          ]
+        },
+        {
+          "id": "assistance-evitement-collision-angle-mort-bca",
+          "titre": "Assistance à l'évitement de collision d'angle mort (BCA)",
+          "contenu": "Le BCA détecte les véhicules en approche dans l'angle mort et avertit le conducteur. En cas de risque de collision lors d'un changement de voie, il peut freiner le véhicule.\n\n*Détection et avertissement (page 7-39/396, 7-42/399)*:\n- Le témoin dans le rétroviseur extérieur s'allume si un véhicule est détecté dans l'angle mort.\n- Si le clignotant est activé dans la direction du véhicule détecté, le témoin clignote, un signal sonore retentit et le volant vibre.\n- Opérationnel si la vitesse de votre véhicule est supérieure à **20 km/h** (détection) ou **40 km/h** (avertissement collision), et le véhicule en angle mort à plus de **10 km/h**.\n- Fonctionne également lors d'une sortie de stationnement parallèle à basse vitesse (inférieure à **3 km/h**).\n\n*Braquage d'urgence (page 7-18/375, 7-20/377)*:\n- En situation de braquage d'urgence, la fonction assiste la direction pour éviter la collision avec un véhicule venant en sens inverse ou en diagonale.\n- Le témoin de braquage d'urgence (P) clignote, message « Emergency steering » et vibrations du volant.\n- Opérationnel entre **40 et 145 km/h**.\n\n*Réglages (page 7-41/398, 7-42/399)*:\n- Via infodivertissement (Véhicule > Assistance cond. > Assistants de conduite > Sécurité d`angle mort).\n- **Méthodes d'avertissement**: Volume d'avertissement, Avertissement haptique (vibration volant), Priorité à la sécurité de conduite.\n\n*Capteurs (page 7-40/397)*:\n- Radars d'angle arrière (A).\n\n*AVERTISSEMENT*\n- Le conducteur est responsable de la sécurité. Ne comptez pas uniquement sur le BCA.\n- Désactivez le BCA si vous tractez une remorque ou installez un porte-vélos.\n- La fonction peut être limitée ou désactivée par mauvais temps, pare-chocs/capteur endommagé ou obstrué, routes sinueuses/en pente, interférences électromagnétiques.",
+          "images": [
+            "assistance-evitement-collision-angle-mort-bca-p396.webp",
+            "assistance-evitement-collision-angle-mort-bca-p397.webp"
+          ]
+        },
+        {
+          "id": "alerte-sortie-vehicule-sew",
+          "titre": "Alerte de sortie du véhicule (SEW)",
+          "contenu": "Le SEW détecte un véhicule s'approchant par l'arrière lorsque votre véhicule est à l'arrêt et qu'un passager ouvre une porte, avertissant ainsi d'un risque de collision.\n\n*Fonctionnement (page 7-51/408)*:\n- Message « Attention au trafic » sur le combiné d'instruments et signal sonore.\n- Opérationnel si votre vitesse est inférieure à **3 km/h** et le véhicule approchant à plus de **6 km/h**.\n\n*Réglages (page 7-50/407, 7-51/408)*:\n- Via infodivertissement (Assistance cond. > Assistants de conduite > SEA (descente du véhicule sécuritaire)).\n- **Méthodes d'avertissement**: Volume d'avertissement, Avertissement haptique, Priorité à la sécurité de conduite.\n\n*Capteurs (page 7-50/407)*:\n- Radars d'angle arrière.\n\n*AVERTISSEMENT*\n- Le conducteur est responsable de la sécurité. Vérifiez toujours les alentours avant de sortir du véhicule.\n- La fonction peut être limitée ou désactivée par mauvais temps (pluie, neige), végétation, objets hauts, interférences électromagnétiques ou si une remorque est tractée.",
+          "images": [
+            "alerte-sortie-vehicule-sew-p406.webp",
+            "alerte-sortie-vehicule-sew-p407.webp"
+          ]
+        },
+        {
+          "id": "aide-intelligente-limite-vitesse-isla",
+          "titre": "Aide intelligente à la limite de vitesse (ISLA)",
+          "contenu": "L'ISLA utilise les panneaux routiers et les données de navigation pour informer des limitations de vitesse et aider à les respecter.\n\n*Fonctionnement (page 7-60/417)*:\n- Affiche les limitations de vitesse sur le combiné d'instruments.\n- **Avertissement de vitesse excessive**: Le témoin rouge de limitation de vitesse clignote et un signal sonore retentit si vous dépassez la limite.\n- **Modification de la vitesse réglée (page 7-61/418)**: Une flèche indique si la vitesse réglée (régulateur de vitesse ou MSLA) doit être changée en fonction de la nouvelle limite. Ajustez avec les boutons +/- au volant.\n- **Changement automatique de la vitesse réglée (si navigation)**: Le véhicule ajuste automatiquement la vitesse si la limitation change sur la route (pour vitesses supérieures à **70 km/h** ou **45 mph**).\n\n*Réglages (page 7-58/415)*:\n- Via infodivertissement (Véhicule > Assistance cond. > Limitation de vitesse).\n- **Limitation de vitesse country**: Définit manuellement le pays.\n- **Assistant de limitation de vitesse**: Informe des limitations et panneaux supplémentaires.\n- **Avertissement de limite de vitesse**: Informe des limitations de vitesse et avertit si dépassée.\n- **Off (désactivé)**: Désactive l'ISLA.\n\n*Capteur de détection (page 7-57/414)*:\n- Caméra avant (A).\n\n*AVERTISSEMENT*\n- Le conducteur est responsable de la sécurité. Ne comptez pas uniquement sur l'ISLA.\n- La fonction peut être limitée ou désactivée par mauvais temps, panneaux illisibles/non conformes, informations GPS erronées, ou si la caméra est obstruée.",
+          "images": [
+            "aide-intelligente-limite-vitesse-isla-p414.webp",
+            "aide-intelligente-limite-vitesse-isla-p415.webp"
+          ]
+        },
+        {
+          "id": "avertissement-attention-conducteur-daw",
+          "titre": "Avertissement d'attention du conducteur (DAW)",
+          "contenu": "Le DAW surveille le mode de conduite et recommande une pause si le niveau d'attention du conducteur est faible.\n\n*Fonctionnement (page 7-66/423)*:\n- **Avertissement d'attention du conducteur**: Message « Pensez à prendre une pause » sur le combiné, témoin W clignote et signal sonore.\n- Se déclenche si le regard n'est pas fixé sur la route pendant **3 secondes** (à plus de **20 km/h**) ou **10 secondes** (à plus de **20 km/h**), ou si les yeux sont fermés plus de **2 secondes** (à plus de **10 km/h**).\n- Ne suggère pas de pause si le temps de conduite total est inférieur à **4 minutes**.\n\n*Fonction d'alerte de départ du véhicule de devant (page 7-66/423)*:\n- Alerte le conducteur lorsque le véhicule détecté devant redémarre. Message « Le véhicule à l`avant s`éloigne » et signal sonore.\n\n*Réglages (page 7-65/422)*:\n- Via infodivertissement (Véhicule > Assistance cond. > DAW (Avertissement d`attention du conducteur)).\n- Activez/désactivez « Alerte de départ du véhicule ».\n- **Alerte FCW (avert. anti-collision frontale - page 7-71/428)**: Avertit si le regard n'est pas concentré sur la route. Toujours activé au redémarrage.\n\n*Capteur de détection (page 7-65/422, 7-71/428)*:\n- Caméra dans l'habitacle (A).\n\n*AVERTISSEMENT*\n- Le DAW est une fonction complémentaire. Le conducteur reste responsable de la sécurité.\n- La fonction peut être limitée ou désactivée si la caméra est obstruée/endommagée, en cas de conduite violente, voies estompées, ou si le véhicule est contrôlé par un autre système d'assistance.",
+          "images": [
+            "avertissement-attention-conducteur-daw-p422.webp",
+            "avertissement-attention-conducteur-daw-p423.webp"
+          ]
+        },
+        {
+          "id": "regulateur-vitesse-intelligent-scc",
+          "titre": "Régulateur de vitesse intelligent (SCC)",
+          "contenu": "Le SCC détecte le véhicule précédent et aide à maintenir la distance et la vitesse programmée.\n\n*Conditions de fonctionnement (page 7-83/440)*:\n- Sélecteur en D (Conduite).\n- Vitesse entre **10 et 200 km/h** (sans véhicule devant) ou **0 et 200 km/h** (avec véhicule devant).\n- ESC ou ABS actif.\n\n*Activation/Désactivation (page 7-84/441, 7-87/444)*:\n- Appuyez sur le bouton d'aide à la conduite (ĩ) sur le volant. La vitesse actuelle est réglée. Le témoin Ü s'allume.\n- Appuyez à nouveau sur (ĩ) pour désactiver.\n\n*Réglage de la vitesse (page 7-78/435, 7-79/436)*:\n- **Augmenter**: Poussez le commutateur + vers le haut. Augmente de **1 km/h** (par pression) ou **10 km/h** (maintien).\n- **Diminuer**: Poussez le commutateur - vers le bas. Réduit de **1 km/h** (par pression) ou **10 km/h** (maintien).\n\n*Réglage de la distance entre véhicules (page 7-85/442)*:\n- Appuyez plusieurs fois sur la touche (å) sur le volant pour basculer entre les 4 niveaux de distance (ex: Distance 4: **52,5 m**, Distance 1: **25 m**).\n\n*Assistance au dépassement (page 7-81/438)*:\n- Accélère pour dépasser si le clignotant est activé (gauche pour conduite à gauche).\n\n*En fonction du style de conduite (si équipé - page 7-82/439)*:\n- Le SCC adapte son fonctionnement au style de conduite du conducteur.\n\n*Désactivation temporaire (page 7-79/436, 7-86/443)*:\n- Freinage, appui sur ç, rapport N, vitesse < **30 km/h** ou > **190 km/h**, activation EPB/ESC.\n- Pour reprendre: Appuyez sur +, - ou ç.\n\n*AVERTISSEMENT*\n- Le SCC est une aide, pas une conduite autonome. Le conducteur est responsable.\n- Désactivez le SCC en tractant une remorque.\n- La fonction peut être limitée ou désactivée par mauvais temps, capteur obstrué, routes sinueuses/en pente, interférences électromagnétiques, etc.",
+          "images": [
+            "regulateur-vitesse-intelligent-scc-p435.webp",
+            "regulateur-vitesse-intelligent-scc-p436.webp"
+          ]
+        },
+        {
+          "id": "moniteur-angle-mort-bvm",
+          "titre": "Moniteur d'angle mort (BVM)",
+          "contenu": "Le BVM utilise des caméras grand angle pour afficher les zones d'angle mort arrière sur le combiné d'instruments lorsque le clignotant est activé, facilitant les changements de voie.\n\n*Activation (page 7-76/433)*:\n- Activez la fonction \"Affichage de l'angle mort\" via infodivertissement (Véhicule > Assistance cond. > Assistants de conduite).\n- La fonction s'active/désactive avec le clignotant.\n\n*Conditions de désactivation (page 7-76/433)*:\n- Le clignotant s'éteint.\n- Les feux de détresse sont activés.\n- Un autre avertissement important s'affiche sur le combiné.\n\n*Capteurs de détection (page 7-76/433)*:\n- Caméras de vue grand angle (situées sous les rétroviseurs extérieurs).\n\n*AVERTISSEMENT*\n- L'image peut différer de la réalité. Le conducteur doit toujours contrôler les alentours.\n- Nettoyez régulièrement la lentille de la caméra. Une lentille obstruée réduit les performances.\n- Ne pas soumettre la caméra à des impacts. ",
+          "images": [
+            "moniteur-angle-mort-bvm-p432.webp",
+            "moniteur-angle-mort-bvm-p433.webp"
+          ]
+        },
+        {
+          "id": "ecran-recul-rvm",
+          "titre": "Écran de recul (RVM)",
+          "contenu": "L’écran de la caméra de recul affiche la zone derrière le véhicule pour faciliter le stationnement et la conduite.\n\n*Activation (page 7-121/478)*:\n- Le rapport R (marche arrière) est engagé.\n- Appuyez sur le bouton Stationnement/Vue (1) (situé sur la console centrale) lorsque le rapport est en P, N ou D et la vitesse est inférieure ou égale à **10 km/h**.\n- Sélectionnez la vue arrière ou la vue arrière du dessus avec la touche Change View (2).\n\n*Lignes de référence (page 7-121/478)*:\n- Les lignes de guidage de stationnement arrière et du dessus s'affichent (si l'option \"Lignes stationn. vue arr\" est sélectionnée via infodivertissement: Véhicule > Assistance cond. > Sécurité de stationnement > Paramètres de la caméra > Afficher le contenu > Lignes stationn. vue arr).\n- Les distances affichées (ex: **0,50 m, 1 m, 2,30 m**) sont basées sur un véhicule à vide.\n\n*Vue arrière en conduisant (page 7-122/479)*:\n- Peut être activée en roulant (rapport N ou D, vitesse > **10 km/h**) via le bouton Stationnement/Vue (1).\n\n*Capteur de détection (page 7-119/476)*:\n- Caméra de vue arrière large (A).\n\n*AVERTISSEMENT*\n- L'écran de recul ne couvre pas la totalité de la zone arrière. Le conducteur doit toujours observer directement les alentours.\n- L'image et la distance affichées peuvent différer de la réalité. Fiez-vous à votre jugement.\n- Nettoyez régulièrement la lentille de la caméra pour éviter les dysfonctionnements.",
+          "images": [
+            "ecran-recul-rvm-p476.webp",
+            "ecran-recul-rvm-p477.webp"
+          ]
+        },
+        {
+          "id": "moniteur-vue-environnante-svm",
+          "titre": "Moniteur de vue environnante (SVM)",
+          "contenu": "L'écran de la caméra de recul panoramique utilise des caméras grand angle pour afficher une vue à **360 degrés** autour du véhicule, facilitant le stationnement et la conduite en toute sécurité.\n\n*Activation (page 7-126/483)*:\n- Appuyez sur le bouton Stationnement/Vue (1) (sur la console centrale) pour activer.\n- Vue avant s'affiche en N ou D à basse vitesse.\n- Vue arrière s'affiche en R.\n- Vue 3D, latérale, ou de dessus peuvent être sélectionnées via le bouton de changement de vue (2).\n\n*Activation automatique (si équipé)*:\n- L'écran s'affiche automatiquement si l'avertissement de distance de stationnement (avant ou latéral) retentit.\n\n*Réglages (page 7-125/482)*:\n- Via infodivertissement (Assistance cond. > Sécurité de stationnement > Paramètres de la caméra > Afficher le contenu).\n- **Priorité à la sécurité du stationnement**: Réduit les volumes audio des autres systèmes d'aides à la conduite.\n- **Avert. distance stationn.**, **Lignes stationn. vue sup.**, **Lignes stationn. vue arr.** peuvent être modifiés.\n\n*Capteurs de détection (page 7-124/481)*:\n- Caméra de vue avant large (A), caméras panoramiques latérales (B, C), caméra de vue arrière large (D).\n\n*AVERTISSEMENT*\n- L'image peut paraître anormale sur des routes irrégulières (bordures, dos d'âne).\n- L'écran ne doit pas être la seule référence pour manœuvrer. Vérifiez toujours directement les alentours.\n- La fonction peut être limitée ou désactivée si les caméras sont sales, obstruées ou endommagées. Ne conduisez pas avec le hayon ouvert.",
+          "images": [
+            "moniteur-vue-environnante-svm-p481.webp",
+            "moniteur-vue-environnante-svm-p482.webp"
+          ]
+        },
+        {
+          "id": "aide-stationnement-distance-rspa",
+          "titre": "Aide au stationnement intelligent à distance (RSPA)",
+          "contenu": "Le RSPA utilise des capteurs à ultrasons pour détecter les places de stationnement et contrôler le véhicule à distance (avant/arrière) pour entrer et sortir des places.\n\n*Fonctionnement à distance (véhicule coupé - page 7-164/521, 7-165/522)*:\n1. Appuyez sur le bouton de verrouillage de la clé intelligente (Ď).\n2. Maintenez enfoncé le bouton de démarrage à distance (Ĕ) (sur la clé) dans les **4 secondes** qui suivent.\n3. Utilisez les boutons avant (đ) ou arrière (Į) sur la clé pour déplacer le véhicule.\n- Le véhicule s'arrête si le bouton est relâché. Maintenez le bouton enfoncé pour continuer.\n\n*Fonctionnement à distance (véhicule allumé)*:\n1. Stationnez le véhicule en P. Appuyez et maintenez enfoncé le bouton de parking/vue (ā) (sur la console centrale) pour activer l'assistance au stationnement intelligent.\n2. Le message « Commande À DISTANCE activée » apparaît.\n3. Sortez du véhicule avec la clé connectée et fermez toutes les portes.\n4. Utilisez les boutons avant (đ) ou arrière (Į) sur la clé pour déplacer le véhicule.\n\n*Conditions de pause/désactivation (page 7-167/524)*:\n- **Pause**: Piéton/animal/objet détecté, porte/hayon ouvert, bouton de déplacement non maintenu, appui simultané sur plusieurs boutons de la clé, clé hors de portée (**4 m**), avertissement de collision actif, véhicule déplacé de **7 m** en appuyant sur le bouton.\n- **Désactivation**: Volant braqué, vitesse engagée, activation EPB, capot ouvert, pédale de frein/accélérateur enfoncée (portes fermées), clé hors du véhicule (pédale de frein enfoncée, porte ouverte), dérapage, roue coincée, durée > **3min 50sec**, pente hors plage, fonction en pause > **1min**, distance déplacée > **14 mètres**.\n\n*Réglages (page 7-162/519)*:\n- Via infodivertissement (Véhicule > Assistance cond. > Méthodes d’avertissement) pour le volume et l'avertissement haptique.\n\n*Capteurs de détection (page 7-161/518)*:\n- Capteurs ultrasoniques avant (A) et arrière (D), capteurs ultrasoniques côté avant (B) et côté arrière (C).\n\n*AVERTISSEMENT*\n- Le conducteur est responsable du stationnement sécurisé. Ne comptez pas uniquement sur le RSPA.\n- Gardez toujours la zone environnante dégagée (piétons, animaux, objets).\n- La fonction peut être limitée par des chocs sur les capteurs/pare-chocs, mauvais alignement des roues, pneus anormaux, charges volumineuses, pentes, surfaces irrégulières/glissantes, vent fort, capteurs obstrués, interférences radio.",
+          "images": [
+            "aide-stationnement-distance-rspa-p517.webp",
+            "aide-stationnement-distance-rspa-p518.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acces-vehicule",
+      "titre": "Accès au véhicule",
+      "icone": "🔑",
+      "sections": [
+        {
+          "id": "cle-intelligente",
+          "titre": "Clé intelligente",
+          "contenu": "La clé intelligente permet de verrouiller/déverrouiller les portes et le hayon, et de démarrer le véhicule.\n\n*Verrouillage du véhicule (page 5-6/191)*\n1. Fermez toutes les portes, le capot et le hayon.\n2. Ayez la clé intelligente sur vous.\n3. Appuyez sur le bouton de la poignée de porte ou sur le bouton de verrouillage des portes (1) de la clé intelligente. Les feux de détresse clignotent une fois.\n4. Assurez-vous que les portes sont verrouillées en tirant sur la poignée.\n\n*Déverrouillage du véhicule (page 5-7/192)*\n1. Ayez la clé intelligente sur vous.\n2. Appuyez sur le bouton de la poignée de porte ou sur le bouton de déverrouillage des portes (2) de la clé intelligente. Les feux de détresse clignotent deux fois.\n\n*Désactivation de la fonction de prévention du verrouillage/déverrouillage des portes:*\n- Appuyez sur le bouton de verrouillage de la clé intelligente, puis immédiatement sur le bouton de déverrouillage et le bouton de verrouillage pendant plus de **4 secondes**. Les feux de détresse clignotent quatre fois.\n\n*Remplacement de la batterie (pile CR2450 - page 5-11/196)*\n1. Insérez un outil fin dans l'encoche (1) et levez doucement le couvercle arrière.\n2. Retirez la pile usagée et insérez une neuve (vérifiez la polarité).\n3. Remettez le couvercle arrière en place.\n\n*Précautions:*\n- La clé intelligente peut ne pas fonctionner si la pile est faible, les ondes radio sont bloquées, il fait très froid, ou si elle est proche d'émetteurs radio/téléphones portables/appareils électroniques/cartes de crédit.\n- Si les fenêtres sont teintées avec un film métallique, cela peut réduire la zone de fonctionnement de la clé.\n- Ne laissez pas la clé intelligente dans le véhicule avec des enfants seuls.\n- En cas de problème, contactez un concessionnaire HYUNDAI agréé.",
+          "images": [
+            "cle-intelligente-p191.webp",
+            "cle-intelligente-p192.webp"
+          ]
+        },
+        {
+          "id": "cle-numerique-smartphone",
+          "titre": "Clé numérique (smartphone)",
+          "contenu": "La clé numérique permet d'utiliser votre smartphone pour verrouiller/déverrouiller les portes et le hayon, et démarrer le véhicule.\n\n*Enregistrement de la clé numérique (page 5-13/198, 5-14/199)*:\n1. Mettez le véhicule en marche avec la clé intelligente et gardez-la avec vous.\n2. Sur l’écran d’accueil du système d’infodivertissement, sélectionnez Véhicule > Clef numérique > Clef du smartphone.\n3. Placez votre smartphone sur la plaque d’authentification du véhicule (plaque de charge sans-fil) avec l’écran vers le haut. (Pour iPhone Apple WATCH, la surface de l’écran doit être en contact avec la plaque de charge [B] sur page 5-13/198).\n4. Suivez les instructions sur l'écran du smartphone pour enregistrer.\n\n*Verrouillage/Déverrouillage des portes (page 5-15/200)*:\n- Placez l'antenne NFC du smartphone sur la plaque d’authentification de la poignée de porte (côté conducteur ou passager) pendant plus de **2 secondes**.\n- Les portes se reverrouillent automatiquement après **30 secondes** si aucune porte n'est ouverte.\n\n*Démarrage du véhicule (page 5-15/200)*:\n- Placez le smartphone enregistré sur la plaque d'authentification du véhicule (plaque de charge sans-fil), appuyez sur la pédale de frein et appuyez sur le bouton Start/Stop (démarrage/arrêt).\n\n*Suppression (page 5-16/201)*:\n- **Toutes les clés numériques**: Via infodivertissement (Véhicule > Clef numérique > Clef du smartphone > Tout supprimer).\n- **Ma clé de smartphone**: Via infodivertissement (Véhicule > Clef numérique > Clef du smartphone > Ma clé de smartphone > Supprimer).\n\n*AVERTISSEMENT*\n- Ne laissez pas d'enfants ou de personnes non informées utiliser le smartphone enregistré sans surveillance dans le véhicule.\n- Gardez toujours le smartphone enregistré avec vous pour éviter le vol.",
+          "images": [
+            "cle-numerique-smartphone-p198.webp",
+            "cle-numerique-smartphone-p199.webp"
+          ]
+        },
+        {
+          "id": "cle-numerique-carte-cle",
+          "titre": "Clé numérique (carte-clé)",
+          "contenu": "La carte-clé permet de verrouiller/déverrouiller les portes et de démarrer le véhicule.\n\n*Enregistrement de la carte-clé (page 5-17/202)*:\n1. Ayez vos deux clés intelligentes avec vous dans le véhicule.\n2. Sur l'écran d'infodivertissement, sélectionnez Véhicule > Clef numérique > Carte-clé NFC et vérifiez si « Carte-clé activée » est sélectionné.\n3. Placez votre carte-clé sur la plaque d'authentification du véhicule (plaque de charge sans-fil) lorsque le véhicule est allumé.\n4. Appuyez sur le bouton Ų, puis sélectionnez Véhicule > Clef numérique > Clé de carte NFC > Enregistrer.\n\n*Verrouillage/Déverrouillage des portes (page 5-18/203)*:\n- Placez la carte-clé sur la plaque d’authentification de la poignée de porte (côté conducteur ou passager) pendant plus de **2 secondes**.\n- Les portes se reverrouillent automatiquement après **30 secondes** si aucune porte n'est ouverte.\n\n*Démarrage du véhicule (page 5-18/203)*:\n- Placez la carte-clé enregistrée sur la plaque d'authentification du véhicule (plaque de charge sans-fil), appuyez sur la pédale de frein et appuyez sur le bouton Start/Stop (démarrage/arrêt).\n\n*Suppression (page 5-19/204)*:\n- Via infodivertissement (Véhicule > Clef numérique > Clé de carte NFC > Supprimer).\n\n*AVERTISSEMENT*\n- Ne laissez pas d'enfants ou de personnes non informées utiliser la carte-clé enregistrée sans surveillance dans le véhicule.\n- Gardez toujours la carte-clé enregistrée avec vous pour éviter le vol.\n- La carte-clé peut être endommagée par des chocs ou une exposition prolongée à des températures élevées.\n- Ne laissez pas la carte-clé sur la plaque d'authentification dans le véhicule en roulant.",
+          "images": [
+            "cle-numerique-carte-cle-p202.webp",
+            "cle-numerique-carte-cle-p203.webp"
+          ]
+        },
+        {
+          "id": "verrouillage-deverrouillage-portes",
+          "titre": "Verrouillage et déverrouillage des portes",
+          "contenu": "*Depuis l'extérieur (clé mécanique - page 5-22/207, 5-23/208)*\n1. Insérez la clé mécanique dans le barillet de clé.\n2. Tournez dans le sens des aiguilles d’une montre pour déverrouiller. Dans le sens inverse pour verrouiller.\n\n*Depuis l'intérieur (poignée ou commutateur - page 5-23/208, 5-24/209)*\n- **Poignée de porte intérieure**: Tirez une fois (portes arrière) ou une fois (déverrouille) puis une deuxième fois (ouvre) (portes avant).\n- **Commutateur de verrouillage centralisé des portes (situé sur la portière conducteur)**:\n  - Appuyez sur la partie (1) pour verrouiller toutes les portes.\n  - Appuyez sur la partie (2) pour déverrouiller toutes les portes.\n\n*Fonctions automatiques (via infodivertissement - page 5-25/210, 5-26/211)*\n- **Verrouillage automatique sur vitesse**: Verrouille toutes les portes lorsque le véhicule dépasse **15 km/h**.\n- **Verrouillage automatique sur vitesse ou changement de vitesse**: Verrouille si vitesse > **15 km/h** ou si le véhicule sort de P.\n- **Déverrouillage automatique dès l'arrêt**: Déverrouille toutes les portes lorsque le contact est coupé.\n- **Déploiement des airbags**: Toutes les portes se déverrouillent automatiquement si un impact déclenche les airbags.\n\n*Serrures de portes arrière avec sécurité enfant (page 5-26/211)*\n- Empêche l'ouverture des portes arrière de l'intérieur. Le verrou est situé sur le bord de chaque porte arrière.\n- Pour verrouiller: Insérez un petit outil à lame plate dans la fente et tournez-le (sens indiqué sur l'illustration). Pour déverrouiller, tournez dans le sens inverse.\n\n*AVERTISSEMENT*\n- Fermez et verrouillez toujours les portes lorsque le véhicule est en mouvement.\n- Ne laissez pas des personnes âgées, des enfants ou des animaux sans surveillance dans le véhicule fermé, risque de coup de chaleur et blessures graves.",
+          "images": [
+            "verrouillage-deverrouillage-portes-p207.webp",
+            "verrouillage-deverrouillage-portes-p208.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entretien",
+      "titre": "Entretien",
+      "icone": "🛠️",
+      "sections": [
+        {
+          "id": "calendrier-entretien",
+          "titre": "Calendrier d'entretien",
+          "contenu": "Effectuez l'entretien de votre véhicule selon le calendrier normal de maintenance ou plus fréquemment si vous utilisez le véhicule dans des conditions sévères.\n\n*Vérifications mensuelles (au moins chaque mois - page 9-6/573)*:\n- Niveau de liquide de refroidissement.\n- Fonctionnement de tous les feux (stop, direction, détresse).\n- Pression de gonflage des pneus (y compris roue de secours), usure et dommages. Vérifiez si les écrous de roue sont desserrés.\n\n*Vérifications semestrielles (au moins deux fois par an - page 9-6/573)*:\n- Flexibles de radiateur, chauffage et climatisation (fuites, dommages).\n- Fonctionnement lave-glace et essuie-glaces (nettoyez les balais).\n- Réglage des phares.\n- Fonctionnement et usure des ceintures de sécurité.\n- Fonctionnement du toit ouvrant (si équipé), nettoyez et lubrifiez les rails.\n\n*Vérifications annuelles (au moins une fois par an - page 9-6/573)*:\n- Orifices d'évacuation de la carrosserie et des portes (nettoyage).\n- Charnières de porte et capot (lubrification).\n- Serrures et fermetures de porte et capot (lubrification).\n- Caoutchoucs d'étanchéité des portes (lubrification).\n- Système de climatisation.\n- Batterie 12V et ses bornes (nettoyage).\n- Niveau de liquide de frein.\n\n*Conditions de conduite extrêmes (page 9-10/577)*:\nSi vous conduisez fréquemment dans ces conditions, inspectez/remplacez/refaites le plein plus souvent que le calendrier normal:\n- Courtes distances (< **8 km** temp. normale, < **16 km** gel).\n- Routes accidentées, poussiéreuses, boueuses, non goudronnées, en gravier ou salées.\n- Zones avec sel ou produits corrosifs, ou par temps très froid.\n- Conditions très poussiéreuses.\n- Trafic dense avec temp. ambiante > **32 °C** et consommation électrique > **50 %**.\n- Remorquage, camping-car, charges sur le toit.\n- Véhicule de patrouille, taxi, usage commercial.\n- Conduite fréquente à haute vitesse ou accélération/décélération rapide.\n- Arrêts et redémarrages fréquents.\n\n*Entretien spécial véhicule électrique (VE - page 9-11/578)*:\n- Tous les **12 mois** / **15 000 km** ou **30 000 km** selon l'élément (ex: contrôle résistance d'isolation batterie, contrôle écart tension, contrôle liquide de refroidissement par air/eau, contrôle DTC, contrôle dommages partie inférieure batterie/câble haute tension).\n- **Filtre à air de l'habitacle**: Remplacer tous les **24 mois** / **30 000 km**.\n- **Batterie du système eCall**: Remplacer tous les **4 ans**.",
+          "images": [
+            "calendrier-entretien-p573.webp",
+            "calendrier-entretien-p574.webp"
+          ]
+        },
+        {
+          "id": "liquides",
+          "titre": "Liquides du véhicule",
+          "contenu": "*Liquide de refroidissement (page 9-13/580, 9-14/581, 9-15/582)*\n- **Vérification du niveau**: Lorsque les pièces du compartiment moteur sont froides, le niveau doit être entre MAX et MIN du réservoir. Ajoutez de l'eau distillée/désionisée mélangée à de l'antigel si le niveau est bas.\n- **Changement**: Nous recommandons de faire changer le liquide de refroidissement par un concessionnaire HYUNDAI agréé selon le programme d'entretien.\n- **Pourcentage du mélange antigel/eau**: Pour une efficacité optimale, utilisez entre **35 % et 60 %** d'antigel. Ex: -35 °C (50% antigel / 50% eau).\n\n*Liquide de frein (page 9-16/583)*\n- **Vérification du niveau**: Le niveau doit être entre MAX et MIN sur le côté du réservoir. Ajoutez du liquide de frein spécifié (DOT 4) si nécessaire.\n- **N'utilisez que le liquide de frein prescrit.** Ne mélangez pas avec d'autres types d'huile (minérale).\n\n*Liquide du réducteur (page 9-16/583)*\n- Inspectez régulièrement tous les **60 000 km**. Si conduit dans des conditions sévères, faites-le inspecter plus fréquemment par HYUNDAI agréé.\n\n*Liquide lave-glace (page 9-17/584)*\n- **Vérification du niveau**: Vérifiez le niveau du réservoir et ajoutez du liquide si nécessaire. Utilisez un produit nettoyant antigel par temps froid.\n- **Ne mettez pas de liquide de refroidissement ou d'antigel moteur dans le réservoir de lave-glace.**\n\n*AVERTISSEMENT*\n- Soyez prudent en vérifiant les liquides lorsque le compartiment moteur est chaud, risque de brûlures.\n- Si le liquide de frein entre en contact avec les yeux, rincez abondamment pendant **15 minutes** et consultez un médecin.\n- Gardez les liquides hors de portée des enfants et animaux.",
+          "images": [
+            "liquides-p580.webp",
+            "liquides-p581.webp"
+          ]
+        },
+        {
+          "id": "pneus",
+          "titre": "Pneus",
+          "contenu": "*Entretien général (page 9-24/591)*\n- Inspectez les pneus tous les mois pour l'usure, les dommages et la pression de gonflage.\n- Remplacez les pneus usés ou endommagés.\n- Remplacez toujours les pneus par des pneus de même taille, type, marque, construction et dessin de sculpture que ceux d'origine.\n\n*Pressions de gonflage recommandées à froid (page 9-24/591, 9-25/592)*\n- Vérifiez la pression des pneus (y compris la roue de secours) au moins une fois par mois, **à froid** (véhicule immobile depuis **3 heures** ou parcouru moins de **1,6 km**).\n- Les pneus chauds ont une pression plus élevée, ne dégonflez pas l'air des pneus chauds pour ajuster la pression.\n- **Procédure de vérification/ajustement**:\n  1. Dévissez le bouchon de la valve.\n  2. Appuyez le manomètre sur la valve pour mesurer la pression.\n  3. Si la pression est basse, ajoutez de l'air jusqu'à la pression recommandée (voir étiquette sur le pied milieu côté conducteur ou section 2-12/91 du manuel).\n  4. Si la pression est trop élevée, relâchez l'air en poussant sur la tige de métal au centre de la valve.\n  5. Remettez le bouchon de la valve.\n\n*Permutation des pneus (page 9-26/593)*\n- Il est recommandé de permuter les pneus tous les **12 000 km** ou plus tôt si usure irrégulière.\n- Vérifiez l'équilibrage et l'usure inégale des pneus pendant la permutation.\n\n*Remplacement des pneus (page 9-27/594)*\n- Remplacez les pneus lorsque l'indicateur d'usure de la bande de roulement (bande pleine de **1,6 mm**) apparaît.\n- Remplacez les deux pneus (avant ou arrière) par paire. HYUNDAI recommande de remplacer les pneus après **6 ans** de service normal.\n\n*Pneu à profil bas (si équipé - page 9-31/598)*\n- Conduisez lentement sur routes irrégulières (nid-de-poule, dos d'âne) pour éviter d'endommager les pneus et les roues, car ils sont plus facilement endommagés.\n- Inspectez l'état et la pression tous les **3 000 km**.",
+          "images": [
+            "pneus-p91.webp",
+            "pneus-p591.webp"
+          ]
+        },
+        {
+          "id": "systeme-controle-pression-pneus-tpms",
+          "titre": "Système de contrôle de la pression des pneus (TPMS)",
+          "contenu": "Le TPMS détecte une pression faible ou un dysfonctionnement via des capteurs dans les roues et affiche un témoin sur le tableau de bord.\n\n*Témoin de faible pression des pneus (L - page 8-9/544)*:\n- S'allume si un ou plusieurs pneus sont sous-gonflés.\n- Réduisez votre vitesse, évitez les virages serrés et les freinages brusques. Faites inspecter le véhicule.\n\n*Témoin de dysfonctionnement du système TPMS (L - page 8-11/546)*:\n- Clignote pendant environ **70 secondes** en cas de problème. S'il reste allumé après réinitialisation, faites inspecter.\n\n*Réinitialisation du système TPMS (page 8-8/543)*:\n1. Ajustez la pression de tous les pneus aux valeurs recommandées.\n2. Véhicule garé, appuyez sur le bouton ô du volant.\n3. Sélectionnez **Pression des pneus** sur le combiné de bord (utilisez ñ, ò).\n4. Appuyez et maintenez enfoncé le bouton **OK** du volant, puis sélectionnez **Régler**.\n5. Vérifiez si le message « Pression des pneus enregistrée » s'affiche et le voyant L clignote pendant environ **4 secondes**.\n\n*Utilisation du kit anti-crevaison (TMK - si équipé - page 8-15/550, 8-16/551, 8-17/552, 8-18/553)*:\n- Répare temporairement les crevaisons (maximum **4 mm** dans la bande de roulement).\n- **Procédure**:\n  1. Secouez la bouteille de produit d'étanchéité (2). Vissez-la sur le support (5).\n  2. Dévissez le bouchon de la valve du pneu et vissez le tuyau de remplissage (3) du compresseur.\n  3. Assurez-vous que la valve du compresseur est verrouillée.\n  4. Branchez le cordon d’alimentation du compresseur (4) dans la prise de courant du véhicule.\n  5. Véhicule allumé, mettez le compresseur en marche pendant **5 à 7 minutes** pour atteindre la bonne pression.\n  6. Arrêtez le compresseur. Débranchez les tuyaux.\n  7. Roulez immédiatement sur **7-10 km** (max **80 km/h**) pour répartir le produit d'étanchéité.\n  8. Arrêtez, puis rebranchez le tuyau de remplissage (3) directement sur la valve du pneu.\n  9. Branchez le cordon d'alimentation du compresseur. Véhicule allumé, ajustez la pression de gonflage (min. **220 kPa / 32 psi**).\n- **Ne roulez pas avec un pneu plat ou trop sous-gonflé.**",
+          "images": [
+            "systeme-controle-pression-pneus-tpms-p542.webp",
+            "systeme-controle-pression-pneus-tpms-p543.webp"
+          ]
+        },
+        {
+          "id": "fusibles",
+          "titre": "Fusibles",
+          "contenu": "Les fusibles protègent le système électrique contre les surcharges. Le véhicule possède des panneaux de fusibles au tableau de bord et dans le compartiment moteur.\n\n*Remplacement d'un fusible (tableau de bord - page 9-33/600)*:\n1. Arrêtez le véhicule et éteignez tous les interrupteurs.\n2. Ouvrez le couvercle du panneau de fusibles (côté conducteur).\n3. Référez-vous à l'étiquette à l'intérieur du couvercle pour localiser le fusible suspect.\n4. Utilisez l'outil de dépose (fourni dans le couvercle du panneau de fusibles du compartiment moteur) pour sortir le fusible.\n5. Vérifiez si le fusible est fondu. Remplacez par un fusible de même calibre (des fusibles de rechange sont fournis).\n6. Insérez le nouveau fusible fermement. S'il n'est pas bien serré, faites inspecter.\n\n*Remplacement d'un fusible (compartiment moteur - page 9-33/600)*:\n1. Arrêtez le véhicule et éteignez tous les interrupteurs.\n2. Retirez le couvercle du panneau de fusibles en appuyant sur le robinet et en tirant vers le haut.\n3. Référez-vous à l'étiquette à l'intérieur du couvercle pour localiser le fusible suspect.\n4. Sortez le fusible à vérifier. Utilisez l'outil de dépose.\n5. Vérifiez si le fusible est fondu. Remplacez par un fusible de même calibre.\n6. Installez le nouveau fusible fermement. S'il n'est pas bien serré, faites inspecter.\n\n*Fusible autoréarmable (page 9-34/601)*:\n- Si le fusible multiple ou le fusible midi est grillé, contactez un concessionnaire HYUNDAI agréé.\n\n*AVERTISSEMENT*\n- Remplacez toujours un fusible par un autre de même calibre. Un calibre supérieur peut entraîner des dommages et un départ de feu.\n- N'utilisez pas de fil ou de papier d'aluminium comme fusible temporaire, risque d'incendie.\n- N'utilisez pas d'outils métalliques (tournevis) pour retirer un fusible, risque de court-circuit.",
+          "images": [
+            "fusibles-p599.webp",
+            "fusibles-p600.webp"
+          ]
+        },
+        {
+          "id": "ampoules-eclairage",
+          "titre": "Ampoules d'éclairage",
+          "contenu": "Nous recommandons de faire remplacer les ampoules par un concessionnaire HYUNDAI agréé en raison de la difficulté d'accès pour la plupart des feux.\n\n*Remplacement du clignotant avant (page 9-48/615)*:\n1. Serrez le frein de main et coupez le contact.\n2. Tournez la roue vers l’intérieur et retirez le capuchon du couvercle (à l’arrière du pare-chocs) avec un tournevis plat.\n3. Déposez le couvercle de service (si équipé).\n4. Retirez le couvercle de la douille en le tournant dans le sens inverse des aiguilles d'une montre.\n5. Retirez l'ampoule de la douille en l'enfonçant et en la tournant dans le sens inverse.\n6. Installez une nouvelle ampoule et réinstallez dans l'ordre inverse.\n\n*Remplacement du balai d'essuie-glace avant (page 9-19/586)*:\n1. Dans les **20 secondes** suivant l'arrêt du véhicule, poussez et maintenez le levier d'essuie-glace en position **1x** pendant **2 secondes** jusqu'à ce qu'ils reviennent en position de balayage haute.\n2. Soulevez les essuie-glaces du pare-brise.\n3. Soulevez l'attache du balai (1), tirez le balai (2) vers le bas, puis déposez-le.\n4. Installez le nouveau balai dans l'ordre inverse.\n5. Reposez doucement les essuie-glaces sur le pare-brise.\n6. Avec le bouton Start/Stop en ON, actionnez le commutateur d'essuie-glaces sur n'importe quelle position pour les ramener en position de repos basse.\n\n*Remplacement du balai d'essuie-glace arrière (page 9-20/587)*:\n1. Dans les **20 secondes** suivant l'arrêt du véhicule, poussez et maintenez le levier d'essuie-glace en position **1x** pendant **2 secondes** jusqu'à ce qu'ils reviennent en position de balayage haute.\n2. Soulevez le bras d'essuie-glace, faites tourner l'ensemble balai d'essuie-glace (1).\n3. Retirez l'ensemble balai d'essuie-glace (2).\n4. Installez le nouveau balai en introduisant la partie centrale dans la fente du bras jusqu'à entendre un clic.\n5. Reposez le bras sur la lunette arrière, démarrez le véhicule et actionnez les essuie-glaces pour vérifier.\n\n*Remplacement des feux LED (phares, feux de jour, répétiteur latéral, feu multifonction arrière, feu stop surélevé, plaque d'immatriculation, éclairage intérieur - pages 9-47/614, 9-52/619, 9-53/620)*:\n- Si une lampe LED ne fonctionne pas, faites vérifier le système par un concessionnaire HYUNDAI agréé. La lumière LED ne peut pas être remplacée comme unité unique.\n\n*Remplacement des ampoules (liseuse, plafonnier, miroir courtoisie, coffre - pages 9-54/621)*:\n1. Avec un tournevis plat, soulevez délicatement la lentille du logement.\n2. Retirez l'ampoule en tirant.\n3. Installez une nouvelle ampoule dans la douille.\n4. Alignez les pattes de la lentille avec les encoches du logement et appuyez pour la mettre en place.\n\n*AVERTISSEMENT*\n- Avant de remplacer un feu, coupez le contact et emportez la clé. Les ampoules peuvent être chaudes.\n\n*REMARQUE*\n- Remplacez toujours par une ampoule de même puissance.\n- Ne nettoyez pas les lentilles des phares avec des solvants chimiques.",
+          "images": [
+            "ampoules-eclairage-p585.webp",
+            "ampoules-eclairage-p586.webp"
+          ]
+        },
+        {
+          "id": "entretien-exterieur-interieur",
+          "titre": "Entretien extérieur et intérieur",
+          "contenu": "*Entretien extérieur (page 9-55/622)*\n- **Lavage**: Lavez le véhicule au moins une fois par mois à l'eau tiède ou froide. Après conduite hors route, lavez immédiatement. Portez attention au sel, saleté, boue. Dégagez les trous d'évacuation.\n- **Ne laissez pas sécher le savon sur la peinture** après rinçage.\n- **Véhicule à peinture matte (si équipé)**: Ne passez pas par un lave-auto automatique avec brosses rotatives. N'utilisez pas de nettoyeur à vapeur. Lavez avec un chiffon doux/microfibres, sans produit de finition à la cire.\n- **Traitement à la cire**: Appliquez une cire liquide ou pâteuse de bonne qualité sur un véhicule propre et sec pour protéger la peinture.\n\n*Protection contre la corrosion (page 9-58/625, 9-59/626)*\n- Rincez le dessous de caisse et les passages de roue à l'eau tiède/froide au moins une fois par mois (surtout après exposition à des matériaux corrosifs comme le sel).\n- Vérifiez que les orifices d’évacuation (bas des portes, bas de caisse) sont ouverts.\n- Gardez le garage sec et bien ventilé.\n- Réparez rapidement les rayures profondes ou éclats de pierre sur la peinture.\n\n*Entretien des jantes en aluminium (page 9-58/625)*\n- N'utilisez pas de produits abrasifs, de solvants ou brosses métalliques. Lavez à l'eau et savon doux/détergent neutre sur jantes froides.\n\n*Entretien intérieur (page 9-60/627)*\n- Évitez les solutions caustiques (parfum, huile cosmétique) sur les surfaces intérieures.\n- **Nettoyage de la garniture et de l’habillage**: Aspirez poussière/saleté. Nettoyez avec de l'eau chaude et un produit non détergent doux.\n- **Tissu (si équipé)**: Aspirez. Nettoyez avec une solution savonneuse douce. Enlevez immédiatement les taches fraîches.\n- **Sièges en cuir (si équipé - page 9-61/628)**: Aspirez régulièrement. Essuyez souvent avec un chiffon sec ou doux. Utilisez un protecteur de cuir approprié. Évitez de mouiller.\n- **Nettoyage des sièges en cuir**: Enlevez immédiatement les éclaboussures. Pour cosmétiques: crème nettoyante sur chiffon. Pour boissons: petite quantité de détergent neutre. Pour huile: chiffon absorbant et détachant pour cuir naturel. Pour chewing-gums: durcissez avec de la glace et retirez.\n- **Nettoyage de la sangle de ceinture de sécurité (page 9-62/629)**: Nettoyez avec une solution savonneuse douce. Ne décolorez pas.\n- **Nettoyage de l'intérieur des vitres**: Utilisez un nettoyant pour vitres. Ne grattez pas la lunette arrière.\n\n*AVERTISSEMENT*\n- Testez les freins après lavage du véhicule, car l'eau peut réduire les performances de freinage.\n- Ne laissez jamais d'eau ou d'autres liquides entrer en contact avec les composants électriques/électroniques.\n- Ne nettoyez pas le compartiment moteur à haute pression.",
+          "images": [
+            "entretien-exterieur-interieur-p622.webp",
+            "entretien-exterieur-interieur-p623.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}
