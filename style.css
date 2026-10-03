@@ -58,6 +58,12 @@ html, body {
   font-size: 15px;
 }
 .nk-recherche:focus { outline: none; border-color: var(--accent); }
+.nk-recherche-simple {
+  width: 100%; padding: 11px 14px; border-radius: 12px; margin-bottom: 12px;
+  border: 1px solid var(--bordure); background: var(--panneau); color: var(--texte);
+  font-size: 15px;
+}
+.nk-recherche-simple:focus { outline: none; border-color: var(--accent); }
 .nk-recherche-icone-btn {
   position: absolute; background: none; border: none; color: var(--texte-att);
   font-size: 16px; cursor: pointer; padding: 6px;

@@ -402,8 +402,16 @@ else {
 
 // ── Voyants (témoins du tableau de bord) ─────────────────────────────────
 
+let filtreVoyantTexte = "";
+
 function rendreVoyants() {
-  const filtres = voyants.filter((v) => filtreVoyantActif === "tous" || (v.couleur || "").toLowerCase() === filtreVoyantActif);
+  const motsTexte = normaliserRecherche(filtreVoyantTexte).split(" ").filter(Boolean);
+  const filtres = voyants.filter((v) => {
+    if (filtreVoyantActif !== "tous" && (v.couleur || "").toLowerCase() !== filtreVoyantActif) return false;
+    if (!motsTexte.length) return true;
+    const cible = normaliserRecherche(`${v.nom} ${v.signification} ${v.action}`);
+    return motsTexte.every((m) => cible.includes(m));
+  });
   $("nk-voyants-vide").classList.toggle("hidden", voyants.length > 0);
   $("nk-voyants-liste").innerHTML = filtres
     .map(
@@ -411,7 +419,7 @@ function rendreVoyants() {
       <div class="nk-voyant-carte">
         <span class="nk-voyant-pastille" style="background:${COULEURS_VOYANT[(v.couleur || "").toLowerCase()] || "#999"}"></span>
         <span>
-          <div class="nk-voyant-nom">${echapperHtml(v.nom)}</div>
+          <div class="nk-voyant-nom">${surligner(v.nom, motsTexte)}</div>
           <div class="nk-voyant-signification">${echapperHtml(v.signification)}</div>
           <div class="nk-voyant-action"><strong>À faire :</strong> ${echapperHtml(v.action)}</div>
         </span>
@@ -430,6 +438,12 @@ $("nk-voyants-filtres").addEventListener("click", (e) => {
   filtreVoyantActif = btn.dataset.couleur;
   $("nk-voyants-filtres").querySelectorAll(".nk-filtre-couleur").forEach((b) => b.classList.toggle("active", b === btn));
   rendreVoyants();
+});
+let debounceVoyants = null;
+$("nk-voyants-recherche").addEventListener("input", (e) => {
+  clearTimeout(debounceVoyants);
+  filtreVoyantTexte = e.target.value;
+  debounceVoyants = setTimeout(rendreVoyants, 150);
 });
 
 // ── Glossaire des sigles ──────────────────────────────────────────────────
@@ -593,6 +607,18 @@ async function chargerNotice() {
     }
     $("nk-chargement").classList.add("hidden");
     rendreAccueil();
+
+    // Lien direct depuis JARVIS/TrajetVE ("voyant orange batterie" à la voix
+    // -> ?voyant=... ouvre directement la fiche filtrée, sans repasser par
+    // l'accueil) -- demande explicite du 2026-10-03.
+    const motVoyant = new URLSearchParams(location.search).get("voyant");
+    if (motVoyant) {
+      filtreVoyantTexte = motVoyant;
+      $("nk-voyants-recherche").value = motVoyant;
+      rendreVoyants();
+      afficherVue("voyants", { historique: false });
+      return;
+    }
 
     // Raccourcis d'appli (manifest "shortcuts") : #recharge, #favoris...
     const hash = location.hash.replace("#", "");
