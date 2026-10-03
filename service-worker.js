@@ -5,7 +5,7 @@
 // d'abord des autres appli (Coffre, TrajetVE), ici on précharge tout au
 // moment de l'installation : le contenu ne change pas entre deux sessions.
 
-const CACHE_NOM = "noticekona-v2";
+const CACHE_NOM = "noticekona-v3";
 const FICHIERS_COQUILLE = ["./", "./index.html", "./style.css", "./manifest.json", "./js/main.js", "./js/markdown.js", "./js/mentions.js", "./js/stockage.js", "./js/checklists.js", "./data/notice.json", "./data/voyants.json", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (event) => {

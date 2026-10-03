@@ -302,25 +302,40 @@ $("nk-signaler-envoyer").addEventListener("click", () => {
 
 // ── Recherche (toutes catégories/sections confondues) ───────────────────
 
-function surligner(texte, q) {
-  if (!q) return echapperHtml(texte);
-  const echappe = echapperHtml(texte);
-  const motEchappe = echapperHtml(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return echappe.replace(new RegExp(`(${motEchappe})`, "gi"), "<mark>$1</mark>");
+// Tiret/apostrophe traités comme des espaces : "essuie-glace" et "essuie
+// glace" doivent se trouver mutuellement -- utile aussi pour la recherche
+// vocale, qui ne transcrit jamais les tirets ("essuie glace" prononcé).
+function normaliserRecherche(texte) {
+  return (texte || "")
+    .toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "") // accents
+    .replace(/[-''’]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function surligner(texte, mots) {
+  let echappe = echapperHtml(texte);
+  for (const mot of mots) {
+    const motEchappe = echapperHtml(mot).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    echappe = echappe.replace(new RegExp(`(${motEchappe})`, "gi"), "<mark>$1</mark>");
+  }
+  return echappe;
 }
 
 function rechercher(requete) {
-  const q = requete.trim().toLowerCase();
-  $("nk-recherche-effacer").classList.toggle("hidden", !q);
+  const q = normaliserRecherche(requete);
+  $("nk-recherche-effacer").classList.toggle("hidden", !requete.trim());
   if (!q) {
     afficherVue(categorieActive ? "categorie" : "accueil", { historique: false });
     return;
   }
+  const mots = q.split(" ").filter(Boolean);
   const resultats = [];
   for (const cat of notice.categories) {
     for (const s of cat.sections) {
-      const cible = `${s.titre} ${s.contenu}`.toLowerCase();
-      if (cible.includes(q)) resultats.push({ cat, section: s });
+      const cible = normaliserRecherche(`${s.titre} ${s.contenu}`);
+      if (mots.every((m) => cible.includes(m))) resultats.push({ cat, section: s });
     }
   }
   const conteneur = $("nk-recherche-resultats");
@@ -331,7 +346,7 @@ function rechercher(requete) {
       <button type="button" class="nk-section-carte" data-cat="${cat.id}" data-section="${section.id}">
         <span>
           <div class="nk-section-carte-cat">${cat.icone || ""} ${echapperHtml(cat.titre)}</div>
-          <div class="nk-section-carte-titre">${surligner(section.titre, q)}</div>
+          <div class="nk-section-carte-titre">${surligner(section.titre, mots)}</div>
         </span>
         <span class="nk-section-carte-fleche">›</span>
       </button>`,
