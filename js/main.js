@@ -377,6 +377,29 @@ else {
   let enEcoute = false;
   reco.addEventListener("result", (e) => {
     const texte = e.results[0][0].transcript;
+    // "voyant/témoin ..." à la voix -> va direct sur la fiche du voyant,
+    // comme le raccourci JARVIS (?voyant=...) -- sans ça, la recherche
+    // vocale ne trouvait jamais les 166 témoins (jeu de données séparé
+    // des fiches). Demande explicite du 2026-10-03.
+    const m = /\b(voyant|témoin|temoin)s?\b\s*(.*)/i.exec(texte);
+    if (m) {
+      // La couleur ("orange", "rouge"...) n'est jamais répétée dans le texte
+      // d'un voyant (stockée à part) : appliquée comme filtre couleur plutôt
+      // que comme mot-clé, sinon "voyant orange batterie" ne trouverait rien.
+      let reste = m[2] || "";
+      const NORMALISER_COULEUR = { rouge: "rouge", orange: "orange", vert: "vert", verte: "vert", bleu: "bleu", bleue: "bleu", blanc: "blanc", blanche: "blanc" };
+      const couleur = /\b(rouge|orange|verte?|bleue?|blanche?)\b/i.exec(reste);
+      if (couleur) {
+        filtreVoyantActif = NORMALISER_COULEUR[couleur[1].toLowerCase()] || "tous";
+        reste = reste.replace(couleur[0], "").replace(/\s+/g, " ").trim();
+        $("nk-voyants-filtres").querySelectorAll(".nk-filtre-couleur").forEach((b) => b.classList.toggle("active", b.dataset.couleur === filtreVoyantActif));
+      }
+      filtreVoyantTexte = reste;
+      $("nk-voyants-recherche").value = filtreVoyantTexte;
+      rendreVoyants();
+      afficherVue("voyants");
+      return;
+    }
     $("nk-recherche").value = texte;
     rechercher(texte);
   });
