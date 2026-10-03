@@ -8,6 +8,20 @@
   --accent: #22e5a0;
   --accent-fonce: #15a877;
   --danger: #ff6b6b;
+  --orange: #ffb400;
+}
+
+:root[data-theme="clair"] {
+  --fond: #eef3f9;
+  --panneau: #ffffff;
+  --panneau-clair: #e4edf7;
+  --bordure: #d4e0ee;
+  --texte: #0e1b2c;
+  --texte-att: #5a7290;
+  --accent: #0f9d68;
+  --accent-fonce: #0c7d54;
+  --danger: #d8373f;
+  --orange: #b4720a;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -24,47 +38,79 @@ html, body {
 /* ── En-tête ─────────────────────────────────────────────────────────── */
 .nk-haut {
   position: sticky; top: 0; z-index: 10;
-  background: linear-gradient(180deg, #0d1f38 0%, #0a1420 100%);
+  background: linear-gradient(180deg, var(--panneau) 0%, var(--fond) 100%);
   padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
   border-bottom: 1px solid var(--bordure);
 }
 .nk-haut-ligne { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
 .nk-haut h1 { font-size: 19px; margin: 0; flex: 1; }
-.nk-retour-btn {
+.nk-retour-btn, .nk-mini-btn {
   background: var(--panneau); border: 1px solid var(--bordure); color: var(--texte);
-  width: 36px; height: 36px; border-radius: 10px; font-size: 20px; cursor: pointer;
+  width: 36px; height: 36px; border-radius: 10px; font-size: 18px; cursor: pointer;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
+.nk-retour-btn { font-size: 20px; }
 .nk-recherche-zone { position: relative; display: flex; align-items: center; }
 .nk-loupe { position: absolute; left: 12px; font-size: 14px; opacity: 0.7; pointer-events: none; }
 .nk-recherche {
-  width: 100%; padding: 11px 36px 11px 36px; border-radius: 12px;
+  width: 100%; padding: 11px 76px 11px 36px; border-radius: 12px;
   border: 1px solid var(--bordure); background: var(--panneau); color: var(--texte);
   font-size: 15px;
 }
 .nk-recherche:focus { outline: none; border-color: var(--accent); }
-.nk-recherche-effacer {
-  position: absolute; right: 8px; background: none; border: none; color: var(--texte-att);
+.nk-recherche-icone-btn {
+  position: absolute; background: none; border: none; color: var(--texte-att);
   font-size: 16px; cursor: pointer; padding: 6px;
 }
+#nk-recherche-vocale { right: 32px; }
+#nk-recherche-effacer { right: 4px; }
+.nk-recherche-vocale-active { color: var(--danger) !important; animation: nk-pulse 1s ease-in-out infinite; }
+@keyframes nk-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
 /* ── Corps ───────────────────────────────────────────────────────────── */
 .nk-corps { padding: 16px; padding-bottom: 90px; max-width: 640px; margin: 0 auto; }
-.nk-vue-titre { font-size: 20px; margin: 4px 0 16px; }
+.nk-vue-entete { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 4px 0 16px; }
+.nk-vue-titre { font-size: 20px; margin: 0; }
+.nk-section-actions { display: flex; gap: 8px; flex-shrink: 0; }
 
 .nk-vide { text-align: center; color: var(--texte-att); padding: 60px 20px; font-size: 14px; }
 
+/* Transition douce entre les vues. */
+.nk-vue { animation: nk-fade-in 0.22s ease; }
+@keyframes nk-fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.nk-bloc-accueil-titre { font-size: 13px; font-weight: 700; color: var(--texte-att); text-transform: uppercase; letter-spacing: 0.04em; margin: 18px 0 10px; }
+.nk-bloc-accueil-titre:first-child { margin-top: 0; }
+.nk-bloc-accueil { margin-bottom: 6px; }
+
+.nk-progression {
+  font-size: 12px; color: var(--texte-att); text-align: center;
+  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 10px;
+  padding: 8px; margin-bottom: 16px;
+}
+.nk-progression-barre { height: 5px; border-radius: 3px; background: var(--bordure); margin-top: 6px; overflow: hidden; }
+.nk-progression-barre-remplie { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.3s ease; }
+
 /* ── Grille de catégories ────────────────────────────────────────────── */
-.nk-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.nk-categories { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
 .nk-categorie-carte {
-  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 16px;
-  padding: 18px 14px; text-align: left; cursor: pointer; color: var(--texte);
+  background: var(--panneau); border: 1px solid var(--bordure); border-left: 4px solid var(--couleur-cat, var(--accent));
+  border-radius: 16px; padding: 18px 14px; text-align: left; cursor: pointer; color: var(--texte);
   display: flex; flex-direction: column; gap: 8px; min-height: 100px;
 }
 .nk-categorie-carte:active { background: var(--panneau-clair); }
 .nk-categorie-icone { font-size: 28px; }
 .nk-categorie-titre { font-size: 14.5px; font-weight: 700; line-height: 1.25; }
 .nk-categorie-compte { font-size: 11.5px; color: var(--texte-att); }
+
+.nk-outils-grille { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 8px; }
+.nk-outil-carte {
+  background: var(--panneau); border: 1px solid var(--bordure); border-radius: 14px;
+  padding: 14px 8px; text-align: center; cursor: pointer; color: var(--texte);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.nk-outil-carte:active { background: var(--panneau-clair); }
+.nk-outil-carte .nk-categorie-titre { font-size: 11.5px; }
 
 /* ── Liste de sections ───────────────────────────────────────────────── */
 .nk-sections-liste { display: flex; flex-direction: column; gap: 10px; }
@@ -74,10 +120,12 @@ html, body {
   display: flex; align-items: center; justify-content: space-between; gap: 10px;
 }
 .nk-section-carte:active { background: var(--panneau-clair); }
-.nk-section-carte-titre { font-size: 15px; font-weight: 600; }
+.nk-section-carte-titre { font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
 .nk-section-carte-cat { font-size: 11.5px; color: var(--accent); margin-top: 3px; }
 .nk-section-carte-fleche { color: var(--texte-att); font-size: 18px; flex-shrink: 0; }
 .nk-section-carte-extrait { font-size: 12.5px; color: var(--texte-att); margin-top: 3px; }
+.nk-badge-avertissement { font-size: 12px; }
+.nk-recherche-resultats mark, .nk-section-carte mark { background: var(--accent); color: #042; border-radius: 3px; padding: 0 2px; }
 
 /* ── Détail de section ───────────────────────────────────────────────── */
 .nk-section-contenu { font-size: 15.5px; line-height: 1.65; }
@@ -88,19 +136,61 @@ html, body {
 .nk-section-contenu em { color: var(--texte-att); font-style: italic; }
 .nk-section-contenu img {
   width: 100%; border-radius: 12px; margin: 10px 0 16px;
-  border: 1px solid var(--bordure);
+  border: 1px solid var(--bordure); cursor: zoom-in;
 }
+.nk-lien-croise { color: var(--accent); text-decoration: underline; cursor: pointer; background: none; border: none; font: inherit; padding: 0; }
+
+.nk-lien-action {
+  display: block; width: 100%; background: none; border: 1px dashed var(--bordure); color: var(--texte-att);
+  font-size: 13px; padding: 10px; border-radius: 10px; cursor: pointer; margin: 10px 0; text-align: center;
+}
+.nk-btn-secondaire {
+  background: var(--panneau-clair); border: 1px solid var(--bordure); color: var(--texte);
+  font-size: 13.5px; padding: 10px 14px; border-radius: 10px; cursor: pointer; width: 100%; margin-top: 10px;
+}
+
+/* ── Mode pas-à-pas ──────────────────────────────────────────────────── */
+.nk-pas-a-pas { background: var(--panneau); border: 1px solid var(--accent); border-radius: 14px; padding: 16px; margin: 10px 0; }
+.nk-pas-a-pas-compte { font-size: 12px; color: var(--texte-att); text-align: center; margin-bottom: 10px; }
+.nk-pas-a-pas-texte { font-size: 17px; line-height: 1.6; min-height: 70px; }
+.nk-pas-a-pas-nav { display: flex; gap: 10px; margin-top: 14px; }
+.nk-pas-a-pas-nav .nk-btn-secondaire { margin-top: 0; }
+
+/* ── Voyants ─────────────────────────────────────────────────────────── */
+.nk-filtre-couleurs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.nk-filtre-couleur {
+  background: var(--panneau); border: 1px solid var(--bordure); color: var(--texte);
+  font-size: 12.5px; padding: 7px 12px; border-radius: 20px; cursor: pointer;
+}
+.nk-filtre-couleur.active { background: var(--accent); color: #042; border-color: var(--accent); font-weight: 700; }
+.nk-voyants-liste { display: flex; flex-direction: column; gap: 8px; }
+.nk-voyant-carte { background: var(--panneau); border: 1px solid var(--bordure); border-radius: 12px; padding: 12px 14px; display: flex; gap: 10px; }
+.nk-voyant-pastille { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; margin-top: 3px; }
+.nk-voyant-nom { font-weight: 700; font-size: 14.5px; }
+.nk-voyant-signification { font-size: 13px; color: var(--texte-att); margin: 3px 0; }
+.nk-voyant-action { font-size: 13px; }
+.nk-voyant-action strong { color: var(--accent); }
+
+/* ── Checklists ──────────────────────────────────────────────────────── */
+.nk-checklist-onglets { display: flex; gap: 8px; margin-bottom: 10px; }
+.nk-checklist-onglet { flex: 1; background: var(--panneau); border: 1px solid var(--bordure); color: var(--texte); font-size: 12.5px; padding: 10px; border-radius: 10px; cursor: pointer; }
+.nk-checklist-onglet.active { background: var(--accent); color: #042; border-color: var(--accent); font-weight: 700; }
+.nk-checklist-actions { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.nk-checklist-liste { display: flex; flex-direction: column; gap: 8px; }
+.nk-checklist-item { display: flex; align-items: center; gap: 10px; background: var(--panneau); border: 1px solid var(--bordure); border-radius: 10px; padding: 12px 14px; cursor: pointer; }
+.nk-checklist-item input { width: 20px; height: 20px; flex-shrink: 0; }
+.nk-checklist-item.coche span { text-decoration: line-through; color: var(--texte-att); }
 
 /* ── Pied ─────────────────────────────────────────────────────────────── */
 .nk-pied {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
-  background: linear-gradient(0deg, #0a1420 60%, transparent);
+  background: linear-gradient(0deg, var(--fond) 60%, transparent);
   padding: 10px 16px calc(14px + env(safe-area-inset-bottom));
   text-align: center;
 }
 .nk-lien { background: none; border: none; color: var(--texte-att); font-size: 12.5px; cursor: pointer; padding: 6px; }
 
-/* ── Modale mentions ─────────────────────────────────────────────────── */
+/* ── Modales (mentions, signaler) ────────────────────────────────────── */
 .nk-modale {
   position: fixed; inset: 0; z-index: 50; background: rgba(5, 10, 18, 0.85);
   display: flex; align-items: center; justify-content: center; padding: 20px;
@@ -115,6 +205,26 @@ html, body {
 .nk-modale-fermer {
   position: absolute; top: 12px; right: 12px; background: var(--panneau-clair); border: 1px solid var(--bordure);
   color: var(--texte); width: 30px; height: 30px; border-radius: 8px; cursor: pointer; font-size: 14px;
+}
+.nk-maj-resultat { font-size: 12.5px; color: var(--texte-att); min-height: 16px; margin-top: 8px; }
+.nk-signaler-sous { font-size: 12.5px; }
+.nk-textarea {
+  width: 100%; background: var(--panneau-clair); border: 1px solid var(--bordure); color: var(--texte);
+  border-radius: 10px; padding: 10px; font-size: 14px; font-family: inherit; resize: vertical;
+}
+
+/* ── Lightbox (zoom image) ───────────────────────────────────────────── */
+.nk-lightbox {
+  position: fixed; inset: 0; z-index: 80; background: rgba(0, 0, 0, 0.92);
+  display: flex; align-items: center; justify-content: center; padding: 20px; cursor: zoom-out;
+}
+.nk-lightbox img { max-width: 100%; max-height: 100%; border-radius: 6px; }
+
+/* ── Impression (catégorie, checklist) ──────────────────────────────── */
+@media print {
+  .nk-haut, .nk-pied, #nk-categorie-imprimer-btn, #nk-checklist-imprimer, .nk-checklist-actions button:first-child { display: none !important; }
+  body { background: #fff; color: #111; }
+  .nk-section-contenu strong, .nk-vue-titre { color: #111; }
 }
 
 @media (min-width: 560px) {

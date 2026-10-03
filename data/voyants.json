@@ -1,0 +1,1000 @@
+{
+  "voyants": [
+    {
+      "nom": "POWER (ALIMENTATION) (chargeur portable)",
+      "couleur": "vert",
+      "signification": "L'appareil de charge portable est sous tension.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "CHARGE (chargeur portable)",
+      "couleur": "bleu",
+      "signification": "La charge est en cours et clignote lorsque le courant est limité.",
+      "action": "Aucune action spécifique n'est requise si la charge se déroule normalement."
+    },
+    {
+      "nom": "DÉFAUT (chargeur portable)",
+      "couleur": "rouge",
+      "signification": "Clignote en cas de fuite de courant, d'erreur de communication, de surintensité ou de protection contre les hautes températures.",
+      "action": "Arrêtez immédiatement la charge et contactez un concessionnaire HYUNDAI agréé si le problème persiste après réinitialisation."
+    },
+    {
+      "nom": "Indicateur V2L intérieur (Veille)",
+      "couleur": "bleu",
+      "signification": "La prise de courant V2L intérieure est en mode veille.",
+      "action": "Aucune action spécifique n'est requise, cela indique un état de préparation."
+    },
+    {
+      "nom": "Indicateur V2L intérieur (Pas d'alimentation électrique)",
+      "couleur": "rouge",
+      "signification": "Aucune alimentation électrique n'est fournie même si la prise de courant est connectée.",
+      "action": "Vérifiez la connexion de la prise de courant et la fonction V2L."
+    },
+    {
+      "nom": "Indicateur V2L intérieur (Alimentation normale)",
+      "couleur": "vert",
+      "signification": "L'alimentation électrique est fournie normalement via une connexion à la prise.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Message : V2L terminé. Niveau de charge défini atteint",
+      "couleur": "blanc",
+      "signification": "Le niveau de la batterie haute tension a atteint la limite de décharge définie pour la fonction V2L.",
+      "action": "Pour utiliser le V2L en continu, réglez la limite de décharge à un niveau inférieur au niveau de charge actuel de la batterie."
+    },
+    {
+      "nom": "Message : Consommation d’énergie trop élevée. V2L annulé",
+      "couleur": "rouge",
+      "signification": "Un appareil électrique branché dépasse la puissance de sortie maximale que le véhicule peut fournir.",
+      "action": "Vérifiez la consommation électrique totale de l'appareil et remplacez-le par un produit respectant la limite de puissance maximale du V2L."
+    },
+    {
+      "nom": "Message : Conditions V2L remplies",
+      "couleur": "blanc",
+      "signification": "La fonction V2L a été arrêtée en raison de la coupure du contacteur du connecteur, d'une surchauffe du connecteur V2L, ou de l'ouverture de la trappe de charge.",
+      "action": "Assurez-vous qu'il n'y a pas de problème avec le connecteur V2L et la prise intérieure du véhicule."
+    },
+    {
+      "nom": "Témoin Ready (prêt) (¢)",
+      "couleur": "vert",
+      "signification": "Le véhicule électrique est prêt à être conduit et opérationnel.",
+      "action": "Aucune action spécifique n'est requise; si éteint ou clignote, faites inspecter le véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "UTIL (mode utilitaire)",
+      "couleur": "blanc",
+      "signification": "Le mode utilitaire est activé, permettant d'utiliser la batterie haute tension pour des appareils électriques à l'arrêt.",
+      "action": "Assurez-vous que le réducteur est en position P (parking) avant d'activer le mode utilitaire."
+    },
+    {
+      "nom": "Témoin d'avertissement d'entretien («)",
+      "couleur": "orange",
+      "signification": "Indique un problème sur les pièces connexes au système de commande de véhicule électrique ou un dysfonctionnement de la climatisation.",
+      "action": "Faites inspecter le véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de réduction d'alimentation (®)",
+      "couleur": "orange",
+      "signification": "Indique que la puissance du véhicule est limitée en raison d'un niveau/tension de batterie haute tension bas ou d'une température trop élevée du moteur.",
+      "action": "Chargez immédiatement le véhicule et faites-le inspecter si le témoin persiste ou s'allume avec le témoin d'entretien."
+    },
+    {
+      "nom": "Témoin de connecteur de charge (¥)",
+      "couleur": "vert",
+      "signification": "Le connecteur de charge est branché à la batterie haute tension.",
+      "action": "Aucune action spécifique n'est requise, cela indique un branchement correct."
+    },
+    {
+      "nom": "Témoin d’avertissement de niveau de batterie haute tension (ª)",
+      "couleur": "orange",
+      "signification": "Le niveau de la batterie haute tension est bas (inférieur à 20%).",
+      "action": "Chargez immédiatement le véhicule."
+    },
+    {
+      "nom": "Témoin de la ceinture de sécurité (!)",
+      "couleur": "rouge",
+      "signification": "Le conducteur n'a pas bouclé sa ceinture de sécurité.",
+      "action": "Bouclez votre ceinture de sécurité."
+    },
+    {
+      "nom": "Témoin d'avertissement d'airbag (=)",
+      "couleur": "rouge",
+      "signification": "Indique un dysfonctionnement potentiel du système de retenue supplémentaire (SRS).",
+      "action": "Faites vérifier votre système SRS par un concessionnaire HYUNDAI agréé dès que possible."
+    },
+    {
+      "nom": "Témoin d'avertissement de freinage par récupération (\")",
+      "couleur": "jaune",
+      "signification": "Le freinage par récupération ne fonctionne pas et les freins ne fonctionnent pas correctement.",
+      "action": "Conduisez prudemment et faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin d'avertissement de frein de stationnement et de niveau de liquide de frein (\")",
+      "couleur": "rouge",
+      "signification": "Le frein de stationnement est activé, ou si desserré, le niveau de liquide de frein est bas.",
+      "action": "Vérifiez le niveau de liquide de frein et faites inspecter les freins par un concessionnaire HYUNDAI agréé si le témoin persiste."
+    },
+    {
+      "nom": "Témoin du système de frein antiblocage (ABS) (B)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement du système de frein antiblocage (ABS).",
+      "action": "Faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin d'avertissement du système électronique de répartition de la force de freinage (EBD) (B\")",
+      "couleur": "jaune",
+      "signification": "S'allume lorsque les systèmes ABS et EBD ne fonctionnent pas normalement.",
+      "action": "Évitez toute conduite à grande vitesse et tout freinage sec; faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin MDPS (direction assistée entraînée par le moteur) (E)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement de la direction assistée entraînée par le moteur.",
+      "action": "Conduisez le véhicule jusqu'à un endroit sûr et faites-le vérifier par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin d’alerte principal (X)",
+      "couleur": "rouge",
+      "signification": "Indique un dysfonctionnement d'un des systèmes d'aide à la conduite.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin du frein de stationnement électronique (EPB) (M)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement du frein de stationnement électronique (EPB).",
+      "action": "Faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin d'avertissement de basse pression des pneus (L)",
+      "couleur": "orange",
+      "signification": "Indique qu'un ou plusieurs pneus sont fortement sous-gonflés.",
+      "action": "Réduisez votre vitesse, évitez les virages serrés et les freinages brusques, puis faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de sécurité avant (O) (désactivé/dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "La fonction de sécurité avant de l'assistance anticollision est désactivée, désélectionnée ou en dysfonctionnement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé si le témoin reste allumé."
+    },
+    {
+      "nom": "Témoin de sécurité avant (O) (activée)",
+      "couleur": "rouge",
+      "signification": "La fonction de sécurité avant est activée, indiquant une intervention imminente.",
+      "action": "Soyez attentif à la route et aux conditions de circulation, le système intervient activement."
+    },
+    {
+      "nom": "Témoin de braquage d'urgence (P) (dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "La fonction de sécurité avant/latérale de l'aide à l'évitement de collision est désactivée ou présente un dysfonctionnement.",
+      "action": "Faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé si le témoin jaune reste allumé."
+    },
+    {
+      "nom": "Témoin de braquage d'urgence (P) (fonctionne)",
+      "couleur": "rouge",
+      "signification": "La sécurité avant/latérale de l'aide à l'évitement de collision à l'avant fonctionne, indiquant une intervention de braquage.",
+      "action": "Soyez attentif à la route et aux conditions de circulation, le système intervient activement."
+    },
+    {
+      "nom": "Témoin du système de détection de fatigue du conducteur (W) (désactivé/dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "L'avertissement d'attention au conducteur est désactivé ou un dysfonctionnement est détecté.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé si le témoin jaune reste allumé."
+    },
+    {
+      "nom": "Témoin du système de détection de fatigue du conducteur (W) (recommande pause)",
+      "couleur": "jaune",
+      "signification": "L'avertissement d'attention du conducteur recommande de faire une pause.",
+      "action": "Faites une pause pour favoriser la sécurité de la conduite."
+    },
+    {
+      "nom": "Témoin du système de détection de fatigue du conducteur ({) (désactivé/dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "L'avertisseur d'attention portée à l'avant est désactivé ou un dysfonctionnement est détecté.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé si le témoin reste allumé."
+    },
+    {
+      "nom": "Témoin du système de détection de fatigue du conducteur ({) (avertissement actif)",
+      "couleur": "jaune",
+      "signification": "L'avertisseur d'attention portée à l'avant avertit le conducteur qu'il doit garder les yeux sur la route.",
+      "action": "Gardez les yeux sur la route et faites attention aux conditions de circulation."
+    },
+    {
+      "nom": "Témoin d'assistance au suivi de file (º) (activée)",
+      "couleur": "vert",
+      "signification": "L’assistance au suivi de file est activée.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin d'assistance au suivi de file (º) (conditions non réunies)",
+      "couleur": "gris",
+      "signification": "Les conditions de fonctionnement de l'assistance au suivi de file ne sont pas réunies.",
+      "action": "Vérifiez les conditions de la route ou du véhicule."
+    },
+    {
+      "nom": "Témoin d'assistance au suivi de file (º) (assistance annulée)",
+      "couleur": "blanc",
+      "signification": "L'assistance au volant est annulée.",
+      "action": "Reprenez le contrôle du volant."
+    },
+    {
+      "nom": "Témoin d'assistance intelligente de limitation de vitesse (z)",
+      "couleur": "jaune",
+      "signification": "L'assistance intelligente de limitation de vitesse est désactivée ou présente un dysfonctionnement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de sécurité de voie (S) (conditions non réunies)",
+      "couleur": "gris",
+      "signification": "Les conditions de fonctionnement de l'assistance au maintien de voie ne sont pas réunies.",
+      "action": "Vérifiez les conditions de la route ou du véhicule."
+    },
+    {
+      "nom": "Témoin de sécurité de voie (S) (conditions réunies)",
+      "couleur": "vert",
+      "signification": "Les conditions de fonctionnement de l'assistance au maintien de la trajectoire sont réunies.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin de sécurité de voie (S) (désactivé/dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "Le système de sécurité de la voie est désélectionné, désactivé ou présente un dysfonctionnement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de sécurité de voie (S) (activée)",
+      "couleur": "vert",
+      "signification": "L’assistance au maintien dans la voie est activée.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin d'avertissement des phares à LED (Y)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement des phares à LED ou d'une pièce connexe.",
+      "action": "Faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de portière ouverte (l)",
+      "couleur": "orange",
+      "signification": "Une portière ou le hayon est laissé ouvert.",
+      "action": "Fermez correctement la portière et le hayon avant de conduire."
+    },
+    {
+      "nom": "Témoin de contrôle électronique de stabilité (ESC) (a) (dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement du système de contrôle électronique de stabilité (ESC).",
+      "action": "Faites vérifier votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de contrôle électronique de stabilité (ESC) (a) (actif)",
+      "couleur": "jaune",
+      "signification": "Le système de contrôle électronique de stabilité (ESC) est actif.",
+      "action": "Roulez lentement et n'accélérez pas; n'éteignez jamais l'ESC quand il clignote."
+    },
+    {
+      "nom": "Témoin de désactivation (OFF) du contrôle électronique de stabilité (ESC) (b)",
+      "couleur": "jaune",
+      "signification": "Le système de contrôle électronique de stabilité (ESC) est désactivé.",
+      "action": "Aucune action spécifique n'est requise, cela indique un statut du système."
+    },
+    {
+      "nom": "Témoin du système antidémarrage (j) (prêt)",
+      "couleur": "jaune",
+      "signification": "Le véhicule détecte la clé intelligente et peut démarrer.",
+      "action": "Démarrez le véhicule."
+    },
+    {
+      "nom": "Témoin du système antidémarrage (j) (warning)",
+      "couleur": "jaune",
+      "signification": "La clé intelligente n'est pas détectée ou il y a un dysfonctionnement du système antidémarrage.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de clignotants (`) (normal)",
+      "couleur": "vert",
+      "signification": "Les clignotants sont activés pour signaler un changement de direction.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin de clignotants (`) (dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement du système de clignotants (ampoule grillée, clignotement rapide, etc.).",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de feux antibrouillard arrière (i)",
+      "couleur": "jaune",
+      "signification": "Les feux antibrouillard arrière sont allumés.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Lampe indicatrice des feux de croisement (^)",
+      "couleur": "vert",
+      "signification": "Les feux de croisement sont allumés.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin des feux de route (])",
+      "couleur": "bleu",
+      "signification": "Les feux de route sont allumés.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin de feux allumés (_)",
+      "couleur": "vert",
+      "signification": "Les feux arrière ou avant sont allumés.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin d'aide aux feux de route (Z) (prêt)",
+      "couleur": "blanc",
+      "signification": "L'assistant de feux de route (HBA) est prêt à fonctionner.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Témoin d'aide aux feux de route (Z) (fonctionne)",
+      "couleur": "vert",
+      "signification": "L'assistant de feux de route (HBA) est en fonction.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin AUTO HOLD (maintien automatique) (N) (activé)",
+      "couleur": "blanc",
+      "signification": "La fonction Auto Hold est activée et en mode veille.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Témoin AUTO HOLD (maintien automatique) (N) (maintenu)",
+      "couleur": "vert",
+      "signification": "La fonction Auto Hold maintient le véhicule à l'arrêt.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin AUTO HOLD (maintien automatique) (N) (dysfonctionnement)",
+      "couleur": "jaune",
+      "signification": "Indique un dysfonctionnement de la fonction Auto Hold.",
+      "action": "Faites contrôler votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin d'alerte de verglas (¯)",
+      "couleur": "orange",
+      "signification": "Signale au conducteur que la route peut être verglacée car la température extérieure est inférieure à 4 °C.",
+      "action": "Évitez les excès de vitesse, les accélérations rapides, les freinages brusques et les virages serrés."
+    },
+    {
+      "nom": "Message : Positionnez le levier sur P",
+      "couleur": "blanc",
+      "signification": "Le bouton Start/Stop a été enfoncé en position OFF sans que le levier de vitesse ne soit en P.",
+      "action": "Amenez le rapport en position P (parking)."
+    },
+    {
+      "nom": "Message : Véhicule en mode N. Appuyez sur START, positionnez le levier sur P et coupez le contact du véhicule",
+      "couleur": "blanc",
+      "signification": "Vous tentez d'arrêter le véhicule alors que le levier est en position N (point mort).",
+      "action": "Appuyez sur le bouton Start/Stop, amenez le rapport en position P (Stationnement), puis appuyez à nouveau sur le bouton Start/Stop."
+    },
+    {
+      "nom": "Message : Low key battery (Batterie de clé faible)",
+      "couleur": "blanc",
+      "signification": "La batterie interne de la clé intelligente est faible.",
+      "action": "Remplacez la pile de la clé intelligente."
+    },
+    {
+      "nom": "Message : Appuyer sur la pédale de frein pour démarrer le véhicule",
+      "couleur": "blanc",
+      "signification": "Le bouton Start/Stop a été appuyé plusieurs fois sans enfoncer la pédale de frein.",
+      "action": "Enfoncez la pédale de frein puis appuyez sur le bouton Start/Stop pour démarrer."
+    },
+    {
+      "nom": "Message : Key not in vehicle (La clé n’est pas dans le véhicule)",
+      "couleur": "blanc",
+      "signification": "La clé intelligente n'est pas dans le véhicule lorsque vous quittez le véhicule en position ON ou Start.",
+      "action": "Coupez toujours le véhicule avant de le quitter."
+    },
+    {
+      "nom": "Message : Press START button again (Appuyez sur le bouton START de nouveau)",
+      "couleur": "blanc",
+      "signification": "Le véhicule ne démarre pas après avoir appuyé sur le bouton Start/Stop.",
+      "action": "Essayez de démarrer le véhicule en appuyant à nouveau sur le bouton Start/Stop; si le problème persiste, faites inspecter le véhicule."
+    },
+    {
+      "nom": "Message : Appuyez sur le bouton START avec la clé",
+      "couleur": "blanc",
+      "signification": "La clé intelligente n'est pas détectée lorsque vous appuyez sur le bouton Start/Stop après avoir accédé au véhicule.",
+      "action": "Appuyez sur le bouton Start/Stop avec la clé intelligente pour démarrer le véhicule."
+    },
+    {
+      "nom": "Message : Vérifiez fusible BRAKE SWITCH",
+      "couleur": "blanc",
+      "signification": "Le fusible du contacteur de frein est déconnecté.",
+      "action": "Remplacez le fusible avant de démarrer le véhicule, ou démarrez en appuyant 10 secondes sur Start/Stop en position ACC si non remplaçable."
+    },
+    {
+      "nom": "Message : Shift to P to start vehicle (Passez en P pour démarrer le véhicule)",
+      "couleur": "blanc",
+      "signification": "Vous tentez de démarrer le véhicule dans une position autre que P (parking).",
+      "action": "Passez le rapport en position P (parking) pour démarrer le véhicule."
+    },
+    {
+      "nom": "Message : La batterie se décharge à cause d'appareils électriques extérieurs",
+      "couleur": "blanc",
+      "signification": "La tension de la batterie 12V du véhicule est faible ou une consommation de courant anormale est détectée.",
+      "action": "Débranchez tout appareil électronique externe; faites inspecter le véhicule si le message persiste sans connexion d'appareil."
+    },
+    {
+      "nom": "Message / icône : Témoin de porte, capot, hayon ouvert",
+      "couleur": "orange",
+      "signification": "Une portière, le capot ou le hayon est ouvert.",
+      "action": "Vérifiez que la portière, le capot et le hayon sont bien fermés avant de conduire."
+    },
+    {
+      "nom": "Message / icône : Témoin de toit ouvrant ouvert",
+      "couleur": "orange",
+      "signification": "Le toit ouvrant n'est pas complètement fermé lorsque le véhicule est arrêté.",
+      "action": "Fermez correctement le toit ouvrant avant de quitter votre véhicule."
+    },
+    {
+      "nom": "Message / icône : Pression faible",
+      "couleur": "orange",
+      "signification": "La pression d'un ou plusieurs pneus est faible.",
+      "action": "Reportez-vous à la section 'Témoin de faible pression des pneus' pour vérifier la pression et agir en conséquence."
+    },
+    {
+      "nom": "Message : Liquide de lave-glace bas",
+      "couleur": "blanc",
+      "signification": "Le réservoir de liquide lave-glace est presque vide.",
+      "action": "Faites remplir le réservoir de liquide lave-glace."
+    },
+    {
+      "nom": "Message : Vérifier le clignotant",
+      "couleur": "blanc",
+      "signification": "Les clignotants ne fonctionnent pas correctement, indiquant une ampoule grillée.",
+      "action": "Remplacez l'ampoule grillée par une neuve du même ampérage."
+    },
+    {
+      "nom": "Message : Vérifiez les phares à LED",
+      "couleur": "blanc",
+      "signification": "Il y a un problème avec les phares à LED.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Vérifiez le système de volet d'air actif",
+      "couleur": "blanc",
+      "signification": "Le volet de l'actionneur ou le contrôleur de volet d'air est défaillant, ou le volet d'air ne s'ouvre pas.",
+      "action": "Arrêtez le véhicule en lieu sûr, vérifiez l'état du volet d'air et retirez tout corps étranger; contactez un concessionnaire HYUNDAI agréé si le message persiste."
+    },
+    {
+      "nom": "Message : Lorsque la batterie 12V est déchargée",
+      "couleur": "rouge",
+      "signification": "La batterie 12V est déchargée et vous ne pouvez pas changer de vitesse.",
+      "action": "Démarrez votre véhicule selon la procédure de démarrage de secours ou contactez un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Appuyez péd. de frein pour changer vitesse",
+      "couleur": "blanc",
+      "signification": "La pédale de frein n'a pas été enfoncée pour changer de vitesse.",
+      "action": "Enfoncez la pédale de frein, puis changez de vitesse."
+    },
+    {
+      "nom": "Message : Shift to P after stopping (Réglez le levier sur P après l’arrêt)",
+      "couleur": "blanc",
+      "signification": "Le mode P (Stationnement) a été sélectionné alors que le véhicule est en mouvement.",
+      "action": "Arrêtez le véhicule avant de passer au mode P (Stationnement)."
+    },
+    {
+      "nom": "Message : Rapport déjà sélectionné",
+      "couleur": "blanc",
+      "signification": "La vitesse actuelle est à nouveau sélectionnée ou le rapport de vitesse ne fonctionne pas correctement en P (Stationnement).",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Check P button (Vérifiez bouton P)",
+      "couleur": "blanc",
+      "signification": "Il y a un problème au niveau du bouton P (stationnement).",
+      "action": "Faites examiner votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Erreur du système du levier de vitesse",
+      "couleur": "rouge",
+      "signification": "Il y a un dysfonctionnement du sélecteur de vitesse rotatif.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Vérifier le sélecteur rotatif de vitesse",
+      "couleur": "rouge",
+      "signification": "Il y a un dysfonctionnement du sélecteur de vitesse rotatif.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Sélecteur rotatif de vitesse bloqué",
+      "couleur": "rouge",
+      "signification": "Le sélecteur de vitesse rotatif ne revient pas sur sa position normale après une rotation.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Erreur de bouton PARK ! Engage parking brake when parking vehicle",
+      "couleur": "rouge",
+      "signification": "Le bouton P (stationnement) ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin ECO (mode de conduite)",
+      "couleur": "vert",
+      "signification": "Le mode ECO est sélectionné, visant à améliorer la consommation de carburant.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin SPORT (mode de conduite)",
+      "couleur": "blanc",
+      "signification": "Le mode SPORT est sélectionné, offrant une conduite sportive mais ferme.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin SNOW (mode de conduite)",
+      "couleur": "blanc",
+      "signification": "Le mode SNOW est sélectionné, aidant le véhicule à démarrer sur des routes glissantes.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Message : Vérifier le système de récupération intelligent",
+      "couleur": "orange",
+      "signification": "Le système de récupération intelligent est désactivé car les capteurs avant sont recouverts ou pour d'autres raisons.",
+      "action": "Vérifiez et nettoyez les capteurs avant; faites inspecter le véhicule par un concessionnaire HYUNDAI agréé si le problème persiste."
+    },
+    {
+      "nom": "Message : Conduisez prudemment (suite à freinage d'urgence)",
+      "couleur": "blanc",
+      "signification": "Le véhicule est immobilisé à la suite d'un freinage d'urgence.",
+      "action": "Appuyez immédiatement sur la pédale de frein et vérifiez les alentours."
+    },
+    {
+      "nom": "Message : Régulateur adaptatif désactivé (SCC annulé)",
+      "couleur": "blanc",
+      "signification": "Le régulateur de vitesse intelligent est temporairement annulé automatiquement.",
+      "action": "Regardez toujours devant vous et appuyez sur la pédale de frein si nécessaire."
+    },
+    {
+      "nom": "Message : Conditions SCC non respectées",
+      "couleur": "blanc",
+      "signification": "Les conditions de fonctionnement du régulateur de vitesse intelligent ne sont pas satisfaites.",
+      "action": "Vérifiez les conditions de fonctionnement du régulateur de vitesse intelligent."
+    },
+    {
+      "nom": "Message : Attention aux véhicules tout autour",
+      "couleur": "blanc",
+      "signification": "Avertissement des conditions routières à l'avant du véhicule.",
+      "action": "Faites toujours attention aux véhicules ou objets et appuyez sur la pédale de frein si nécessaire."
+    },
+    {
+      "nom": "Message : Conduisez prudemment (régulateur de vitesse intelligent basé sur la navigation)",
+      "couleur": "blanc",
+      "signification": "Le régulateur de vitesse adaptatif basé sur la navigation ne peut pas ralentir votre véhicule à une vitesse sécuritaire.",
+      "action": "Soyez toujours attentif à la route et aux conditions de circulation."
+    },
+    {
+      "nom": "Témoin d’assistance à la conduite sur autoroute (HDA) (fonctionnement)",
+      "couleur": "vert",
+      "signification": "L'assistance à la conduite sur autoroute fonctionne activement.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Témoin d’assistance à la conduite sur autoroute (HDA) (veille)",
+      "couleur": "gris",
+      "signification": "L'assistance à la conduite sur autoroute est en mode veille.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Témoin d’assistance à la conduite sur autoroute (HDA) (accélérateur enfoncé)",
+      "couleur": "blanc",
+      "signification": "L'accélérateur est enfoncé pendant que l'HDA est actif.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Témoin d’assistance à la conduite sur autoroute (HDA) (désactivé)",
+      "couleur": "aucun",
+      "signification": "L'assistant à la conduite sur autoroute est désactivé et non affiché.",
+      "action": "Activez la fonction HDA via les réglages si désiré."
+    },
+    {
+      "nom": "Message : Utilisation bouton ou pédale pour accélérer (HDA après arrêt)",
+      "couleur": "blanc",
+      "signification": "Le véhicule est arrêté après l'intervention de l'HDA et attend une action du conducteur pour redémarrer.",
+      "action": "Appuyez sur la pédale d’accélérateur ou sur le commutateur du régulateur de vitesse pour démarrer la conduite."
+    },
+    {
+      "nom": "Message : Gardez les mains sur le volant (HDA)",
+      "couleur": "blanc",
+      "signification": "Le conducteur a retiré ses mains du volant pendant plusieurs secondes.",
+      "action": "Reprenez le volant pour que l'assistance continue à fonctionner."
+    },
+    {
+      "nom": "Message : Volant (rouge) avec avertissement sonore (HDA)",
+      "couleur": "rouge",
+      "signification": "Le conducteur n'a toujours pas repris le volant après l'avertissement initial de 'Gardez les mains sur le volant'.",
+      "action": "Reprenez le volant immédiatement."
+    },
+    {
+      "nom": "Message : Système HDA (ass. autoroute) désactivé",
+      "couleur": "blanc",
+      "signification": "L’assistance à la conduite sur autoroute a été automatiquement annulée.",
+      "action": "Reprenez le contrôle manuel du véhicule."
+    },
+    {
+      "nom": "Message : Les mains ne sont pas sur le volant. La vitesse va être limitée",
+      "couleur": "rouge",
+      "signification": "L'assistance à la conduite sur autoroute a été annulée en raison de l'absence des mains du conducteur sur le volant, et la vitesse sera limitée.",
+      "action": "Reprenez le volant et le contrôle manuel du véhicule."
+    },
+    {
+      "nom": "Indicateur d'assistance au changement de voie sur autoroute (Ħ) (prêt)",
+      "couleur": "vert",
+      "signification": "La fonction d'aide au changement de file sur autoroute est prête à fonctionner.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Indicateur d'assistance au changement de voie sur autoroute (Ħ) (fonctionnement)",
+      "couleur": "vert",
+      "signification": "La fonction d'aide au changement de file sur autoroute est en cours de fonctionnement.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Indicateur d'assistance au changement de voie sur autoroute (Ħ) (veille)",
+      "couleur": "gris",
+      "signification": "La fonction d'aide au changement de file sur autoroute est en mode veille.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Indicateur d'assistance au changement de voie sur autoroute (Ħ) (annulé)",
+      "couleur": "blanc",
+      "signification": "La fonction d'aide au changement de file sur autoroute a été annulée.",
+      "action": "Reprenez le contrôle manuel du véhicule."
+    },
+    {
+      "nom": "Message : La fonction ne fonctionne pas",
+      "couleur": "blanc",
+      "signification": "La fonction d'aide au changement de file sur autoroute ne fonctionne pas même si le levier de clignotant est utilisé.",
+      "action": "Vérifiez les conditions de fonctionnement de la fonction."
+    },
+    {
+      "nom": "Message : La fonction est annulée pendant le fonctionnement",
+      "couleur": "blanc",
+      "signification": "La fonction d'aide au changement de file sur autoroute a été annulée en cours de fonctionnement.",
+      "action": "Reprenez le contrôle manuel du véhicule et vérifiez les conditions."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (HDA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’assistance à la conduite sur autoroute ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Assistant de changement de voie (HDA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’assistant de changement de voie sur autoroute ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (LFA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’assistance au suivi de voie ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Système d'assistance conducteur limité. Vue de la caméra obstruée (LFA)",
+      "couleur": "blanc",
+      "signification": "L'assistance au maintien de voie est désactivée en raison d'une obstruction de la caméra avant.",
+      "action": "Retirez l'obstruction du pare-brise ou du capteur; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Syst. d`assistance des angles morts désactivé",
+      "couleur": "blanc",
+      "signification": "L’assistance à l’évitement de collision d’angle mort est désactivée.",
+      "action": "Conduisez attentivement et activez la fonction via les réglages si nécessaire."
+    },
+    {
+      "nom": "Message : Vérifiez le voyant d`avert. lumineux rétro. extérieur",
+      "couleur": "blanc",
+      "signification": "Le témoin du rétroviseur extérieur ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Système d'assistance conducteur limité. Capteur bloqué (BCA)",
+      "couleur": "blanc",
+      "signification": "L'aide à l'évitement de collision d'angle mort est désactivée en raison d'un capteur bloqué.",
+      "action": "Retirez l'obstruction des capteurs; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Témoin de limite de vitesse (Ý)",
+      "couleur": "jaune",
+      "signification": "L'assistance manuelle à la limite de vitesse est activée ou présente un dysfonctionnement.",
+      "action": "Définissez la limite de vitesse souhaitée ou faites inspecter le système si un dysfonctionnement est détecté."
+    },
+    {
+      "nom": "Témoin de limitation de vitesse (rouge clignotant)",
+      "couleur": "rouge",
+      "signification": "Vous roulez à une vitesse plus élevée que la limite de vitesse affichée.",
+      "action": "Réduisez votre vitesse pour respecter la limite."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (ISLA)",
+      "couleur": "rouge",
+      "signification": "L’assistance intelligente à la limitation de vitesse ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Système d'assistance conducteur limité. Vue de la caméra obstruée (ISLA)",
+      "couleur": "blanc",
+      "signification": "L'assistance connectée de limite de vitesse est temporairement désactivée en raison d'une obstruction de la caméra avant.",
+      "action": "Retirez l'obstruction du pare-brise ou du capteur; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Vérifier le système d’aides à la conduite (DAW)",
+      "couleur": "rouge",
+      "signification": "Le système de détection de fatigue du conducteur ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Syst. d`avertissement anti-collision avant désactivé. Vue de la caméra bloquée",
+      "couleur": "blanc",
+      "signification": "L'alerte FCW est désactivée en raison d'une obstruction de la caméra dans l'habitacle.",
+      "action": "Retirez l'objet devant la caméra; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Collision Warning! (FCA Basic)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté avec un véhicule, deux-roues motorisé, piéton ou cycliste devant vous.",
+      "action": "Un signal sonore retentit et le volant vibre; appuyez sur la pédale de frein et corrigez la direction si nécessaire."
+    },
+    {
+      "nom": "Message : Emergency Braking (FCA Basic)",
+      "couleur": "rouge",
+      "signification": "Le freinage d'urgence sera assisté pour éviter une collision frontale.",
+      "action": "Un signal sonore retentit et le volant vibre; le système applique un freinage maximal."
+    },
+    {
+      "nom": "Message : Collision warning! (FCA Junction Turning)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté lors d'un virage à une intersection avec un véhicule en sens inverse.",
+      "action": "Un signal sonore retentit et le volant vibre; appuyez sur la pédale de frein et corrigez la direction si nécessaire."
+    },
+    {
+      "nom": "Message : Emergency Braking (FCA Junction Turning)",
+      "couleur": "rouge",
+      "signification": "Le freinage d'urgence sera assisté pour éviter une collision lors d'un virage à une intersection.",
+      "action": "Un signal sonore retentit et le volant vibre; le système applique un freinage maximal."
+    },
+    {
+      "nom": "Message : Avert. anti-collision (FCA Direct Oncoming)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté avec un véhicule approchant en sens inverse.",
+      "action": "Le témoin de sécurité avant clignote, un signal sonore retentit et le volant vibre."
+    },
+    {
+      "nom": "Message : Frein urgence (FCA Direct Oncoming)",
+      "couleur": "rouge",
+      "signification": "Le freinage d'urgence sera assisté pour éviter une collision avec un véhicule approchant en sens inverse.",
+      "action": "Le témoin de sécurité avant clignote, un signal sonore retentit et le volant vibre; le système applique un freinage maximal."
+    },
+    {
+      "nom": "Message : Collision warning! (FCA Junction Crossing)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté lors de la traversée d'un carrefour.",
+      "action": "Le témoin de sécurité avant clignote, un signal sonore retentit et le volant vibrera."
+    },
+    {
+      "nom": "Message : Frein urgence (FCA Junction Crossing)",
+      "couleur": "rouge",
+      "signification": "Le freinage d'urgence sera assisté pour éviter une collision lors de la traversée d'un carrefour.",
+      "action": "Le témoin de sécurité avant clignote, un signal sonore retentit et le volant vibrera; le système applique un freinage maximal."
+    },
+    {
+      "nom": "Message : Collision warning! (FCA Lane Overtaking)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté lors d'un changement de voie avec un véhicule en sens inverse.",
+      "action": "Un signal sonore retentit et le volant vibre."
+    },
+    {
+      "nom": "Message : Frein urgence (FCA Lane Overtaking)",
+      "couleur": "rouge",
+      "signification": "Le braquage d'urgence sera assisté pour éviter une collision avec un véhicule en sens inverse lors d'un changement de voie.",
+      "action": "Le témoin de braquage d'urgence clignote, un signal sonore retentit et le volant vibre; le système prend en main la direction."
+    },
+    {
+      "nom": "Message : Collision warning! (FCA Lane Change Side)",
+      "couleur": "rouge",
+      "signification": "Un risque de collision est détecté lors d'un changement de voie latérale.",
+      "action": "Le témoin de braquage d'urgence clignote, un signal sonore retentit et le volant vibre."
+    },
+    {
+      "nom": "Message : Emergency Steering (FCA Evasive Steering Assist)",
+      "couleur": "rouge",
+      "signification": "Le braquage d'urgence sera assisté pour éviter une collision avec un véhicule, piéton ou cycliste devant.",
+      "action": "Le témoin de braquage d'urgence clignote, un signal sonore retentit et le volant vibre; le système aide à tourner le volant."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (FCA Malfunction)",
+      "couleur": "rouge",
+      "signification": "L'aide à l'évitement de collision avant ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Camera obscured.",
+      "couleur": "blanc",
+      "signification": "L'aide à l'évitement de collision avant est désactivée car la caméra avant est obstruée.",
+      "action": "Retirez l'obstruction du pare-brise; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Radar blocked.",
+      "couleur": "blanc",
+      "signification": "L'aide à l'évitement de collision avant est désactivée car le radar avant est bloqué.",
+      "action": "Retirez l'obstruction du radar; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Gardez les mains sur le volant (LFA)",
+      "couleur": "rouge",
+      "signification": "Le conducteur a retiré ses mains du volant pendant plusieurs secondes alors que l'assistance au maintien de voie est active.",
+      "action": "Reprenez le volant pour que l'assistance continue à fonctionner."
+    },
+    {
+      "nom": "Message : LFA annulé (ass. maintien voie)",
+      "couleur": "blanc",
+      "signification": "L'assistance au suivi de voie est automatiquement annulée car le conducteur n'a pas repris le volant.",
+      "action": "Reprenez le contrôle manuel du véhicule."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (LKA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’assistance au maintien de voie ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Camera obscured. (LKA)",
+      "couleur": "blanc",
+      "signification": "L'assistance au maintien de voie est désactivée car la caméra avant est obstruée.",
+      "action": "Retirez l'obstruction du pare-brise; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Blind spot monitor (BCA)",
+      "couleur": "blanc",
+      "signification": "L'assistance à l'évitement de collision d'angle mort est désactivée en raison d'un capteur bloqué.",
+      "action": "Retirez l'obstruction des capteurs; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Témoin du rétroviseur extérieur (BCA)",
+      "couleur": "jaune",
+      "signification": "Un véhicule est détecté dans la zone d'angle mort.",
+      "action": "Soyez attentif à votre environnement avant de changer de voie; le témoin clignote et un signal sonore retentit en cas de risque de collision avec le clignotant activé."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (BCA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’avertissement de risque de collision d’angle mort ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Check outside mirror warning icon (BCA)",
+      "couleur": "blanc",
+      "signification": "Le témoin du rétroviseur extérieur ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Radar blocked. (BCA)",
+      "couleur": "blanc",
+      "signification": "L'aide à l'évitement de collision d'angle mort est désactivée en raison d'un radar bloqué.",
+      "action": "Retirez l'obstruction du radar; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Attention au trafic (SEW)",
+      "couleur": "rouge",
+      "signification": "Un véhicule arrivant par l'arrière est détecté au moment où une portière s'ouvre, indiquant un risque de collision.",
+      "action": "Fermez la portière et attendez que le véhicule soit passé pour éviter une collision."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (SEW malfunction)",
+      "couleur": "rouge",
+      "signification": "Le système d’avertissement de sortie sécurisée ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Radar blocked. (SEW)",
+      "couleur": "blanc",
+      "signification": "L'avertissement de sortie sécurisée est désactivé en raison d'un radar bloqué.",
+      "action": "Retirez l'obstruction du radar; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Indicateur de limite de vitesse (MSLA)",
+      "couleur": "blanc",
+      "signification": "La limite de vitesse manuelle est définie.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Message : Vérifier le système d'assistance conducteur (ISLA malfunction)",
+      "couleur": "rouge",
+      "signification": "L’assistance intelligente à la limitation de vitesse ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Driver assistance system limited. Camera obscured. (ISLA)",
+      "couleur": "blanc",
+      "signification": "L'assistance connectée de limite de vitesse est temporairement désactivée en raison d'une obstruction de la caméra avant.",
+      "action": "Retirez l'obstruction du pare-brise; faites inspecter le véhicule si le problème persiste."
+    },
+    {
+      "nom": "Message : Pensez à prendre une pause (DAW)",
+      "couleur": "blanc",
+      "signification": "Le système de détection de fatigue du conducteur recommande de faire une pause.",
+      "action": "Faites une pause pour améliorer la sécurité de la conduite."
+    },
+    {
+      "nom": "Message : Le véhicule à l`avant s`éloigne (LVDA)",
+      "couleur": "blanc",
+      "signification": "Le véhicule détecté devant a redémarré depuis un stop.",
+      "action": "Préparez-vous à démarrer votre véhicule."
+    },
+    {
+      "nom": "Message : Vérifier le système d’aides à la conduite (FCW/DAW malfunction)",
+      "couleur": "rouge",
+      "signification": "L'avertissement d’attention frontale ou le système de détection de fatigue du conducteur ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Témoin de surveillance de vue environnante (SVM) (anormale)",
+      "couleur": "blanc",
+      "signification": "L'écran de vue panoramique s'affiche de manière anormale et une icône apparaît.",
+      "action": "Vérifiez les conditions environnementales (hayon/portière ouverte, rétroviseur rabattu) ou faites inspecter les caméras."
+    },
+    {
+      "nom": "Message : Vérifier l'assistant de stationnement (RSPA)",
+      "couleur": "blanc",
+      "signification": "L'aide au stationnement intelligent à distance ne fonctionne pas correctement.",
+      "action": "Faites inspecter votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Message : Assistant de stationnement annulé (RSPA)",
+      "couleur": "blanc",
+      "signification": "L'aide au stationnement intelligent à distance a été annulée.",
+      "action": "Reprenez le contrôle manuel du véhicule et stationnez en toute sécurité."
+    },
+    {
+      "nom": "Message : Frein stationnement serré automatique-ment (Auto Hold/EPB)",
+      "couleur": "blanc",
+      "signification": "Le frein de stationnement électronique est activé automatiquement en même temps que la fonction Auto Hold.",
+      "action": "Desserrez le frein de stationnement manuellement avec l’interrupteur de l’EPB."
+    },
+    {
+      "nom": "Message : Désactivation de la fonction AUTO HOLD (maintien automatique). Appuyez sur la pédale de frein",
+      "couleur": "blanc",
+      "signification": "La fonction Auto Hold a présenté un dysfonctionnement lors du passage à l’EPB.",
+      "action": "Appuyez sur la pédale de frein pour votre sécurité."
+    },
+    {
+      "nom": "Message : Nettoyer disques freins",
+      "couleur": "blanc",
+      "signification": "La fonction de nettoyage des disques de frein est activée pour réduire le bruit et la rouille.",
+      "action": "Aucune action spécifique n'est requise, cela indique un fonctionnement normal."
+    },
+    {
+      "nom": "Message : To release EPB, fasten seatbelt and close door, hood and tailgate",
+      "couleur": "blanc",
+      "signification": "L'EPB est activé alors que la ceinture de sécurité du conducteur n'est pas attachée, ou si le capot, le hayon ou les portières sont ouverts.",
+      "action": "Bouclez la ceinture, fermez la porte, le coffre et le capot pour désactiver l'EPB."
+    },
+    {
+      "nom": "Message : Pression des pneus enregistrée (TPMS)",
+      "couleur": "blanc",
+      "signification": "La pression des pneus a été enregistrée avec succès après réinitialisation du TPMS.",
+      "action": "Aucune action spécifique n'est requise."
+    },
+    {
+      "nom": "Témoin de dysfonctionnement du système TPMS (L)",
+      "couleur": "orange",
+      "signification": "Indique un problème sur le système de contrôle de pression des pneus.",
+      "action": "Faites examiner votre véhicule par un concessionnaire HYUNDAI agréé."
+    },
+    {
+      "nom": "Diode rouge eCall (panne du système)",
+      "couleur": "rouge",
+      "signification": "Indique un dysfonctionnement du système eCall paneuropéen.",
+      "action": "Faites vérifier immédiatement le système eCall par un concessionnaire HYUNDAI agréé."
+    }
+  ]
+}

@@ -18,33 +18,115 @@
   <div class="nk-haut-ligne">
     <button id="nk-retour-btn" class="nk-retour-btn hidden" type="button" aria-label="Retour">‹</button>
     <h1 id="nk-titre">🔋 Notice Kona</h1>
+    <button id="nk-theme-btn" class="nk-mini-btn" type="button" aria-label="Changer le thème">🌙</button>
   </div>
   <div class="nk-recherche-zone">
     <span class="nk-loupe">🔍</span>
     <input type="text" id="nk-recherche" class="nk-recherche" placeholder="Rechercher une fonction, un bouton…" autocomplete="off">
-    <button id="nk-recherche-effacer" class="nk-recherche-effacer hidden" type="button" aria-label="Effacer">✕</button>
+    <button id="nk-recherche-vocale" class="nk-recherche-icone-btn" type="button" aria-label="Recherche vocale">🎤</button>
+    <button id="nk-recherche-effacer" class="nk-recherche-icone-btn hidden" type="button" aria-label="Effacer">✕</button>
   </div>
 </header>
 
 <main id="nk-corps" class="nk-corps">
 
   <div id="nk-vue-accueil" class="nk-vue">
+    <div id="nk-progression" class="nk-progression"></div>
+
+    <div id="nk-bloc-favoris" class="nk-bloc-accueil hidden">
+      <div class="nk-bloc-accueil-titre">⭐ Favoris</div>
+      <div id="nk-favoris-liste" class="nk-sections-liste"></div>
+    </div>
+
+    <div id="nk-bloc-recents" class="nk-bloc-accueil hidden">
+      <div class="nk-bloc-accueil-titre">🕘 Récemment consultées</div>
+      <div id="nk-recents-liste" class="nk-sections-liste"></div>
+    </div>
+
+    <div class="nk-bloc-accueil-titre">📚 Catégories</div>
     <div id="nk-categories" class="nk-categories"></div>
+
+    <div class="nk-outils-grille">
+      <button type="button" id="nk-ouvrir-voyants" class="nk-outil-carte">
+        <span class="nk-categorie-icone">🚨</span>
+        <span class="nk-categorie-titre">Voyant allumé ?</span>
+      </button>
+      <button type="button" id="nk-ouvrir-glossaire" class="nk-outil-carte">
+        <span class="nk-categorie-icone">🔤</span>
+        <span class="nk-categorie-titre">Glossaire des sigles</span>
+      </button>
+      <button type="button" id="nk-ouvrir-checklists" class="nk-outil-carte">
+        <span class="nk-categorie-icone">✅</span>
+        <span class="nk-categorie-titre">Checklists</span>
+      </button>
+    </div>
   </div>
 
   <div id="nk-vue-categorie" class="nk-vue hidden">
-    <h2 id="nk-categorie-titre" class="nk-vue-titre"></h2>
+    <div class="nk-vue-entete">
+      <h2 id="nk-categorie-titre" class="nk-vue-titre"></h2>
+      <button type="button" id="nk-categorie-imprimer-btn" class="nk-mini-btn" aria-label="Imprimer / Enregistrer en PDF">🖨️</button>
+    </div>
     <div id="nk-sections-liste" class="nk-sections-liste"></div>
   </div>
 
   <div id="nk-vue-section" class="nk-vue hidden">
-    <h2 id="nk-section-titre" class="nk-vue-titre"></h2>
+    <div class="nk-vue-entete">
+      <h2 id="nk-section-titre" class="nk-vue-titre"></h2>
+      <span class="nk-section-actions">
+        <button type="button" id="nk-section-favori-btn" class="nk-mini-btn" aria-label="Ajouter aux favoris">☆</button>
+        <button type="button" id="nk-section-partager-btn" class="nk-mini-btn" aria-label="Partager">📤</button>
+      </span>
+    </div>
+    <button type="button" id="nk-mode-pas-a-pas-btn" class="nk-lien-action hidden">▶️ Mode pas à pas</button>
     <div id="nk-section-contenu" class="nk-section-contenu"></div>
+    <div id="nk-pas-a-pas" class="nk-pas-a-pas hidden">
+      <div id="nk-pas-a-pas-compte" class="nk-pas-a-pas-compte"></div>
+      <div id="nk-pas-a-pas-texte" class="nk-pas-a-pas-texte"></div>
+      <div class="nk-pas-a-pas-nav">
+        <button type="button" id="nk-pas-precedent" class="nk-btn-secondaire">‹ Précédent</button>
+        <button type="button" id="nk-pas-suivant" class="nk-btn-secondaire">Suivant ›</button>
+      </div>
+      <button type="button" id="nk-pas-a-pas-quitter" class="nk-lien-action">✕ Revenir au texte complet</button>
+    </div>
+    <button type="button" id="nk-section-signaler-btn" class="nk-lien-action">🖊️ Signaler une erreur ou un manque</button>
   </div>
 
   <div id="nk-vue-recherche" class="nk-vue hidden">
     <div id="nk-recherche-resultats" class="nk-sections-liste"></div>
     <div id="nk-recherche-vide" class="nk-vide hidden">Aucun résultat.</div>
+  </div>
+
+  <div id="nk-vue-voyants" class="nk-vue hidden">
+    <h2 class="nk-vue-titre">🚨 Voyant allumé ?</h2>
+    <div class="nk-filtre-couleurs" id="nk-voyants-filtres">
+      <button type="button" class="nk-filtre-couleur active" data-couleur="tous">Tous</button>
+      <button type="button" class="nk-filtre-couleur" data-couleur="rouge">🔴 Rouge</button>
+      <button type="button" class="nk-filtre-couleur" data-couleur="orange">🟠 Orange</button>
+      <button type="button" class="nk-filtre-couleur" data-couleur="vert">🟢 Vert</button>
+      <button type="button" class="nk-filtre-couleur" data-couleur="bleu">🔵 Bleu</button>
+    </div>
+    <div id="nk-voyants-liste" class="nk-voyants-liste"></div>
+    <div id="nk-voyants-vide" class="nk-vide hidden">Liste des voyants pas encore disponible hors-ligne (nécessite une connexion la première fois).</div>
+  </div>
+
+  <div id="nk-vue-glossaire" class="nk-vue hidden">
+    <h2 class="nk-vue-titre">🔤 Glossaire des sigles</h2>
+    <div id="nk-glossaire-liste" class="nk-sections-liste"></div>
+    <div id="nk-glossaire-vide" class="nk-vide hidden">Aucun sigle détecté.</div>
+  </div>
+
+  <div id="nk-vue-checklists" class="nk-vue hidden">
+    <h2 class="nk-vue-titre">✅ Checklists</h2>
+    <div class="nk-checklist-onglets">
+      <button type="button" class="nk-checklist-onglet active" data-check="trajet">🧭 Avant un long trajet</button>
+      <button type="button" class="nk-checklist-onglet" data-check="hivernage">❄️ Avant hivernage</button>
+    </div>
+    <div class="nk-checklist-actions">
+      <button type="button" id="nk-checklist-reinit" class="nk-lien-action">↺ Réinitialiser</button>
+      <button type="button" id="nk-checklist-imprimer" class="nk-lien-action">🖨️ Imprimer</button>
+    </div>
+    <div id="nk-checklist-liste" class="nk-checklist-liste"></div>
   </div>
 
   <div id="nk-chargement" class="nk-vide">Chargement de la notice…</div>
@@ -61,7 +143,25 @@
     <button id="nk-mentions-fermer" class="nk-modale-fermer" type="button" aria-label="Fermer">✕</button>
     <h2>🔋 Notice Kona</h2>
     <p id="nk-mentions-texte"></p>
+    <button type="button" id="nk-verifier-maj-btn" class="nk-btn-secondaire">🔄 Vérifier les mises à jour du contenu</button>
+    <div id="nk-maj-resultat" class="nk-maj-resultat"></div>
     <p class="nk-mentions-legal">Contenu issu du manuel du propriétaire officiel Hyundai, résumé et réorganisé à titre d'aide-mémoire personnel. En cas de doute, la notice papier/PDF originale fait foi.</p>
+  </div>
+</div>
+
+<div id="nk-lightbox" class="nk-lightbox hidden">
+  <img id="nk-lightbox-img" src="" alt="">
+</div>
+
+<div id="nk-signaler-modale" class="nk-modale hidden">
+  <div class="nk-modale-contenu">
+    <button id="nk-signaler-fermer" class="nk-modale-fermer" type="button" aria-label="Fermer">✕</button>
+    <h2>🖊️ Signaler</h2>
+    <p class="nk-signaler-sous">Note gardée uniquement sur ce téléphone, pour qu'on la corrige ensemble plus tard.</p>
+    <textarea id="nk-signaler-texte" class="nk-textarea" rows="4" placeholder="Ex : la section Recharge manque les temps de charge CC en hiver…"></textarea>
+    <button type="button" id="nk-signaler-envoyer" class="nk-btn-secondaire">Enregistrer la note</button>
+    <div class="nk-bloc-accueil-titre" style="margin-top:16px;">Notes déjà enregistrées</div>
+    <div id="nk-signaler-liste" class="nk-sections-liste"></div>
   </div>
 </div>
 
