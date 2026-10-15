@@ -330,18 +330,27 @@ function surligner(texte, mots) {
 const SYNONYMES_RECHERCHE = {
   tableau: ["combine"],
   ecran: ["combine", "affichage"],
+  compteur: ["combine"],
+  aspect: ["affichage"],
 };
 
 // Comparaison par prefixe (5 lettres) pour les mots assez longs -- tolere
 // les conjugaisons/pluriels ("changer" prononce doit trouver "Change" dans
 // le texte), sans affaiblir les mots courts ou` ce serait trop permissif.
-function motCorrespond(mot, cible) {
-  const base = mot.length >= 5 ? mot.slice(0, 5) : mot;
-  return cible.includes(base);
+function racineRecherche(mot) {
+  return mot.length >= 5 ? mot.slice(0, 5) : mot;
 }
 
+function motCorrespond(mot, cible) {
+  return cible.includes(racineRecherche(mot));
+}
+
+// Cle de SYNONYMES_RECHERCHE comparee par racine (pas egalite stricte) pour
+// que "compteurs" (pluriel) retrouve l'entree "compteur" (singulier).
 function groupeCorrespond(mot, cible) {
-  const candidats = [mot, ...(SYNONYMES_RECHERCHE[mot] || [])];
+  const racine = racineRecherche(mot);
+  const cles = Object.keys(SYNONYMES_RECHERCHE).filter((k) => racineRecherche(k) === racine);
+  const candidats = [mot, ...cles.flatMap((k) => SYNONYMES_RECHERCHE[k])];
   return candidats.some((c) => motCorrespond(c, cible));
 }
 
