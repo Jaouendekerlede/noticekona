@@ -323,6 +323,28 @@ function surligner(texte, mots) {
   return echappe;
 }
 
+// Mots courants (langage parlé/vocal) absents du vocabulaire technique du
+// manuel -- sans ça, "changer l'écran du tableau de bord" ne trouve jamais
+// "Modes d'affichage du combiné" (le manuel dit "combiné", pas "tableau de
+// bord"). Chaque mot de la requete est aussi cherche sous ses synonymes.
+const SYNONYMES_RECHERCHE = {
+  tableau: ["combine"],
+  ecran: ["combine", "affichage"],
+};
+
+// Comparaison par prefixe (5 lettres) pour les mots assez longs -- tolere
+// les conjugaisons/pluriels ("changer" prononce doit trouver "Change" dans
+// le texte), sans affaiblir les mots courts ou` ce serait trop permissif.
+function motCorrespond(mot, cible) {
+  const base = mot.length >= 5 ? mot.slice(0, 5) : mot;
+  return cible.includes(base);
+}
+
+function groupeCorrespond(mot, cible) {
+  const candidats = [mot, ...(SYNONYMES_RECHERCHE[mot] || [])];
+  return candidats.some((c) => motCorrespond(c, cible));
+}
+
 function rechercher(requete) {
   const q = normaliserRecherche(requete);
   $("nk-recherche-effacer").classList.toggle("hidden", !requete.trim());
@@ -334,8 +356,8 @@ function rechercher(requete) {
   const resultats = [];
   for (const cat of notice.categories) {
     for (const s of cat.sections) {
-      const cible = normaliserRecherche(`${s.titre} ${s.contenu}`);
-      if (mots.every((m) => cible.includes(m))) resultats.push({ cat, section: s });
+      const cible = normaliserRecherche(`${cat.titre} ${s.titre} ${s.contenu}`);
+      if (mots.every((m) => groupeCorrespond(m, cible))) resultats.push({ cat, section: s });
     }
   }
   const conteneur = $("nk-recherche-resultats");
